@@ -34,67 +34,37 @@
   align-items: center;
   padding: 5%;
   height: 100%;
+  text-align: left;
+}
+
+h1 {
+  line-height: 1.2;
+  font-size: 9rem;
+  color:rgb(15, 16, 88);
+  text-align: left;
 }
 
 h2 {
-  font-size: 2.5rem;
-  white-space: nowrap;
+  font-size: 3rem;
   color: rgb(15, 16, 88);
-}
-
-#animatedTitleContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3.5rem;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  white-space: normal;
-  overflow: hidden;
-}
-
-#animatedTitleContainer h1 {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
-  white-space: nowrap;
 }
 
 @media screen and (max-width: 1024px) {
-  #landingPageTextContainer h1 {
+  h1 {
     line-height: 1.2;
     font-size: 6rem;
-    color:rgb(15, 16, 88);
-    text-align: left;
   }
-  #landingPageTextContainer h2 {
+  h2 {
     font-size: 2rem;
-    white-space: normal;
-    text-align: left;
   }
 }
 
-#animatedTitleContainer h1:nth-child(1) {
-  color: rgb(15, 16, 88);
-  --webkit-text-stroke: 5px #1c8bba;
-}
-
-#animatedTitleContainer h1:nth-child(2) {
-  color: rgb(75, 114, 186);
-  animation: animate 4s ease-in-out infinite; /* Corrected "infinite" spelling */
-}
-@keyframes animate
-{
-  0%, 100%
-  {
-    clip-path: polygon(0% 45%, 15% 44%, 32% 50%,
-      54% 60%, 70% 61%, 84% 59%, 100% 52%,
-      100% 100%, 0% 100%);
+@media screen and (max-width: 768px) {
+  h1 {
+    line-height: 1.2;
+    font-size: 4rem;
   }
-  50%
-  {
-    clip-path: polygon(0 60%, 16% 65%, 34% 66%,
-    51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%,
-    0% 100%);
+  h2 {
+    font-size: 1.5rem;
   }
 }
