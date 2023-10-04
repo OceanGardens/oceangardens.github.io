@@ -15,13 +15,17 @@ function LandingPage() {
                 resolution={400}
             >
                 {({pause, play}) => (
-                    <div id="landingPageText">
-                        <div id="titleBox">
-                            <div className='textAlign'>
+                    <div id="landingPageTextContainer">
+                            {window.innerWidth > 1024 ? (
+                                <div id="animatedTitleContainer">
+                                    <div className='textAlign'>
+                                        <h1>Ocean Gardens</h1>
+                                        <h1>Ocean Gardens</h1>
+                                    </div>
+                                </div>
+                            ): (
                                 <h1>Ocean Gardens</h1>
-                                <h1>Ocean Gardens</h1>
-                            </div>
-                        </div>
+                            )}
                         <h2>How the oceans play a key role in Earth's biosphere</h2>
                     </div>
                 )}

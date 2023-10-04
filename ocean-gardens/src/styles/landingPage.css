@@ -26,35 +26,34 @@
   position: relative;
 }
 
-#landingPageText {
+#landingPageTextContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
   padding: 5%;
-
+  height: 100%;
 }
 
-#landingPageText h2 {
+h2 {
   font-size: 2.5rem;
   white-space: nowrap;
-  color: rgb(15, 16, 88)
+  color: rgb(15, 16, 88);
 }
 
-#titleBox {
+#animatedTitleContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self:center;
-  padding: 70px;
+  margin-bottom: 3.5rem;
   width: 100%;
+  height: auto;
   text-align: center;
-  overflow: hidden;
   white-space: normal;
+  overflow: hidden;
 }
 
-#titleBox h1 {
+#animatedTitleContainer h1 {
   position: absolute;
   transform: translate(-50%, -50%);
   font-size: 8rem;
@@ -62,44 +61,25 @@
 }
 
 @media screen and (max-width: 1024px) {
-  #titleBox h1 {
+  #landingPageTextContainer h1 {
+    line-height: 1.2;
     font-size: 6rem;
-    white-space: normal;
+    color:rgb(15, 16, 88);
+    text-align: left;
   }
-  #landingPageText {
-    justify-content: flex-start;
-  }
-  #titleBox h2 {
+  #landingPageTextContainer h2 {
     font-size: 2rem;
     white-space: normal;
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 768px) {
-  #titleBox h1 {
-    font-size: 5rem;
-  }
-  #titleBox h2 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #titleBox h1 {
-    font-size: 2rem;
-    word-wrap: break-word;
-  }
-  #titleBox h2 {
-    font-size: 1rem;
-  }
-}
-
-#titleBox h1:nth-child(1) {
+#animatedTitleContainer h1:nth-child(1) {
   color: rgb(15, 16, 88);
   --webkit-text-stroke: 5px #1c8bba;
 }
 
-#titleBox h1:nth-child(2) {
+#animatedTitleContainer h1:nth-child(2) {
   color: rgb(75, 114, 186);
   animation: animate 4s ease-in-out infinite; /* Corrected "infinite" spelling */
 }
