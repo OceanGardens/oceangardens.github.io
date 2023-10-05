@@ -7,21 +7,28 @@ import ImageSmall from "../resources/wallpaper/imageSmall.jpg"
 import ImageSmaller from "../resources/wallpaper/imageSmaller.jpg"
 import "../styles/landingPage.css"
 import React, { useEffect, useState } from 'react';
+import Button from '@mui/material/Button';
 
 function LandingPage() {
 
     const getBackgroundImage=(width, height)=>{
         if(width < 450 && height < 675){
+            console.log("Image6")
             return ImageSmaller
         }else if(width < 670 && height < 1000){
+            console.log("Image5")
             return ImageSmall
         }else if(width < 1500 && height < 1000){
+            console.log("Image4")
             return Image1500
         }else if(width < 1800 && height < 1200){
+            console.log("Image3")
             return Image1800
         }else if(width < 2100 && height < 1400){
+            console.log("Image2")
             return Image2
         }else{
+            console.log("Image1")
             return Image1
         }
     }
@@ -40,7 +47,8 @@ function LandingPage() {
                 {({pause, play}) => (
                     <div id="landingPageTextContainer">
                         <h1>Ocean Gardens</h1>
-                        <h2>How the oceans play a key role in Earth's biosphere</h2>
+                        <h2>How the oceans play a key role in planet Earth's biosphere</h2>
+                        <Button>Hello world</Button>
                     </div>
                 )}
             </WaterWave>
