@@ -8,6 +8,7 @@ import ImageSmaller from "../resources/wallpaper/imageSmaller.jpg"
 import "../styles/landingPage.css"
 import React, { useEffect, useState } from 'react';
 
+
 function LandingPage() {
 
     const getBackgroundImage=(width, height)=>{
