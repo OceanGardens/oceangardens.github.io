@@ -11,8 +11,8 @@ function App() {
   return (
     <div style={{flex: 1, flexDirection: 'column'}}>
       {/* <LandingPage/> */}
-      <GlobeHub />
-      {/* < InitialGlobePage /> */}
+      {/* <GlobeHub /> */}
+      < InitialGlobePage />
     </div>
   );
 }

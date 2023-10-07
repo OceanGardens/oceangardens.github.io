@@ -34,8 +34,8 @@ function InitialGlobePage() {
         <Container fluid className="content">
           <Row>
             <div className="info-box">
-              <h2>Visualize the Temperature of the Oceans on Earth!</h2>
-              <p>The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black, which means there is no water. Feel free to zoom in, move around, and explore!</p>
+              <h2>This is our planet, Earth!</h2>
+              <p>But, it should be planet water, because 70% of it is water, that is, there is more water than earth! </p>
               <p>When I was a young boy
                 My father took me into the city
                 To see a marching band
@@ -52,7 +52,7 @@ function InitialGlobePage() {
       <Col className="info-box">
         <div className="scrollable-content">
           <p>
-            The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black, which means there is no water. Feel free to zoom in, move around, and explore!
+            Sample text. color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black, which means there is no water. Feel free to zoom in, move around, and explore!
           </p>
         </div>
       </Col>
