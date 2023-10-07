@@ -5,12 +5,14 @@ import ContentPage from './components/contentPage';
 import {Helmet} from "react-helmet"
 import GlobeHub from "./components/GlobePages/GlobeHub"
 import GlobePage from "./components/GlobePages/GlobePage"
+import InitialGlobePage from './components/GlobePages/InitialPage/InitialGlobePage';
 
 function App() {
   return (
     <div style={{flex: 1, flexDirection: 'column'}}>
       {/* <LandingPage/> */}
       <GlobeHub />
+      {/* < InitialGlobePage /> */}
     </div>
   );
 }
