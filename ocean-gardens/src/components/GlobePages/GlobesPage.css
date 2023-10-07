@@ -22,7 +22,7 @@
   top: 0;
   padding: 5%;
   background-color: transparent;
-  background-image: url('../../resources/NASA-Galaxies15k-HubbleHDUV-20180816.png');
+  background-image: url('//unpkg.com/three-globe/example/img/night-sky.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
