@@ -7,6 +7,8 @@ import ImageSmall from "../resources/wallpaper/imageSmall.jpg"
 import ImageSmaller from "../resources/wallpaper/imageSmaller.jpg"
 import "../styles/landingPage.css"
 import React, { useEffect, useState } from 'react';
+import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 function LandingPage() {
 
@@ -28,7 +30,12 @@ function LandingPage() {
     
   return (
         
-        <div className="landingPage">
+        <motion.div className="landingPage"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}    
+            transition={{duration: 5}}
+            >
+            
             <WaterWave
                 imageUrl={getBackgroundImage(window.innerWidth, window.innerHeight)}
                 dropRadius={40}
@@ -46,7 +53,7 @@ function LandingPage() {
             </WaterWave>
             
             
-        </div>
+        </motion.div>
 
   );
 }
