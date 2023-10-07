@@ -1,8 +1,7 @@
 import React from 'react';
 import Globe from 'react-globe.gl';
 import image from '../../resources/AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.png'
-// '../resources/AQUA_MODIS.20021016_20021023.L3m.8D.CHL.chlor_a.4km.nc.png'
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useCallback } from "react";
 import oceanLocations from './OCEAN_LOCATIONS'
 import escala from '../../resources/escala.png'
 import './GlobePage.css'
@@ -14,9 +13,9 @@ function GlobePage() {
       <div>
         <h2>This shows the concentration of chrolophila on Earth! AAAAAAAAAAAAAAAAAAAAAAAAAAAaaa</h2>
       </div>
-      <div className="image-overlay">
+      {/* <div className="image-overlay">
         <img src={escala} alt="Image Overlay" />
-      </div>
+      </div> */}
       <div className="globe-container" style={{ width: '100%', height: '100vh' }} >
         <Globe
           globeImageUrl={image}
