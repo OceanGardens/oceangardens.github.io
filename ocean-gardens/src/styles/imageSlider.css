@@ -1,0 +1,8 @@
+.handle {
+    height: 100%;
+    width: 2%;
+    overflow: hidden;
+    background-color: chocolate;
+    z-index: 0;
+}
+  
