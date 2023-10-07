@@ -5,16 +5,19 @@ import image from '../../resources/AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor
 import { useEffect, useState, useRef, useCallback } from "react";
 import oceanLocations from './OCEAN_LOCATIONS'
 import escala from '../../resources/escala.png'
+import './GlobePage.css'
 
 function GlobePage() {
 
   return (
     <>
       <div>
-        <h2>This shows the concentration of chrolophila on Earth!</h2>
-        
+        <h2>This shows the concentration of chrolophila on Earth! AAAAAAAAAAAAAAAAAAAAAAAAAAAaaa</h2>
       </div>
-      <div style={{ width: '100%', height: '100vh' }}>
+      <div className="image-overlay">
+        <img src={escala} alt="Image Overlay" />
+      </div>
+      <div className="globe-container" style={{ width: '100%', height: '100vh' }} >
         <Globe
           globeImageUrl={image}
           backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
