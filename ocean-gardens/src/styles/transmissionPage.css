@@ -78,6 +78,19 @@ body {
     font-size: 1.9rem;
   }
 
+  #messenger9 {
+    position: relative;
+    left: 0%;
+    top: 11rem;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+  }
+
   #messenger7 {
     position: relative;
     left: 0%;
@@ -95,7 +108,7 @@ body {
   #messenger8 {
     position: relative;
     left: 0%;
-    top: 21rem;
+    top: 19.75rem;
     
     font-family: Poppins;
     font-weight: 550;

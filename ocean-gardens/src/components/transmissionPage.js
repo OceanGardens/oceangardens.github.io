@@ -15,6 +15,7 @@ function TransmissionPage(props) {
   const [msg6, setMsg6] = useState('');
   const [msg7, setMsg7] = useState('');
   const [msg8, setMsg8] = useState('');
+  const [msg9, setMsg9] = useState('');
   const [stage2, setStage] = useState(true);
   const [buttonHeight, setButtonHeight] = useState(true)
   const Messenger = function (writeMsg, setter, timewait) {
@@ -106,7 +107,7 @@ function TransmissionPage(props) {
     if(props.clicks == 0){
     var messenger1 = new Messenger("Receiving new radio transmission...", setMsg1, 2000);
 
-    var messenger2 = new Messenger("Distance from source: 4.3 light years", setMsg2, 6500);
+    var messenger2 = new Messenger("Distance from source: 39.46 light years", setMsg2, 6500);
 
     var messenger3 = new Messenger("Click on the screen to decode...", setMsg3, 10000);}
     
@@ -122,11 +123,12 @@ function TransmissionPage(props) {
           setButtonHeight(false)
           //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
 
-          var messenger4 = new Messenger("Dear Alpha Centaurians,", setMsg4, 0);
+          var messenger4 = new Messenger("Dear inhabitants of TRAPPIST-1 planetary system,", setMsg4, 0);
           var messenger5 = new Messenger("Greetings from Earth!", setMsg5, 2500);
-          var messenger6 = new Messenger("We are sending this to you, our cosmic neighbors,", setMsg6, 5000);
-          var messenger7 = new Messenger("so you can experience the beauty of our greatest garden: The Oceans", setMsg7, 8000);
-          var messenger8 = new Messenger("Click on the screen to start", setMsg8, 10000);
+          var messenger6 = new Messenger("We are sending this transmission as a gift to you,", setMsg6, 5000);
+          var messenger9 = new Messenger("our cosmic neighbors,", setMsg9, 8000);
+          var messenger7 = new Messenger("so you can experience the beauty of our greatest garden: the oceans.", setMsg7, 10000);
+          var messenger8 = new Messenger("Click on the screen to start", setMsg8, 13000);
           
         }else{
           setMsg4('')
@@ -134,6 +136,7 @@ function TransmissionPage(props) {
           setMsg6('')
           setMsg7('')
           setMsg8('')
+          setMsg9('')
           
           
           document.removeEventListener('mousedown', handleClickOutside);
@@ -146,10 +149,6 @@ function TransmissionPage(props) {
     
   }, [stage2, setStage, props.clicks]); // Empty dependency array to run the effect once on component mount
   
-  //limitar crescimento ->ajuda no celular
-  //trocar margem esquerda pra 10% da tela
-  //separar oração
-  //funcionar pra celular
 
   return (
     <>
@@ -170,6 +169,7 @@ function TransmissionPage(props) {
         <div id='mail'>
           <p id='messenger5'>{msg5}</p>
           <p id='messenger6'>{msg6}</p>
+          <p id='messenger9'>{msg9}</p>
           <p id='messenger7'>{msg7}</p>
           <p id='messenger8'>{msg8}</p>
         </div>
