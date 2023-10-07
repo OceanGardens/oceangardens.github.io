@@ -57,9 +57,12 @@ function GlobesPage() {
   const [scalaImage, setScalaImage] = useState(escalaCrolo);
 
 
-  const changeImages = (newBackgroundImage, newScalaImage) => {
+  const changeImages = (newBackgroundImage, newScalaImage, typeGlob) => {
     setGlobeImageUrl(newBackgroundImage);
     setScalaImage(newScalaImage);
+    setText(typeGlob);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera  
   };
 
   return (
@@ -106,19 +109,19 @@ function GlobesPage() {
           <ButtonGroup vertical="true" className="button-group-vert">
             <Button
               variant="primary"
-              onClick={() => changeImages(imageCrolo, escalaCrolo)}
+              onClick={() => changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}
             >
               Chlorophyll Concentration 
             </Button>
             <Button
               variant="primary"
-              onClick={() => changeImages(imageTemp, tempScale)}
+              onClick={() => changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}
             >
               Water Temperature
             </Button>
             <Button
               variant="primary"
-              onClick={() => changeImages(imageRad, absortionScale)}
+              onClick={() => changeImages(imageRad, absortionScale, 'GlobeAbsortion')}
             >
               Photosynthetically available radiation
             </Button>
