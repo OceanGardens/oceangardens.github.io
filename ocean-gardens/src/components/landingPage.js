@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 
+
 function LandingPage() {
 
     const getBackgroundImage=(width, height)=>{
