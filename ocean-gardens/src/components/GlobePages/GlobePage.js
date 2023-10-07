@@ -14,10 +14,47 @@ import imageRad from '../../resources/PhotosynAvailableRadiation-AQUA_MODIS.2022
 
 
 function GlobePage() {
+  const [text, setText] = useState('ChloroPage');
+
+  const renderText = () => {
+    switch (text) {
+      case 'ChloroPage':
+        return (
+          <div className="info-box">
+            <h2>Visualize the concentration of chlorophyll on Earth's water bodies!</h2>
+            <p>The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll levels, except for black, which signifies an absence of water. Higher chlorophyll levels contribute to richer marine life. Feel free to zoom in, move around, and explore!</p>
+            <p className="small-font"> You can change the displayed information below. Images from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
+
+        </div>
+        );
+      case 'GlobeOceanTemperature':
+        return (
+          <div className="info-box">
+            <h2>Visualize the Temperature of the Oceans on Earth!</h2>
+            <p>The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with exception of black which means there is no water. Feel free to zoom in, move around, and explore!</p>
+            {/* <p>Learn more about ? <a href="#">hmm maybe remove this</a> </p> */}
+        </div>
+        );
+      case 'GlobeAbsortion':
+        return (
+          <div className="info-box">
+            <h2>Visualize the Capacity of light absortion on Earth's water!</h2>
+            <p>The color intensity represents the average  in 2022, at daytime. Darker colors indicate higher temperatures, with exception of black which means there is no water. 
+              Can you find the relation between this and the temperature of the water?
+              Feel free to zoom in, move around, and explore!</p>
+            {/* <p>Learn more about ? <a href="#">hmm maybe remove this</a> </p> */}
+        </div>
+        );
+      default:
+        return null;
+    }
+  };
+
   const [globeImageUrl, setGlobeImageUrl] = useState(
     imageCrolo
   );
   const [scalaImage, setScalaImage] = useState(escalaCrolo);
+
 
   const changeImages = (newBackgroundImage, newScalaImage) => {
     setGlobeImageUrl(newBackgroundImage);
@@ -25,22 +62,10 @@ function GlobePage() {
   };
 
   return (
-    <>
-        <div className="text-container">
-            <Container fluid className="content">
-        <Row>
-          <div className="info-box">
-            <h2>Visualize the concentration of chlorophyll on Earth's water bodies!</h2>
-            <p>
-              The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll
-              levels, except for black, which signifies an absence of water. Higher chlorophyll levels contribute to
-              richer marine life. Feel free to zoom in, move around, and explore!
-            </p>
-          </div>
-        </Row>
-        <Row>
-         <Col className="text-center next-prev">
-           <ButtonGroup>
+    <div> 
+      <div id="header">
+        {renderText()}
+        <ButtonGroup>
              <Button
                className="button-next"
                size="sm"
@@ -60,10 +85,6 @@ function GlobePage() {
                Next Page <FontAwesomeIcon icon={faArrowRight} />
              </Button>
            </ButtonGroup>
-         </Col>
-       </Row>
-
-      </Container>
       </div>
       <div className="globe-container">
         <Globe
@@ -71,6 +92,8 @@ function GlobePage() {
           backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
           labelsData={oceanLocations}
           labelText={'label'}
+          width={'100vw'}
+          height={'100vh'}
           labelSize={3}
           labelColor={() => 'white'}
           labelDotRadius={0.4}
@@ -102,7 +125,7 @@ function GlobePage() {
         </Row>
       </Container>
       </div>
-    </>
+    </div> 
   );
 }
 
