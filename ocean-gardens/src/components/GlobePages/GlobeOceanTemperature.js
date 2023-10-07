@@ -13,9 +13,9 @@ function GlobeOceanTemperature() {
       <div>
         <h2>This shows the Average temperature of the waters (daytime) in 2022</h2>
       </div>
-      <div className="image-overlay">
+      {/* <div className="image-overlay">
         <img src={escala} alt="Image Overlay" />
-      </div>
+      </div> */}
       <div className="globe-container" style={{ width: '100%', height: '100vh' }} >
         <Globe
           globeImageUrl={image}
