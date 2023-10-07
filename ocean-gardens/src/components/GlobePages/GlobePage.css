@@ -33,10 +33,13 @@
 .info-box {
     background-color: #f8f9fa; /* Bootstrap light gray background color */
     padding: 20px;
-    border: 1px solid #dee2e6; /* Bootstrap border color */
+    border: none;
+
+    /* border: 1px solid #dee2e6; Bootstrap border color */
     border-radius: 4px; /* Bootstrap border radius */
     max-width: 600px;
-    margin-bottom: 20px; /* Add margin to control spacing to the next component */
+    margin: auto;
+    margin-bottom: 0px; /* Add margin to control spacing to the next component */
     text-align:left;
 }
 

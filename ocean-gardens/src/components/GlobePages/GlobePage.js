@@ -16,7 +16,7 @@ function GlobePage() {
               <div className="info-box">
                   <h2>Visualize the concentration of chlorophyll on Earth's water bodies!</h2>
                   <p>The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll levels, except for black, which signifies an absence of water. Higher chlorophyll levels contribute to richer marine life. Feel free to zoom in, move around, and explore!</p>
-                  <p>Learn more about the importance of <a href="#">chlorophyll</a> in marine ecosystems.</p>
+                  {/* <p>Learn more about the importance of <a href="#">chlorophyll</a> in marine ecosystems.</p> */}
               </div>
       </Row>
   </Container>

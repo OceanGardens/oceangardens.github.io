@@ -5,7 +5,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'; // Import Bootstrap Button component
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './GlobeHeader.css'
-
+import { ButtonGroup } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+ 
 const GlobeHeader = ({ setSelectedBanner }) => {
     const changeBanner = (newBanner) => {
         setSelectedBanner(newBanner);
@@ -18,6 +21,29 @@ const GlobeHeader = ({ setSelectedBanner }) => {
         </Row>
             <Col><Button variant="primary" onClick={() => changeBanner('GlobePage')}> Chlorophyll Concentration </Button></Col>
             <Col><Button variant="primary" onClick={() => changeBanner('GlobeOceanTemperature')}> Water Temperature </Button></Col>
+            <Col><Button variant="primary" onClick={() => changeBanner('GlobeAbsortion')}> Photosynthetically available radiation </Button></Col>
+        </Row>
+        <Row>
+        <ButtonGroup>
+             <Button
+               className="button-next"
+               size="sm"
+               style={{ fontSize: '12px', padding: '7px 10px' }}
+               variant="primary"
+               href="/previous-page"
+             >
+               <FontAwesomeIcon icon={faArrowLeft} /> Previous Page
+             </Button>
+             <Button
+               className="button-next"
+               size="sm"
+               style={{ fontSize: '12px', padding: '5px 10px' }}
+               variant="primary"
+               href="/next-page"
+             >
+               Next Page <FontAwesomeIcon icon={faArrowRight} />
+             </Button>
+           </ButtonGroup>
         </Row>
     </Container>
     );
