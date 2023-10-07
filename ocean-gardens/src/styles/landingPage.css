@@ -1,7 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 *
 {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select:none;
   font-family: 'Poppins';
   margin: 0;
   padding: 0;
@@ -27,35 +29,63 @@
 }
 
 #landingPageTextContainer {
+  align-self: center;
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding: 5%;
-  height: 100%;
   text-align: left;
+}
+
+#startButton {
+  background-color: rgb(15, 16, 88);
 }
 
 h1 {
-  line-height: 1.2;
-  font-size: 9rem;
+  font-size: 6rem;
   color:rgb(15, 16, 88);
-  text-align: left;
+  text-align: center;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+  text-align: center;
   color: rgb(15, 16, 88);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(15, 16, 88);
+  align-self: end;
+  position: fixed;
+}
+
+#landingPageContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 2vw;
+  display: grid;
+  place-items: center;
 }
 
 @media screen and (max-width: 1024px) {
+  #landingPageContent {
+    padding: 5vw;
+  }
   h1 {
     line-height: 1.2;
     font-size: 6rem;
+    text-align: left;
   }
   h2 {
     font-size: 2rem;
+    text-align: left;
+  }
+  #startButton {
+    align-self: left;
   }
 }
 

@@ -7,6 +7,7 @@ import ImageSmall from "../resources/wallpaper/imageSmall.jpg"
 import ImageSmaller from "../resources/wallpaper/imageSmaller.jpg"
 import "../styles/landingPage.css"
 import React, { useEffect, useState } from 'react';
+import Button from '@mui/material/Button';
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 
@@ -45,10 +46,15 @@ function LandingPage() {
             >
                 
                 {({pause, play}) => (
-                    <div id="landingPageTextContainer">
-                        <h1>Ocean Gardens</h1>
-                        <h2>How the oceans play a key role in Earth's biosphere</h2>
-                    </div>
+                    <div id="landingPageContent">
+                        <div id="landingPageTextContainer">
+                            <h1>Ocean Gardens</h1>
+                            <h2>How the oceans play a key role in planet Earth's biosphere</h2>
+                            <Button id="startButton" variant="contained">Let's start!</Button>
+                        </div>
+                        <h3>Click on the screen to generate water ripples!</h3>
+                    </div> 
+                    
                 )}
             </WaterWave>
             
