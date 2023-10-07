@@ -1,18 +1,33 @@
 .globe-container {
     position: relative;
     width: 100%;
-    height: 100%;
-}
+    height: 80vh;
+  }
+  
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    z-index: 3; /* Ensure the text container is on top of the canvas */
+  }
+  
 
 .image-overlay {
-    position: relative;
+    position: absolute;
     background-color: azure;
-    top: 50px;
+    top: 40%;
     left: 40px;
-    width: 20%;
-    height: 20%;
-    z-index: 2; /* Adjust the z-index to control the stacking order */
+    /* width: 200px; Fixed pixel value */
+    /* height: auto; Automatically adjust height to maintain aspect ratio */
+    transform: scale(0.6, 0.6); /* Initial scaling without distortion */
+    transform-origin: top left; /* Set the scaling origin to the top-left corner */
+
+    z-index: 1; /* Adjust the z-index to control the stacking order */
     pointer-events: none; /* Allows interactions with the globe underneath */
+    
 }
 
 .image-overlay img {
@@ -21,44 +36,74 @@
     object-fit: cover; /* Adjust the image sizing as needed */
 }
 
-
-/* ChlorophyllComponent.css */
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.buttons-group{
+    flex-direction: row;
+    padding: 10px;
 }
 
-.info-box {
+.button-group-vertical{
+    flex-direction: column;
+    padding: 10px;
+}
+ 
+.buttons-container {
+    position: absolute;
+    top: 50%;
+    height: 30vh;
+    left: 73%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the container */
+    z-index: 1; /* Ensure the buttons container is on top of the canvas */
+}
+
+.next-prev{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    padding: 10px;
+}
+ 
+  .button-next{
+      size: 10px;
+  }
+ 
+  /* Add this to your CSS file */
+  .scrollable-content {
+      max-height: 200px; /* Set a maximum height for the scrollable content */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+ 
+ 
+  .content {
+    text-align: center;
+  }
+ 
+  .info-box {
     background-color: #f8f9fa; /* Bootstrap light gray background color */
     padding: 20px;
-    border: none;
-
-    /* border: 1px solid #dee2e6; Bootstrap border color */
+    border: 1px solid #dee2e6; /* Bootstrap border color */
     border-radius: 4px; /* Bootstrap border radius */
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 0px; /* Add margin to control spacing to the next component */
-    text-align:left;
-}
-
-h2 {
-    font-size: 1.0rem;
-    line-height: 1.0;
+    max-width: 400px;
+    text-align: center;
+  }
+ 
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
     margin-bottom: 20px;
-}
-
-p {
+  }
+ 
+  p {
     margin-bottom: 10px;
-}
-
-a {
+  }
+ 
+  a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
-}
-
-a:hover {
+  }
+ 
+  a:hover {
     text-decoration: underline;
-}
+  }

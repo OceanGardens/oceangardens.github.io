@@ -10,7 +10,8 @@ function App() {
   return (
     <div style={{flex: 1, flexDirection: 'column'}}>
       {/* <LandingPage/> */}
-      <GlobeHub />
+      {/* <GlobeHub /> */}
+      <GlobePage />
     </div>
   );
 }
