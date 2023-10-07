@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import WaterWave from 'react-water-wave';
 import LandingPage from './components/landingPage';
-import ContentPage from './components/contentPage';
+import ContentPage from './components/wavePage';
 import Navigator from './components/navigator';
 import TransmissionPage from './components/transmissionPage'
 import {Helmet} from "react-helmet"
@@ -14,12 +14,12 @@ function App() {
   const [clicks, setClicks] = useState(0)
   
   return (
-    <Router>
-      <div style={{flex: 1, flexDirection: 'column'}}>
-        <Navigator setLandingPage = {setLandingPg} LandingPage = {landingPg} clicks = {clicks} setClicks = {setClicks}/>
-      </div>
-    </Router>
-    
+    //<Router>
+    //  <div style={{flex: 1, flexDirection: 'column'}}>
+    //    <Navigator setLandingPage = {setLandingPg} LandingPage = {landingPg} clicks = {clicks} setClicks = {setClicks}/>
+    //  </div>
+    //</Router>
+    <ContentPage></ContentPage>
   );
 }
 
