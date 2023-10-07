@@ -15,17 +15,16 @@ body {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .content h1 {
   color: rgb(165, 187, 209);
-  text-align: right;
 }
 
 .inner-header h1 {
   color: rgba(15, 16, 88, 1);
-  text-align: left;
 }
 
 .header {
@@ -33,25 +32,25 @@ h1 {
   text-align: center;
   color: rgb(153, 42, 42);
   background: rgb(165, 187, 209);
+  
 }
 
 .logo {
   width: 50px;
   fill: rgb(194, 65, 65);
-  padding-right: 15px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .inner-header {
   display: flex;
+
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  height: 40vh;
-  width: 100%;
-  padding-left: 5vh;
-  padding-right: 5vh;
+  height: 45vh;
+  padding:5vw;
+  width: 50vw;
 }
 
 .waves {
@@ -70,15 +69,22 @@ h1 {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  height: 40vh;
+  height: 45vh;
   background-color: rgba(15, 16, 88, 1);
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding: 5vw;
+}
+
+#lowerTextDiv {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #buttonGroup {
   margin-top: 10px;
-  color:rgb(165, 187, 209);
+  background-color:rgb(165, 187, 209);
+  color: black;
 }
 
 /* Animation */
@@ -119,12 +125,7 @@ h1 {
 
 /* /* Shrinking for mobile */
 @media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-
   h1 {
-    font-size: 24px;
+    font-size: 1rem;
   }
 }

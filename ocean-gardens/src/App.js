@@ -14,12 +14,11 @@ function App() {
   const [clicks, setClicks] = useState(0)
   
   return (
-    //<Router>
-    //  <div style={{flex: 1, flexDirection: 'column'}}>
-    //    <Navigator setLandingPage = {setLandingPg} LandingPage = {landingPg} clicks = {clicks} setClicks = {setClicks}/>
-    //  </div>
-    //</Router>
-    <ContentPage></ContentPage>
+    <Router>
+      <div style={{flex: 1, flexDirection: 'column'}}>
+        <Navigator setLandingPage = {setLandingPg} LandingPage = {landingPg} clicks = {clicks} setClicks = {setClicks}/>
+      </div>
+    </Router>
   );
 }
 

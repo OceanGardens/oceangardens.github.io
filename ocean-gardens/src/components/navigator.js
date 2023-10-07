@@ -1,5 +1,5 @@
 import LandingPage from './landingPage';
-import wavePage from './wavePage';
+import WavePage from './wavePage';
 import TransmissionPage from './transmissionPage'
 import {Helmet} from "react-helmet"
 import React, {useState} from 'react';
@@ -13,7 +13,7 @@ export default function Navigator(props){
                 <Routes location={location} key={location.pathname}>
                     <Route path = '/' element = {<TransmissionPage setLandingPage = {props.setLandingPage} clicks = {props.clicks} setClicks = {props.setClicks}/>} />
                     <Route path = '/landingPage' element={<LandingPage/>} />
-                    <Route path = '/wavePage' element={<wavePage/>} />
+                    <Route path = '/wavePage' element={<WavePage/>} />
                 </Routes>
            </AnimatePresence>
 }

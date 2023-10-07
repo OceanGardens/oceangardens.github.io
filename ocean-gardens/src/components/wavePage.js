@@ -2,27 +2,33 @@ import React, { useState }from 'react';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import '../styles/wavePage.css';
+import { useNavigate } from 'react-router-dom';
 
 function WavePage() {
 
   const [i, seti] = useState(0);
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/landingPage'); // Replace '/' with the desired route
+  };
 
   const texts = [
     {
-      "upperText": "Texto 1",
-      "lowerText": "Texto 2"
+      "upperText": "Even though the oceans cover 70% of Earth's surface, it is estimated that we humans have only explored 20% of them.   Ranging from shallow waters full of marine life to deep underwater valleys ranging up to 10,935 meters (35,876 feet) in depth, humanity has still much to learn about them. ",
+      "lowerText": "For a comparison, the number of people that have already been to space is more than 10 times bigger than the number of people who has visited Challenger Deep, the lowest point of the seabed. "
     },
     {
-      "upperText": "Texto 3",
-      "lowerText": "Texto 4"
+      "upperText": "Even if we still have much to learn, we already know that the oceans play a crucial role in many aspects of our daily lives - even for those who live far from the shores. From our oceans, we obtain a significant amount of food and materials such as salt, sand and oil.",
+      "lowerText": "Moreover, we strongly rely on them for transporting both people and goods worldwide, especially considering the current state of globalized trade. Around costal areas, millions of people have fishing and ocean-related tourism as their main source of income."
     },
     {
-      "upperText": "Texto 5",
-      "lowerText": "Texto 6"
+      "upperText": "But that's not all! Our oceans are home to a wide array of life, including animals, bacteria, plants, and protozoans. This diverse range of living beings constitutes vast aquatic ecosystems. The interactions within those ecosystems have far-reaching benefits, impacting not only the oceans but also the land.",
+      "lowerText": "For example, coral reefs and mangrove swamps are essential for protecting coastal areas from the erosion caused by waves. These last also contribute to control the Greenhouse Effect by stocking carbon from the atmosfere in their tissues and in the sediments trapped around their roots."
     },
     {
-      "upperText": "Texto 7",
-      "lowerText": "Texto 8"
+      "upperText": "Animals such as mussels also play a key role in filtering the water, contributing to provide us clean beaches and clear waters, as they feed from impurities. Other creatures, like sponges and algae, have important applications in the production of medicines.",
+      "lowerText": "To understand a little more about the importance of the oceans and their ecosystems, we should first mention one of the most important resource for Earth's lifeforms: Oxygen!"
     }
   ]
 
@@ -30,7 +36,7 @@ function WavePage() {
     if (i < texts.length - 1) {
       seti(i + 1);
     } else {
-      
+      navigateToHome();
     }
     
   }
@@ -39,7 +45,7 @@ function WavePage() {
     if (i > 0) {
       seti(i - 1);
     } else {
-      
+      navigateToHome();
     }
   }
 
@@ -92,11 +98,13 @@ function WavePage() {
         </div>
       </div>
       <div className="content">
-        <h1>{lowerText}</h1>
-        <ButtonGroup id="buttonGroup" variant="outlined">
-          <Button onClick={previous}>Previous</Button>
-          <Button onClick={next}>Next</Button>
-        </ButtonGroup>
+        <div id="lowerTextDiv">
+          <h1>{lowerText}</h1>
+          <ButtonGroup id="buttonGroup" variant="outlined">
+            <Button onClick={previous}>Previous</Button>
+            <Button onClick={next}>Next</Button>
+          </ButtonGroup>
+        </div>
       </div>
     </div>
   );
