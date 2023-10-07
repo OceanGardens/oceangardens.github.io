@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/transmissionPage.css';
 import MatrixRain from './matrixRain';
+import Image from '../resources/wallpaper/wallpaper.jpg'
+import {useLinkClickHandler, Link} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 
 function TransmissionPage(props) {
@@ -12,8 +15,8 @@ function TransmissionPage(props) {
   const [msg6, setMsg6] = useState('');
   const [msg7, setMsg7] = useState('');
   const [msg8, setMsg8] = useState('');
-  const [stage2, setStage] = useState(true)
-
+  const [stage2, setStage] = useState(true);
+  const [buttonHeight, setButtonHeight] = useState(true)
   const Messenger = function (writeMsg, setter, timewait) {
     const m = this;
 
@@ -91,15 +94,15 @@ function TransmissionPage(props) {
 
       m.current_length = 0;
       m.fadeBuffer = false;
-      // setter('');
-
-      // setTimeout(m.animateIn, 200);
     };
     m.init(writeMsg, setter, timewait);
   };
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
+
+
+
     if(props.clicks == 0){
     var messenger1 = new Messenger("Receiving new radio transmission...", setMsg1, 2000);
 
@@ -116,41 +119,62 @@ function TransmissionPage(props) {
           setMsg1('')
           setMsg2('')
           setMsg3('')
-          
-
+          setButtonHeight(false)
           //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
 
           var messenger4 = new Messenger("Dear Alpha Centaurians,", setMsg4, 0);
           var messenger5 = new Messenger("Greetings from Earth!", setMsg5, 2500);
-          var messenger6 = new Messenger("We are sending this to you, our cosmic neighbors, so you can ", setMsg6, 5000);
-          var messenger7 = new Messenger("experience the beauty of our greatest garden: The Oceans", setMsg7, 7500);
-          var messenger8 = new Messenger("Click on the screen to start", setMsg8, 9000);
+          var messenger6 = new Messenger("We are sending this to you, our cosmic neighbors,", setMsg6, 5000);
+          var messenger7 = new Messenger("so you can experience the beauty of our greatest garden: The Oceans", setMsg7, 8000);
+          var messenger8 = new Messenger("Click on the screen to start", setMsg8, 10000);
           
         }else{
+          setMsg4('')
+          setMsg5('')
+          setMsg6('')
+          setMsg7('')
+          setMsg8('')
           
-          props.setLandingPage(true)
-          console.log("não remova esse comentário ele quebra o código")
-          return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-          };
+          
+          document.removeEventListener('mousedown', handleClickOutside);
+          
+          return ;
           
         }
         
     }
     
   }, [stage2, setStage, props.clicks]); // Empty dependency array to run the effect once on component mount
+  
+  //limitar crescimento ->ajuda no celular
+  //trocar margem esquerda pra 10% da tela
+  //separar oração
+  //funcionar pra celular
 
   return (
     <>
-      <MatrixRain/>
-      <p id='messenger1'>{msg1}</p>
-      <p id='messenger2'>{msg2}</p>
-      <p id='messenger3'>{msg3}</p>
-      <p id='messenger4'>{msg4}</p>
-      <p id='messenger5'>{msg5}</p>
-      <p id='messenger6'>{msg6}</p>
-      <p id='messenger7'>{msg7}</p>
-      <p id='messenger8'>{msg8}</p>
+      <motion.div className="transmissionPage"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}>
+        
+        <MatrixRain/>
+        <Link to='landingPage'>
+            <button id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
+            </Link>
+        
+        <p id='messenger1'>{msg1}</p>
+        <p id='messenger2'>{msg2}</p>
+        <p id='messenger3'>{msg3}</p>
+        <p id='messenger4'>{msg4}</p>
+        <div id='mail'>
+          <p id='messenger5'>{msg5}</p>
+          <p id='messenger6'>{msg6}</p>
+          <p id='messenger7'>{msg7}</p>
+          <p id='messenger8'>{msg8}</p>
+        </div>
+        
+      </motion.div>
     </>
   );
 }
