@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Globe from 'react-globe.gl';
 import oceanLocations from './OCEAN_LOCATIONS';
-import './GlobePage.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import './GlobesPage.css';
 import { Container, Row, Button, ButtonGroup, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
  import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +14,7 @@ import imageTemp from '../../resources/temperature2022-AQUA_MODIS.20220101_20221
 import imageRad from '../../resources/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.png';
 
 
-function GlobePage() {
+function GlobesPage() {
   const [text, setText] = useState('ChloroPage');
 
   const renderText = () => {
@@ -129,4 +130,4 @@ function GlobePage() {
   );
 }
 
-export default GlobePage;
+export default GlobesPage;
