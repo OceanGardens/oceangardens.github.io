@@ -34,14 +34,11 @@ function InitialGlobePage() {
         <Container fluid className="content">
           <Row>
             <div className="info-box">
-              <h2>This is our planet, Earth!</h2>
-              <p>But, it should be planet water, because 70% of it is water, that is, there is more water than earth! </p>
-              <p>When I was a young boy
-                My father took me into the city
-                To see a marching band
-                He said, "Son, when you grow up
-                Would you be the savior..." </p>
-              {/* <p>Learn more about ? <a href="#">hmm maybe remove this</a> </p> */}
+              <h2>This is our home, Planet Earth!</h2>
+              <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
+              <p>Our planet is divided in three main parts: </p>
+              <p>Lithosphere: Our rigid layer, composed mainly of rocks, minerals and crystals.</p>
+              <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide.</p>
             </div>
           </Row>
         </Container>
@@ -51,9 +48,8 @@ function InitialGlobePage() {
     <Row>
       <Col className="info-box">
         <div className="scrollable-content">
-          <p>
-            Sample text. color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black, which means there is no water. Feel free to zoom in, move around, and explore!
-          </p>
+          <p>Finally, and one of the most amazing: the Oceans! They are composed of an enormous quantity of water in different temperatures, shapes and forms.</p>
+          <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
         </div>
       </Col>
     </Row>
@@ -64,7 +60,7 @@ function InitialGlobePage() {
             <Button
               className="button-next"
               size="sm"
-              style={{ fontSize: '12px', padding: '5px 10px' }}
+              style={{ fontSize: '12px', padding: '7px 10px' }}
               variant="primary"
               href="/previous-page"
             >
