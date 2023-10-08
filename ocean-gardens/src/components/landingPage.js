@@ -17,6 +17,7 @@ var buttonSound = new Howl({
     src: [BOTAO]
   })
 
+
 function LandingPage() {
 
     const navigate = useNavigate();

@@ -25,7 +25,7 @@ function Page3() {
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
                     <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for human beings?</h2>
+                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for life on Earth?</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
@@ -33,8 +33,8 @@ function Page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>Oxygen is a chemical element that is present in two of the most important things in our lives: Water and Air!</p>
-                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
+                        <p style={{position:'relative', color:'#fff', fontSize: '4vh', textAlign:'right'}}>One of the fundamental building blocks of life on Earth, alongside carbon, hydrogen, and nitrogen, oxygen is an essential chemical element found in the organic compounds that make up the bodies of living beings.</p>
+                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'5vh', right: '0vw'}}>
                                 <Link to='../landingPage'>
                                     <Button>Previous</Button>
