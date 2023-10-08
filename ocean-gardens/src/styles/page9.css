@@ -1,15 +1,15 @@
-#imagePage {
+#page8 {
   padding: 5vw;
   background-color: white;
 }
 
-h1 {
+#page8 h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#imagePage p {
+#page8 p {
   text-align: justify;
   font-size: 1rem;
   line-height: 1.5;

@@ -13,7 +13,8 @@ import Page7 from './page7';
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
-import PhytoplanktonPage from './phytoplanktonPage';
+import Page9 from './page9';
+import Page8 from './page8'
 
 export default function Navigator(props){
     const location = useLocation();
@@ -32,7 +33,8 @@ export default function Navigator(props){
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
-                    <Route path = '/phytoplancton' element={<PhytoplanktonPage/>} />
+                    <Route path = '/page8' element={<Page8/>}/>
+                    <Route path = '/page9' element={<Page9/>} />
                 </Routes>
            </AnimatePresence>
 }

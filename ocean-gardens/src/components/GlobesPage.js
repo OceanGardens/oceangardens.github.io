@@ -62,16 +62,16 @@ function GlobesPage() {
           <button
             className="button-next"
             style={{ fontSize: '12px', padding: '7px 10px' }}
-            onClick={() => window.location.href = "/previous-page"}
+            onClick={() => window.location.href = "/page7"}
           >
-            <FontAwesomeIcon icon={faArrowLeft} /> Previous Page
+            <FontAwesomeIcon icon={faArrowLeft} /> Previous
           </button>
           <button
             className="button-next"
             style={{ fontSize: '12px', padding: '5px 10px' }}
-            onClick={() => window.location.href = "/next-page"}
+            onClick={() => window.location.href = "/page8"}
           >
-            Next Page <FontAwesomeIcon icon={faArrowRight} />
+            Next<FontAwesomeIcon icon={faArrowRight} />
           </button>
         </div>
       </div>

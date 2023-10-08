@@ -1,12 +1,12 @@
 import React from 'react';
-import '../styles/phytoplanktonPage.css'
+import '../styles/page9.css'
 import image2 from "../resources/phytoplankton/diatomaceas.webp" 
 import image3 from "../resources/phytoplankton/singlediatomacea.jpg"
 import ButtonGroup from '@mui/material/Button';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
-function PhytoplanktonPage() {
+function Page9() {
 
   const navigate = useNavigate()
 
@@ -15,11 +15,11 @@ function PhytoplanktonPage() {
   }
 
   const navigatePrevious = () => {
-    navigate("/page5")
+    navigate("/page7")
   }
 
   return (
-    <div id="imagePage">
+    <div id="page9">
       <h1>Phytoplankton comes in a wide variety of shapes</h1>
       <h2>Subtítulo</h2>
       <p>BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
@@ -78,4 +78,4 @@ function PhytoplanktonPage() {
   );
 }
 
-export default PhytoplanktonPage;
+export default Page9;
