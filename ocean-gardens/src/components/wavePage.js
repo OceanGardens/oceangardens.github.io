@@ -53,7 +53,7 @@ function WavePage() {
   const lowerText = texts[i].lowerText;
 
   return (
-    <div className="page">
+    <div id="wavePage">
       <div className="header">
         <div className="inner-header">
           <h1>{upperText}</h1>
