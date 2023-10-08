@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  font-family: "Poppins";
+}
+
+#wavePage {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+#wavePage h1 {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.content h1 {
+  color: rgb(165, 187, 209);
+}
+
+.inner-header h1 {
+  color: rgba(15, 16, 88, 1);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: rgb(153, 42, 42);
+  background: rgb(165, 187, 209);
+  
+}
+
+.logo {
+  width: 50px;
+  fill: rgb(194, 65, 65);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 45vh;
+  padding:5vw;
+  width: 50vw;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: 45vh;
+  background-color: rgba(15, 16, 88, 1);
+  padding: 5vw;
+}
+
+#lowerTextDiv {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#buttonGroup {
+  margin-top: 10px;
+  background-color:rgb(165, 187, 209);
+  color: black;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* /* Shrinking for mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1rem;
+  }
+}

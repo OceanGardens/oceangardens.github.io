@@ -1,15 +1,26 @@
 import React, { useRef } from 'react';
 import Globe from 'react-globe.gl';
-import image from '../../../resources/earth_daymap.jpg'
+import image from '../resources/earth_daymap.jpg'
 import { useCallback, useEffect } from "react";
-import './InitialGlobePage.css'
+import '../styles/InitialGlobePage.css'
 import { Container, Row, Col, Button, ButtonGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 function InitialGlobePage() {
 
   const globeRef = useRef();
+
+  const navigate = useNavigate();
+
+  const navigateToGlobePage = () => {
+    navigate('/wavePage'); 
+  };
+
+  const navigateBack = () => {
+    navigate('landingPage')
+  }
 
   useEffect(() => {
     // Access controls and set autoRotate to true
@@ -62,7 +73,7 @@ function InitialGlobePage() {
               size="sm"
               style={{ fontSize: '12px', padding: '7px 10px' }}
               variant="primary"
-              href="/previous-page"
+              onClick={navigateBack}
             >
               <FontAwesomeIcon icon={faArrowLeft} /> Previous Page
             </Button>
@@ -71,7 +82,7 @@ function InitialGlobePage() {
               size="sm"
               style={{ fontSize: '12px', padding: '5px 10px' }}
               variant="primary"
-              href="/next-page"
+              onClick={navigateToGlobePage}
             >
               Next Page <FontAwesomeIcon icon={faArrowRight} />
             </Button>
