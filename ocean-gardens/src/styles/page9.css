@@ -1,18 +1,26 @@
-#page8 {
+#page9 {
   padding: 5vw;
   background-color: white;
 }
 
-#page8 h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+#page9 li {
+  color: rgb(15, 16, 88);
 }
 
-#page8 p {
+#page9 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(15, 16, 88);
+}
+
+#page9 p {
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+  color:  rgb(15, 16, 88);
+}
+
+.list {
   color: black;
 }
 
@@ -31,6 +39,7 @@
 }
 
 .image-div {
+  width: 100%;
   border-radius: 25px;
   width: 100%;
   margin-bottom: 15px;
@@ -39,11 +48,11 @@
 
 .side-image-div {
   border-radius: 25px;
-  background-color: red;
   width: 45vw;
   margin-left: 25px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   height: 45vw;
+  overflow: hidden;
 }
 
 .side-paragraph-div {
@@ -54,6 +63,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .paragraph-image-row p {
@@ -61,11 +71,5 @@
   font-size: 1rem;
   line-height: 1.5;
   width: 45vw;
-  height: 45vw;
   overflow: hidden;
-}
-
-.paragraph-image-row img {
-  max-width: 30%;
-  margin-left: 20px;
 }

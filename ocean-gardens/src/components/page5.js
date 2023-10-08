@@ -3,7 +3,8 @@ import {motion} from 'framer-motion'
 import Image from '../resources/nasa/northernBeringSea.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
-import {ButtonGroup} from '@mui/material'
+import {ButtonGroup} from '@mui/material';
+import Plot from 'react-plotly.js';
 
 function Page5() {
 
@@ -28,13 +29,40 @@ function Page5() {
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
-                animate={{right: '-50vw'}}
+                animate={{right: '-10vw'}}
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
-                style={{position: 'relative', top:'-6vh', width:'45vw'}}
+                style={{position: 'relative', top:'-6vh', width:'85vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
+                        <div style={{position:'relative'}}>
+                            <Plot
+                                
+                                data = {[{
+                                values: [78, 21, 1],
+                                labels: ['Nitrogen', 'Oxygen', 'Others' ],
+                                type: 'pie',
+                                marker: {
+                                    colors: ['rgba(100,50,50,1)', 'rgba(50,100,50,1)', 'rgba(50,0,100, 1)']
+                                }
+                                }
+                                ]}
+                                layout = {{
+                                    title: 'Atmosphere Composition',
+                                    font: {
+                                        color: 'white'
+                                    },
+                                    height: 350,
+                                    width: 500,
+                                    paper_bgcolor: 'rgba(0, 0, 0, 0)', // Transparent paper background
+                                    plot_bgcolor: 'rgba(0, 0, 0, 0)', // Transparent plot background
+                                    legend:{
+                                        traceorder: 'normal',
+                                        itemsizing: 'constant'
+                                    }
+                                }}
+                            />
                         
-                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
+                            <h1 style={{position:'absolute', top: '0vh', left: '50vw', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
+                            <div style={{position:'absolute', right: '0vw', bottom: '5vh', marginLeft: 'auto', marginRight: '0'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../page4'>
                                     <Button>Previous</Button>
@@ -44,7 +72,10 @@ function Page5() {
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>
-                        </div>
+                            </div>
+                        
+                        </div>        
+                        
         
                 </motion.div>
             </div>
