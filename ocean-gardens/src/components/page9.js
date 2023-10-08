@@ -18,7 +18,7 @@ function Page9() {
   }
 
   const navigatePrevious = () => {
-    navigate("globesPage")
+    navigate("/GlobesPage")
   }
 
   return (
