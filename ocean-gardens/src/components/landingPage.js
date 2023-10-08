@@ -23,7 +23,7 @@ function LandingPage() {
 
     const navigateToGlobePage = () => {
         buttonSound.play()
-        navigate('/initialGlobePage'); 
+        navigate('/creditsPage'); 
     };
 
     const getBackgroundImage=(width, height)=>{
