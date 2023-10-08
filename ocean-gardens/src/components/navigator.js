@@ -21,6 +21,7 @@ import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
 import Page9 from './page9';
 import Page8 from './page8'
+import PreviewGlobesPage from './PreviewGlobesPage';
 
 export default function Navigator(props){
     const location = useLocation();
@@ -39,6 +40,7 @@ export default function Navigator(props){
                     <Route path = '/creditsPage' element={<CreditsPage/>} />
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
+                    <Route path = '/previewGlobesPage' element = {<PreviewGlobesPage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
                     <Route path = '/page61' element={<Page61/>} />
                     <Route path = '/page62' element={<Page62/>} />
