@@ -30,7 +30,7 @@ export default function Navigator(props){
                     <Route path = '/page6' element={<Page6/>} />
                     <Route path = '/page7' element={<Page7/>} />
                     <Route path = '/landingPage' element={<LandingPage/>} />
-                    <Route path = '/creditsPage' element={<CreditsPage/>} />
+                    {/* <Route path = '/creditsPage' element={<CreditsPage/>} /> */}
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
