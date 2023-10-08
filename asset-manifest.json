@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.011449ff.css",
-    "main.js": "/static/js/main.ade76b3f.js",
+    "main.css": "/static/css/main.cca6f3c1.css",
+    "main.js": "/static/js/main.491a7586.js",
     "static/js/787.fd0698ee.chunk.js": "/static/js/787.fd0698ee.chunk.js",
+    "static/media/deepOcean.mp3": "/static/media/deepOcean.0583e6c317939377a0c9.mp3",
     "static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.png": "/static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.40e4f9cdbe1889fe9033.png",
     "static/media/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.png": "/static/media/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.a7df56254a1c82621ad7.png",
     "static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png": "/static/media/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.91720b0edc136bdd88e1.png",
@@ -35,15 +36,16 @@
     "static/media/microalga.jpeg": "/static/media/microalga.9ef055bc13015e7e94be.jpeg",
     "static/media/dinoflagelados.webp": "/static/media/dinoflagelados.077a412e22b5089c47e7.webp",
     "static/media/sample-3s.mp3": "/static/media/sample-3s.68e9be0168d87b9d956e.mp3",
+    "static/media/click.mp3": "/static/media/click.b070217cc3ec9826fd89.mp3",
     "static/media/eugenoid.jpeg": "/static/media/eugenoid.fdf8ca04c5544f7880f7.jpeg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.011449ff.css.map": "/static/css/main.011449ff.css.map",
-    "main.ade76b3f.js.map": "/static/js/main.ade76b3f.js.map",
+    "main.cca6f3c1.css.map": "/static/css/main.cca6f3c1.css.map",
+    "main.491a7586.js.map": "/static/js/main.491a7586.js.map",
     "787.fd0698ee.chunk.js.map": "/static/js/787.fd0698ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.011449ff.css",
-    "static/js/main.ade76b3f.js"
+    "static/css/main.cca6f3c1.css",
+    "static/js/main.491a7586.js"
   ]
 }
