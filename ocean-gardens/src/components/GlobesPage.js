@@ -73,10 +73,10 @@ function GlobesPage() {
         {renderText()}
         <div className="button-group">
           <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
-            <Link to='../page4'>
+            <Link to='../page8'>
               <Button>Previous</Button>
             </Link> 
-            <Link to='../globesPage'>
+            <Link to='../page9'>
               <Button>Next</Button>
             </Link>
           </ButtonGroup>

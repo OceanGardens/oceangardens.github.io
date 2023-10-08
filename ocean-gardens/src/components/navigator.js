@@ -17,6 +17,7 @@ import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
 import Page9 from './page9';
 import Page8 from './page8'
+import CreditsPage from "./creditsPage"
 
 export default function Navigator(props){
     const location = useLocation();
