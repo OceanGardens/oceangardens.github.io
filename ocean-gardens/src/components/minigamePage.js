@@ -1,18 +1,30 @@
 import "../styles/minigamePage.css"
 import { Unity, useUnityContext } from "react-unity-webgl";
 import React, { useEffect, useState } from 'react';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {ButtonGroup, Button} from '@mui/material'
 
 function MinigamePage() {
-    
-    const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
+    const navigate = useNavigate();
+    const { unityProvider, isLoaded, loadingProgression, unload } = useUnityContext({
         loaderUrl: "build/GAME.loader.js",
         dataUrl: "build/GAME.data",
         frameworkUrl: "build/GAME.framework.js",
         codeUrl: "build/GAME.wasm",
     });
     
+    async function returnNext(){
+      await unload()
+      navigate('/creditsPage');
+
+    }
+
+    async function returnPrevious(){
+      await unload()
+      navigate('/topic6page4');
+
+    }
+
     // We'll use a state to store the device pixel ratio.
     const [devicePixelRatio, setDevicePixelRatio] = useState(
         window.devicePixelRatio
@@ -55,12 +67,12 @@ function MinigamePage() {
             
               </div>
               <ButtonGroup variant = 'contained' style={{position: 'absolute', right:'2vw', bottom: '5vh', alignSelf: 'end'}}>
-              <Link to='../landingPage'>
-                    <Button>Previous</Button>
-                </Link> 
-                <Link to='../creditsPage'>
-                    <Button>Next</Button>
-                </Link>
+              
+                <Button onClick={returnPrevious}>Previous</Button>
+                
+                
+                <Button onClick={returnNext}>Next</Button>
+                
             </ButtonGroup>
             
             
