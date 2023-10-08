@@ -12,6 +12,11 @@ import escalaCrolo from '../resources/escala.png';
 import imageCrolo from '../resources/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.png';
 import imageTemp from '../resources/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png';
 import imageRad from '../resources/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.png';
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
 
 function GlobesPage() {
   const [text, setText] = useState('ChloroPage');
@@ -93,11 +98,11 @@ function GlobesPage() {
           <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
 
             <Link to='../previewGlobesPage'>
-              <Button>Previous</Button>
+              <Button onClick={() => buttonSound.play()} >Previous</Button>
             </Link> 
             <Link to='../page9'>
 
-              <Button>Next</Button>
+              <Button onClick={() => buttonSound.play()}>Next</Button>
             </Link>
           </ButtonGroup>
         </div>
@@ -117,6 +122,29 @@ function GlobesPage() {
           labelAltitude={0.05}
         />
         <img src={scalaImage} alt="Image Overlay" className="image-overlay" />
+
+        <div className="buttons-container">
+          <div className="button-group-vert" style={{position: 'relative', left: '0vw'}} >
+            <ButtonGroup orientation = 'vertical' variant="contained">
+              <Button
+                onClick={() => {buttonSound.play(); changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}}
+              >
+                Chlorophyll Concentration
+              </Button>
+              <Button
+                onClick={() => {buttonSound.play(); changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}}
+              >
+                Water Temperature
+              </Button>
+              <Button
+                onClick={() => {buttonSound.play(); changeImages(imageRad, absortionScale, 'GlobeAbsortion')}}
+              >
+                Photosynthetically available radiation
+              </Button>
+            </ButtonGroup>
+          </div>
+        </div>
+
       </div>
     </div>
   );

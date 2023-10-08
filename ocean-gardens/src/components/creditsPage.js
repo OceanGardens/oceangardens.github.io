@@ -5,8 +5,6 @@ import Image from '../resources/wallpaper/wallpaper.jpg'
 import {useLinkClickHandler, Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { Howl, Howler } from 'howler';
-import soundSrc from '../resources/waveSound.mp3'
-import BOTAO from '../resources/sample-3s.mp3'
 
 function CreditsPage(props) {
   const [msg1, setMsg1] = useState('');
@@ -23,13 +21,7 @@ function CreditsPage(props) {
   const [stage2, setStage] = useState(0);
   const [decoding, setDecode] = useState(true);
   const [buttonHeight, setButtonHeight] = useState(true)
-  var sound = new Howl({
-    src: [soundSrc],
-    loop: true
-  })
-  var buttonSound = new Howl({
-    src: [BOTAO]
-  })
+
   const Messenger = function (writeMsg, setter, timewait) {
     const m = this;
     if(stage2>1){
@@ -169,7 +161,7 @@ function CreditsPage(props) {
         
         <MatrixRain/>
         <Link to='../landingPage'>
-            <button onClick={()=>{sound.play(); buttonSound.play()}} id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
+            <button id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
             </Link>
         
         <p id='messenger1'>{msg1}</p>

@@ -4,6 +4,11 @@ import Image from '../resources/nasa/andamanSea.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import  ButtonGroup from '@mui/material/ButtonGroup';
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
 
 function Page3() {
 
@@ -37,10 +42,10 @@ function Page3() {
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'5vh', right: '0vw'}}>
                                 <Link to='../wavePage'>
-                                    <Button>Previous</Button>
+                                    <Button onClick={() => buttonSound.play()}>Previous</Button>
                                 </Link> 
                                 <Link to='../page4'>
-                                    <Button>Next</Button>
+                                    <Button onClick={() => buttonSound.play()}>Next</Button>
                                 </Link>
                             </ButtonGroup>
                         </div>
