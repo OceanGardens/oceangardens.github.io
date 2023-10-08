@@ -5,8 +5,8 @@ import Image from '../resources/wallpaper/wallpaper.jpg'
 import {useLinkClickHandler, Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { Howl, Howler } from 'howler';
-import soundSrc from '../resources/waveSound.mp3'
-import BOTAO from '../resources/sample-3s.mp3'
+import soundSrc from '../resources/deepOcean.mp3'
+import BOTAO from '../resources/click.mp3'
 
 function TransmissionPage(props) {
   const [msg1, setMsg1] = useState('');
