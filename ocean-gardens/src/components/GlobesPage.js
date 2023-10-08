@@ -77,7 +77,7 @@ function GlobesPage() {
         <div className="button-group">
           <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
 
-            <Link to='../page8'>
+            <Link to='../previewGlobesPage'>
               <Button>Previous</Button>
             </Link> 
             <Link to='../page9'>

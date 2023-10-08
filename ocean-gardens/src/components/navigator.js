@@ -29,6 +29,7 @@ import Topic6page4 from './topic6page4';
 import CreditsPage from './creditsPage';
 import Page9 from './page9';
 import Page8 from './page8'
+import PreviewGlobesPage from './PreviewGlobesPage';
 
 
 export default function Navigator(props){
@@ -48,6 +49,7 @@ export default function Navigator(props){
                     <Route path = '/creditsPage' element={<CreditsPage/>} />
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
+                    <Route path = '/previewGlobesPage' element = {<PreviewGlobesPage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
 
                     <Route path = '/topic5page1' element={<Topic5page1/>} />
