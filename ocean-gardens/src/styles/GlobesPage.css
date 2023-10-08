@@ -39,11 +39,11 @@
     position: absolute;
     background-color: azure;
     top: 40%;
-    left: 73%;
+    right: 5%;
     /* width: 200px; Fixed pixel value */
     /* height: auto; Automatically adjust height to maintain aspect ratio */
-    transform: scale(0.6, 0.6); /* Initial scaling without distortion */
-    transform-origin: top left; /* Set the scaling origin to the top-left corner */
+    transform: scale(0.62, 0.62); /* Initial scaling without distortion */
+    transform-origin: top right; /* Set the scaling origin to the top-left corner */
 
     z-index: 1; /* Adjust the z-index to control the stacking order */
     pointer-events: none; /* Allows interactions with the globe underneath */
@@ -55,26 +55,15 @@
     height: 100%;
     object-fit: cover; /* Adjust the image sizing as needed */
 }
-
-.buttons-group{
-    flex-direction: row;
-    padding: 10px;
-}
-
-.button-group-vertical{
-    flex-direction: column;
-    padding: 10px;
-}
  
 .buttons-container {
+    max-width: 30%;
     position: absolute;
     top: 50%;
-    height: 30vh;
-    left: 73%;
-    padding: 10px;
-    display: flex;
-    align-items: flex-start; /* Align items to the start (top) of the container */
-    z-index: 1; /* Ensure the buttons container is on top of the canvas */
+    right: 5%;
+
+    z-index: 10000; /* Adjust the z-index to control the stacking order */
+    
 }
 
 .next-prev{

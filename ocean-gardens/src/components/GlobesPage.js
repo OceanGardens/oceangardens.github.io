@@ -4,6 +4,8 @@ import oceanLocations from './OCEAN_LOCATIONS';
 import '../styles/GlobesPage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Button, ButtonGroup } from '@mui/material';
+import { Link } from 'react-router-dom';
 import tempScale from '../resources/tempScale.png';
 import absortionScale from '../resources/absortionScale.png';
 import escalaCrolo from '../resources/escala.png';
@@ -59,20 +61,14 @@ function GlobesPage() {
       <div id="header">
         {renderText()}
         <div className="button-group">
-          <button
-            className="button-next"
-            style={{ fontSize: '12px', padding: '7px 10px' }}
-            onClick={() => window.location.href = "/previous-page"}
-          >
-            <FontAwesomeIcon icon={faArrowLeft} /> Previous Page
-          </button>
-          <button
-            className="button-next"
-            style={{ fontSize: '12px', padding: '5px 10px' }}
-            onClick={() => window.location.href = "/next-page"}
-          >
-            Next Page <FontAwesomeIcon icon={faArrowRight} />
-          </button>
+          <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
+            <Link to='../page4'>
+              <Button>Previous</Button>
+            </Link> 
+            <Link to='../globesPage'>
+              <Button>Next</Button>
+            </Link>
+          </ButtonGroup>
         </div>
       </div>
       <div className="globe-container">
@@ -90,22 +86,24 @@ function GlobesPage() {
         />
         <img src={scalaImage} alt="Image Overlay" className="image-overlay" />
         <div className="buttons-container">
-          <div className="button-group-vert">
-            <button
-              onClick={() => changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}
-            >
-              Chlorophyll Concentration
-            </button>
-            <button
-              onClick={() => changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}
-            >
-              Water Temperature
-            </button>
-            <button
-              onClick={() => changeImages(imageRad, absortionScale, 'GlobeAbsortion')}
-            >
-              Photosynthetically available radiation
-            </button>
+          <div className="button-group-vert" style={{position: 'relative', left: '0vw'}} >
+            <ButtonGroup orientation = 'vertical' variant="contained">
+              <Button
+                onClick={() => changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}
+              >
+                Chlorophyll Concentration
+              </Button>
+              <Button
+                onClick={() => changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}
+              >
+                Water Temperature
+              </Button>
+              <Button
+                onClick={() => changeImages(imageRad, absortionScale, 'GlobeAbsortion')}
+              >
+                Photosynthetically available radiation
+              </Button>
+            </ButtonGroup>
           </div>
         </div>
       </div>

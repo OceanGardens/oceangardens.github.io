@@ -23,15 +23,15 @@ function InitialGlobePage() {
 
 
   return (
-    <div className="globe-container" style={{ position: 'relative', width: '100%', height: '100vh' }}>
+    <div className="globe-container">
       <Globe
         ref={globeRef}
         globeImageUrl={image}
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         enablePointerInteraction={false}
       />
-      <div className="text-overlay">
-        <Container fluid className="content">
+      <div className="text-overlay" style = {{width: '40vw', height: '60vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
+        <Container fluid className="content" style = {{backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px'}}>
           <Row>
             <div className="info-box">
               <h2>This is our home, Planet Earth!</h2>
@@ -44,7 +44,7 @@ function InitialGlobePage() {
         </Container>
       </div>
       <div className="text-overlay2">
-      <Container fluid className="content">
+      <Container fluid className="content" style = {{height: '30vh', backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px' }}>
     <Row>
       <Col className="info-box">
         <div className="scrollable-content">
@@ -55,7 +55,7 @@ function InitialGlobePage() {
     </Row>
 
       <Row>
-        <Col className="text-center buttons-container">
+        <Col className="text-center buttons-container" style = {{position:'absolute', maxHeight: '5vh', left: '11vw', top: '40vh'}}>
           <ButtonGroup>
             <Button
               className="button-next"
