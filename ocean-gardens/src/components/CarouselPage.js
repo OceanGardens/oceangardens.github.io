@@ -74,18 +74,18 @@ function CarouselPage(props) {
       
   
     return (
-        <div id="carousel-naim" onKeyDown={handleKeyDown} tabIndex={0}>
-            <div className="phytoplankton-container">
-            <Typography variant="h4" className="phytoplankton-title" gutterBottom>
-                The World of Phytoplankton
-            </Typography>
-            <Typography variant="body1" className="phytoplankton-paragraph" paragraph>
-                Phytoplankton are microscopic, plant-like organisms that play a crucial role in the Earth's oceans. Despite their small size, they are the foundation of marine ecosystems, serving as the primary producers of organic matter through photosynthesis.
-            </Typography>
-            <ButtonGroup variant="contained" style={{display:'flex', top: '20%', position: 'absolute', right: '0vw'}}>
-                <Button href="./carousel">Previous</Button>
-                <Button href="./carousel">Next</Button>
-            </ButtonGroup>
+        <div id="carousel-naim" onKeyDown={handleKeyDown} tabIndex={0} >
+            <div className="phytoplankton-container" >
+                <Typography variant="h4" className="phytoplankton-title" gutterBottom>
+                    The World of Phytoplankton
+                </Typography>
+                <Typography variant="body1" className="phytoplankton-paragraph" paragraph>
+                    Phytoplankton are microscopic, plant-like organisms that play a crucial role in the Earth's oceans. Despite their small size, they are the foundation of marine ecosystems, serving as the primary producers of organic matter through photosynthesis.
+                </Typography>
+                <ButtonGroup variant="contained" style={{display:'flex', top: '20%', position: 'absolute', right: '0vw'}}>
+                    <Button href="./carousel">Previous</Button>
+                    <Button href="./carousel">Next</Button>
+                </ButtonGroup>
             </div>
             <Carousel
                 className = "carousel-container"
@@ -94,7 +94,7 @@ function CarouselPage(props) {
                 navButtonsAlwaysVisible={true}
                 index={activeIndex}
                 onChange={(index) => setActiveIndex(index)}    
-                style={{ width: '70%', margin: 'auto' }}
+                style={{ width: '70%', margin: 'auto'}}
                 height={'600px'}
                 >
                 {items.map((item, i) => (

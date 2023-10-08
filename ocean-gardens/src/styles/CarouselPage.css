@@ -3,9 +3,13 @@
     flex-direction: column;
     height: 100vh; /* Set the height of the container to 100% of the viewport height */
     background-image: url("../resources/wallpaper/wallpaper.jpg");
+    margin: 0; /* Reset margin to ensure no additional spacing */
+    padding: 0; /* Reset padding to ensure no additional spacing */
+    align-items: flex-start; /* Align items to the start (top) of the container */
   }
 
 #carousel-naim .carousel-item {
+
     overflow: hidden; /* Hide any overflow */
     width: 100%; /* Ensure the Paper takes the full width */
     max-height: 1000px; /* Adjust the max height as needed */
@@ -14,10 +18,10 @@
   }
 
 #carousel-naim .carousel-container{
+    flex: 2;
     width: 50%;
     height: 40%;
     align-self: center;
-    /* flex: 4; Make the carousel container take up 80% of the available height */
 }
 
   #carousel-naim  .phytoplankton-container {
@@ -25,8 +29,6 @@
     width: 100%;
     margin: auto;
     padding: 20px;
-    margin-top: 0vh;
-    flex: 0 0 20%;
   }
   
   #carousel-naim   .phytoplankton-title {
@@ -59,11 +61,10 @@
 #carousel-naim .carousel-naim-text{
     width: 75%;
     align-self: center;
-    border-radius: 3px;
-    border: 1px solid #4CAF50; /* Set your border color */
-    background-color: #8ae9cb; /* Set your background color */
+    border-radius: 10px;
     padding: 8px; /* Add padding for better aesthetics */
     opacity: 50%;
+    flex: 1;
 }
 
   #carousel-naim .phyto-name {
@@ -74,4 +75,7 @@
 
 #carousel-naim .phyto-desc {
     font-size: 1.5em;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    padding-bottom: 1vh;
 }
