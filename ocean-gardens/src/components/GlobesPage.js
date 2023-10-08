@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Globe from 'react-globe.gl';
 import oceanLocations from './OCEAN_LOCATIONS';
 import '../styles/GlobesPage.css';
@@ -53,6 +53,17 @@ function GlobesPage() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
+  const globeRef = useRef();
+
+  useEffect(() => {
+    // Access controls and set autoRotate to true
+    if (globeRef.current) {
+      const controls = globeRef.current.controls();
+      controls.enableZoom = false;
+      globeRef.current.pointOfView({ lat: 20.88, lng: -97.14, altitude: 2.2 });
+    }
+  }, []); // Empty dependency array ensures the effect runs once when the component mounts
+
 
   return (
     <div>
@@ -77,7 +88,8 @@ function GlobesPage() {
       </div>
       <div className="globe-container">
         <Globe
-          globeImageUrl={globeImageUrl}
+        ref={globeRef}
+        globeImageUrl={globeImageUrl}
           backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
           labelsData={oceanLocations}
           labelText={'label'}

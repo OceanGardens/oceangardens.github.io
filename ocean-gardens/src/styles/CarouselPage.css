@@ -1,18 +1,32 @@
+#carousel-naim {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set the height of the container to 100% of the viewport height */
+    background-image: url("../resources/wallpaper/wallpaper.jpg");
+  }
+
 #carousel-naim .carousel-item {
     overflow: hidden; /* Hide any overflow */
     width: 100%; /* Ensure the Paper takes the full width */
     max-height: 1000px; /* Adjust the max height as needed */
     height: 100%;
-    background-color: rgb(2, 200, 193);
+    background-color: transparent;
   }
 
+#carousel-naim .carousel-container{
+    width: 50%;
+    height: 40%;
+    align-self: center;
+    /* flex: 4; Make the carousel container take up 80% of the available height */
+}
 
   #carousel-naim  .phytoplankton-container {
     background-color: white;
     width: 100%;
     margin: auto;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-top: 0vh;
+    flex: 0 0 20%;
   }
   
   #carousel-naim   .phytoplankton-title {
@@ -25,24 +39,37 @@
     font-size: 1.2em;
     line-height: 1.6;
     color: #555;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 
-  .carousel-image {
+.carousel-image {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    max-width: 400px; /* Set your maximum width */
-    max-height: 400px; /* Set your maximum height */
-    transform: scale(1, 1);
+    max-width: 350px; /* Set your maximum width */
+    max-height: 350px; /* Set your maximum height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set your shadow properties */
+    transform: scale(1); /* Set the scale to 20% */
     transform-origin: center;
     display: block;
     margin: auto;
-  }
+    border-radius: 10px;
+}
+
+#carousel-naim .carousel-naim-text{
+    width: 75%;
+    align-self: center;
+    border-radius: 3px;
+    border: 1px solid #4CAF50; /* Set your border color */
+    background-color: #8ae9cb; /* Set your background color */
+    padding: 8px; /* Add padding for better aesthetics */
+    opacity: 50%;
+}
 
   #carousel-naim .phyto-name {
     text-align: center;
     font-size: 2.5em;
+    
 }
 
 #carousel-naim .phyto-desc {

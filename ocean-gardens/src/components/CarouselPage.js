@@ -1,8 +1,6 @@
-import React from 'react';
+import React , {useState, useEffect} from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Button, Typography, ButtonGroup } from '@mui/material'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import '../styles/CarouselPage.css'
 import diatomaceas from '../resources/phytoplankton/diatomaceas.webp'
 import dinoflagelados from '../resources/phytoplankton/dinoflagelados.webp'
@@ -38,10 +36,45 @@ function CarouselPage(props) {
           imageUrl: synura,
         }
       ];
+
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [currentItem, setCurrentItem] = useState(items[0]);
+    useEffect(() => {
+        // Update the current item when the activeIndex changes
+        setCurrentItem(items[activeIndex]);
+      }, [activeIndex, items]);
+    
+    const handleNext = () => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
+    };
+
+    const handlePrev = () => {
+        setActiveIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'ArrowRight') {
+        handleNext();
+        } else if (e.key === 'ArrowLeft') {
+        handlePrev();
+        }
+    };
+
+    const renderText = () => {
+        return (
+          <Paper> 
+            <Typography variant="h4" className="phyto-name">
+              {currentItem.name}
+            </Typography>
+            <Typography className="phyto-desc">{currentItem.description}</Typography>
+          </Paper>
+        );
+      };
+    
       
   
     return (
-        <div id="carousel-naim">
+        <div id="carousel-naim" onKeyDown={handleKeyDown} tabIndex={0}>
             <div className="phytoplankton-container">
             <Typography variant="h4" className="phytoplankton-title" gutterBottom>
                 The World of Phytoplankton
@@ -54,19 +87,23 @@ function CarouselPage(props) {
                 <Button href="./carousel">Next</Button>
             </ButtonGroup>
             </div>
-
-        <Carousel
-            animation="slide"
-            autoPlay={false}
-            navButtonsAlwaysVisible={true}
-            style={{ width: '70%', margin: 'auto' }}
-            NextIcon={<ArrowForwardIcon />}
-            PrevIcon={<ArrowBackIcon />}      
-            >
-            {items.map((item, i) => (
-                <Item key={i} item={item} />
-                ))}
-        </Carousel>
+            <Carousel
+                className = "carousel-container"
+                animation="false"
+                autoPlay={false}
+                navButtonsAlwaysVisible={true}
+                index={activeIndex}
+                onChange={(index) => setActiveIndex(index)}    
+                style={{ width: '70%', margin: 'auto' }}
+                height={'600px'}
+                >
+                {items.map((item, i) => (
+                    <Item key={i} item={item} />
+                    ))}
+            </Carousel>
+            <div className="carousel-naim-text">
+                {renderText()}
+            </div>
       </div>
     );
   }
@@ -80,8 +117,6 @@ function CarouselPage(props) {
           alt={props.item.name}
           className="carousel-image"
           />
-        <Typography variant="h4" className="phyto-name">{props.item.name}</Typography>
-        <Typography className="phyto-desc">{props.item.description}</Typography>
       </Paper>
     );
   }
