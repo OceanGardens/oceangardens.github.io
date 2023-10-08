@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
-import Image from '../resources/nasa/benguelaCurrent.png'
+import Image from '../resources/nasa/goodImages/southernChukchiSea.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import  ButtonGroup from '@mui/material/ButtonGroup';
@@ -33,7 +33,7 @@ function Page7() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>It is common to think than trees are the main agents in creating Earth's oxygen by photosynthesis, especially considering vast forests such as the Amazon.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>It is common to think that trees are the main agents in creating Earth's oxygen by photosynthesis, especially considering vast forests such as the Amazon.</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'0vh', right: '0vw'}}>
                                 <Link to='../page6'>
