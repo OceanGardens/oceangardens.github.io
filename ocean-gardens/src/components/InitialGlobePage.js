@@ -59,8 +59,8 @@ function InitialGlobePage() {
           <Grid container>
             <Grid item className="info-box">
               <div className="scrollable-content">
-                <p>Finally, and one of the most amazing: the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-                <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
+                <p>Finally, and one of the most amazing: the Hydrosphere! Bursting with an immense amount of water and brimming with life, it is an incredible marvel!</p>
+                <p>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the oceans, their beauties and their importance to our lives.</p>
               </div>
             </Grid>
           </Grid>
