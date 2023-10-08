@@ -1,0 +1,137 @@
+body {
+    background: #111111;
+    color: #ffffff;
+  }
+  
+  #message1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 75vw;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    font-weight: 550;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+  }
+
+  #message2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75vw;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    font-weight: 550;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+  }
+
+  #message3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 75vw;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    font-weight: 550;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+  }
+
+  #message4 {
+    position: relative;
+    left: 5%;
+    top: 8.5vh;
+    overflow-wrap: break-word;
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+  }
+
+  #message5 {
+    position: relative;
+    left: 0%;
+    top: 16vh;
+    overflow-wrap: break-word;
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+  }
+
+  #message6 {
+    position: relative;
+    left: 0%;
+    top: 21vh;
+
+    overflow-wrap: break-word;
+    font-family: Poppins;
+    font-weight: 550;
+    width: 90%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+  }
+
+  #message7 {
+    position: relative;
+    left: 0%;
+    top: 26vh;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+    width: 90%;
+  }
+
+  #message8 {
+    position: relative;
+    left: 0%;
+    top: 31vh;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+  }
+
+  #message9 {
+    position: relative;
+    left: 0%;
+    top: 37vh;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+  }
+
+  #mail{
+    position: absolute;
+    left: 10%;
+    width: 90%;
+  }
+
+  #button{
+    position: absolute;
+    z-index: 100;
+  }
+  
