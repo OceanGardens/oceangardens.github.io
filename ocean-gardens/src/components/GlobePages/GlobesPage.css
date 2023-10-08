@@ -1,0 +1,134 @@
+.globe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+  
+
+.text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    z-index: 3; /* Ensure the text container is on top of the canvas */
+  }
+  
+#header {
+  width: 100%;
+  height: 20%;
+  position: relative;
+  top: 0;
+  padding: 5%;
+  background-color: transparent;
+  background-image: url('//unpkg.com/three-globe/example/img/night-sky.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.small-font {
+  font-size: 14px;
+}
+
+.image-overlay {
+    position: absolute;
+    background-color: azure;
+    top: 40%;
+    left: 73%;
+    /* width: 200px; Fixed pixel value */
+    /* height: auto; Automatically adjust height to maintain aspect ratio */
+    transform: scale(0.6, 0.6); /* Initial scaling without distortion */
+    transform-origin: top left; /* Set the scaling origin to the top-left corner */
+
+    z-index: 1; /* Adjust the z-index to control the stacking order */
+    pointer-events: none; /* Allows interactions with the globe underneath */
+    
+}
+
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust the image sizing as needed */
+}
+
+.buttons-group{
+    flex-direction: row;
+    padding: 10px;
+}
+
+.button-group-vertical{
+    flex-direction: column;
+    padding: 10px;
+}
+ 
+.buttons-container {
+    position: absolute;
+    top: 50%;
+    height: 30vh;
+    left: 73%;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start; /* Align items to the start (top) of the container */
+    z-index: 1; /* Ensure the buttons container is on top of the canvas */
+}
+
+.next-prev{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    padding: 10px;
+}
+ 
+  .button-next{
+      size: 10px;
+  }
+ 
+  /* Add this to your CSS file */
+  .scrollable-content {
+      max-height: 200px; /* Set a maximum height for the scrollable content */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+ 
+ 
+  .content {
+    text-align: center;
+  }
+ 
+  .info-box {
+    
+    background-color: #f8f9fa; /* Bootstrap light gray background color */
+    padding: 20px;
+    border: 1px solid #dee2e6; /* Bootstrap border color */
+    border-radius: 4px; /* Bootstrap border radius */
+    max-width: 100%;
+    text-align: center;
+  }
+ 
+ .info-box h2{
+  color: black;
+}
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+ 
+  p {
+    margin-bottom: 10px;
+  }
+ 
+  a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+ 
+  a:hover {
+    text-decoration: underline;
+  }
