@@ -19,6 +19,7 @@ import Page81 from './page81'
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
+import CreditsPage from './creditsPage';
 
 import Topic5page1 from './topic5page1';
 import Topic5page2 from './topic5page2';
