@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
-import Image from '../resources/nasa/andamanSea.jpg'
+import Image from '../resources/nasa/goodImages/bikiniAtoll.png'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
-import  ButtonGroup from '@mui/material/ButtonGroup';
+import {ButtonGroup} from '@mui/material'
 
-function Page3() {
+function Page63() {
 
     return(
 
-        <motion.div className = 'page3'
+        <motion.div className = 'page63'
         initial={{width: 0}}
         animate={{width: '100%'}}
-        
         transition={{duration: 0.5}}
         exit={{x:window.innerWidth}}>
             <img src = {Image} style={{position:'absolute', top:'0vh', width:'100%', maxHeight:"100vh", zIndex:"-100"}}>     
@@ -22,24 +21,26 @@ function Page3() {
                 initial={{x: '-100%'}}
                 animate={{x: '0%'}}
                 transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
+                style={{position: 'relative', top:'5vh', left: '5vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for human beings?</h2>
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}>It is due to this molecule that we and other living beings can live, because we use this gas to produce energy that keeps our body working!</h1>
+                  
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
                 animate={{right: '-50vw'}}
-                transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'10vh', width:'45vw'}}
+                transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
+                style={{position: 'relative', top:'-6vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>Oxygen is a chemical element that is present in two of the most important things in our lives: Water and Air!</p>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Besides that, oxygen gas is present in other areas of our lives like the combustion process that is super important for cooking, illumination and industrial production.</h1>
+                        
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
-                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'5vh', right: '0vw'}}>
-                                <Link to='../wavePage'>
+                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
+                                <Link to='../page4'>
                                     <Button>Previous</Button>
                                 </Link> 
-                                <Link to='../page4'>
+
+                                <Link to='../page6'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>
@@ -52,4 +53,4 @@ function Page3() {
     )
 }
 
-export default Page3;   
+export default Page63;   
