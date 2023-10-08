@@ -1,46 +1,81 @@
-import {Link} from "react-router-dom";
+import React from 'react';
+import '../styles/imagePage.css'
+import image2 from "../resources/phytoplankton/diatomaceas.webp" 
+import image3 from "../resources/phytoplankton/singlediatomacea.jpg"
+import ButtonGroup from '@mui/material/Button';
 import Button from '@mui/material/Button';
-import  ButtonGroup from '@mui/material/ButtonGroup';
-import React, {useEffect,useState} from 'react';
-import {motion} from 'framer-motion'
-import background from '../resources/nasa/laptevSeaIce.jpg'
-import "../styles/ImagePage.css"
+//import { useNavigate } from 'react-router-dom';
 
-export default function imagePage(props) {
+function InfoPage() {
 
-    return(
-        <motion.div className = 'page3'
-        initial={{width: 0}}
-        animate={{width: '100%'}}
+  //const navigate = useNavigate()
+//
+  //const navigateNext = () => {
+  //  navigate("/phytoplanktons1")
+  //}
+//
+  //const navigatePrevious = () => {
+  //  navigate("/previous1")
+  //}
+
+  return (
+    <div id="imagePage">
+      <h1>Phytoplankton comes in a wide variety of shapes</h1>
+      <h2>Subtítulo</h2>
+      <p>BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      </p>
+      
+      <div className="image-row">
+        <div className="image-and-subtitle">
+          <img src={image2} className="image-div" alt="Image 1" />
+          <p>Daniel hosomi</p>
+        </div>
+        <div  className="image-and-subtitle">
+          <img src={image2} className="image-div" alt="Image 2" />
+          <p>Daniel hosomi</p>
+        </div>
+        <div  className="image-and-subtitle">
+          <img src={image3} className="image-div" alt="Image 3" />
+          <p>Daniel Hosomi</p>
+        </div>
         
-        transition={{duration: 0.5}}
-        exit={{x:window.innerWidth}}>
-            <img src = {background} style={{position:'absolute', top:'0vh', width:'100%', maxHeight:"100vh", zIndex:"-100"}}>     
-            </img>
+      </div>
 
-            <div style={{position:'absolute', top:'0vh', width:'100%', maxHeight:"100vh"}}>
-                <motion.div
-                initial={{x: '-100%'}}
-                animate={{x: '0%'}}
-                transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
-                >
-                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#ccf', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for human beings?</h2>
-                </motion.div>
-                <motion.div
-                initial={{right: '-200vw'}}
-                animate={{right: '-50vw'}}
-                transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'5vh', width:'45vw'}}
-                >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>Oxygen is an atom (a really tiny part of matter!) that is present in two of the most important things in our lives: Water and Air! </p>
-                        
- 
-        
-                </motion.div>
-            </div>
-
-        </motion.div>
-    )
+      <div className="paragraph-image-row">
+        <p>BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      BRABES BRABES BRABESBRABESBRABES BRABES BRABESBRABESBRABESBRABESBRABES
+      </p>
+        <div className='side-image-div'>
+        </div>
+      </div>
+      <ButtonGroup variant="contained">
+        <Button>Previous</Button>
+        <Button>Next</Button>
+      </ButtonGroup>
+      
+    </div>
+  );
 }
+
+export default InfoPage;
