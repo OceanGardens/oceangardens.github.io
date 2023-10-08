@@ -21,10 +21,10 @@ function Topic6page1() {
                 initial={{x: '-100%'}}
                 animate={{x: '0%'}}
                 transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'5vh', left: '5vw', width: '45vw', height:'50vh'}}
+                style={{position: 'relative', top:'5vh', left: '5vw', width: '70vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '6.523vh'}}>So what can we do to protect and preserve the oceans? </h1>
-                    <h2 style={{position:'relative', maxWidth: '37vw', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}> The Oceans are affected by Global Warming just as every other part of the planet, so all actions that help us to stop Global Warming are really useful. </h2>
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'#bbf', fontSize: '6.523vh'}}>So what can we do to protect and preserve the oceans? </h1>
+                    <h2 style={{position:'relative', top:'18vh',maxWidth: '37vw', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}> The Oceans are affected by Global Warming just as every other part of the planet, so all actions that help us to stop Global Warming are really useful. </h2>
                   
                 </motion.div>
                 <motion.div

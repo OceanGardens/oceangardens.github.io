@@ -23,7 +23,7 @@ function Page6() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'right', color:'white', fontSize: '10vh'}}>But where does Earth's oxygen comes from?</h1>
+                    <h1 style={{position:'relative', textAlign: 'right', color:'white', fontSize: '10vh'}}>But where does Earth's oxygen come from?</h1>
                 </motion.div>
                 <motion.div
                 initial={{x: '-105vw'}}
