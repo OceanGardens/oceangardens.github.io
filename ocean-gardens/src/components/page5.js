@@ -1,4 +1,3 @@
-import "../styles/contentPage.css"
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
 import Image from '../resources/LC08_L1TP_131050_20191129_20191129_01_RT.AndamanSea.crop.small.jpg'

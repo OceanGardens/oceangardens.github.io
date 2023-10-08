@@ -10,6 +10,7 @@ import React, { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import { Howl, Howler } from 'howler';
 import BOTAO from '../resources/sample-3s.mp3'
 var buttonSound = new Howl({
@@ -62,7 +63,7 @@ function LandingPage() {
                         <div id="landingPageTextContainer">
                             <h1>Ocean Gardens</h1>
                             <h2>How the oceans play a key role in planet Earth's biosphere</h2>
-                            <Button onClick={navigateToGlobePage} id="startButton" variant="contained">Let's start!</Button>
+                            <Button onClick={() => {navigateToGlobePage, buttonSound.play()}} id="startButton" variant="contained">Let's start!</Button>
                         </div>
                         <h3>Click on the screen to generate water ripples!</h3>
                     </div> 
