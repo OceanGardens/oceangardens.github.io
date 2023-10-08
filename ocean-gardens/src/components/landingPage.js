@@ -7,6 +7,9 @@ import ImageSmall from "../resources/wallpaper/imageSmall.jpg"
 import ImageSmaller from "../resources/wallpaper/imageSmaller.jpg"
 import "../styles/landingPage.css"
 import React, { useEffect, useState } from 'react';
+import Button from '@mui/material/Button';
+import {motion} from 'framer-motion'
+import {Link} from 'react-router-dom'
 
 
 function LandingPage() {
@@ -29,7 +32,12 @@ function LandingPage() {
     
   return (
         
-        <div className="landingPage">
+        <motion.div className="landingPage"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}    
+            transition={{duration: 5}}
+            >
+            
             <WaterWave
                 imageUrl={getBackgroundImage(window.innerWidth, window.innerHeight)}
                 dropRadius={40}
@@ -39,15 +47,20 @@ function LandingPage() {
             >
                 
                 {({pause, play}) => (
-                    <div id="landingPageTextContainer">
-                        <h1>Ocean Gardens</h1>
-                        <h2>How the oceans play a key role in Earth's biosphere</h2>
-                    </div>
+                    <div id="landingPageContent">
+                        <div id="landingPageTextContainer">
+                            <h1>Ocean Gardens</h1>
+                            <h2>How the oceans play a key role in planet Earth's biosphere</h2>
+                            <Button id="startButton" variant="contained">Let's start!</Button>
+                        </div>
+                        <h3>Click on the screen to generate water ripples!</h3>
+                    </div> 
+                    
                 )}
             </WaterWave>
             
             
-        </div>
+        </motion.div>
 
   );
 }
