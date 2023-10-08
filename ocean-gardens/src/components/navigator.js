@@ -34,6 +34,9 @@ import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
 
 
+import MinigamePage from './minigamePage';
+import CreditsPage from './creditsPage';
+
 export default function Navigator(props){
     const location = useLocation();
 
@@ -54,6 +57,9 @@ export default function Navigator(props){
                     <Route path = '/previewGlobesPage' element = {<PreviewGlobesPage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
 
+                    <Route path = '/minigamePage' element={<MinigamePage/>} />
+
+
                     <Route path = '/topic5page1' element={<Topic5page1/>} />
                     <Route path = '/topic5page2' element={<Topic5page2/>} />
                     <Route path = '/topic5page3' element={<Topic5page3/>} />
@@ -69,6 +75,7 @@ export default function Navigator(props){
                     <Route path = '/page8' element={<Page8/>}/>
                     <Route path = '/page9' element={<Page9/>} />
                     <Route path = '/page81' element={<Page81/>} />
+
                 </Routes>
            </AnimatePresence>
 }
