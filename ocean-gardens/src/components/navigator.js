@@ -15,8 +15,6 @@ import Page7 from './page7';
 import Page61 from './page61';
 import Page62 from './page62';
 import Page63 from './page63';
-
-
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
 
