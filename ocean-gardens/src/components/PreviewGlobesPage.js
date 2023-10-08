@@ -6,7 +6,12 @@ import '../styles/InitialGlobePage.css'
 import { Container, Grid, Button, ButtonGroup } from '@mui/material'; // Import Material-UI components
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 
 function PreviewGlobesPage() {
 
@@ -69,10 +74,10 @@ function PreviewGlobesPage() {
             <Grid item className="text-center buttons-container" style={{ position: 'absolute', maxHeight: '5vh', right: '5vw', top: '32vh' }}>
               <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
                 <Link to="../page81">
-                  <Button>Previous</Button>
+                  <Button onClick={() => buttonSound.play()}>Previous</Button>
                 </Link>
                 <Link to="../globesPage">
-                  <Button>Next</Button>
+                  <Button onClick={() => buttonSound.play()}>Next</Button>
                 </Link>
               </ButtonGroup>
             </Grid>

@@ -4,7 +4,12 @@ import Image from '../resources/nasa/bikiniAtoll.png'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material'
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function Topic6page1() {
 
     return(
@@ -24,7 +29,7 @@ function Topic6page1() {
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '70vw', height:'50vh'}}
                 >
                     <h1 style={{position:'relative', textAlign: 'justify', color:'#bbf', fontSize: '6.523vh'}}>So what can we do to protect and preserve the oceans? </h1>
-                    <h2 style={{position:'relative', top:'18vh',maxWidth: '37vw', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}> The Oceans are affected by Global Warming just as every other part of the planet, so all actions that help us to stop Global Warming are really useful. </h2>
+                    <h2 style={{position:'relative', top:'18    vh',maxWidth: '37vw', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}> The Oceans are affected by Global Warming just as every other part of the planet, so all actions that help us to stop Global Warming are really useful. </h2>
                   
                 </motion.div>
                 <motion.div
@@ -39,11 +44,11 @@ function Topic6page1() {
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', top:'1vh', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../topic5page4'>
-                                    <Button>Previous</Button>
+                                    <Button onClick={() => buttonSound.play()}>Previous</Button>
                                 </Link> 
 
                                 <Link to='../topic6page2'>
-                                    <Button>Next</Button>
+                                    <Button onClick={() => buttonSound.play()}>Next</Button>
                                 </Link>
                             </ButtonGroup>
                         </div>

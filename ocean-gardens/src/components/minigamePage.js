@@ -3,6 +3,11 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 import React, { useEffect, useState } from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import {ButtonGroup, Button} from '@mui/material'
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
 
 function MinigamePage() {
     const navigate = useNavigate();
@@ -14,14 +19,16 @@ function MinigamePage() {
     });
     
     async function returnNext(){
+      buttonSound.play()
       await unload()
       navigate('/creditsPage');
 
     }
 
     async function returnPrevious(){
+      buttonSound.play()
       await unload()
-      navigate('/topic6page4');
+      navigate('/topic6page3');
 
     }
 

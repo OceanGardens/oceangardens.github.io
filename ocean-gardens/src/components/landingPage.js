@@ -12,9 +12,9 @@ import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { Howl, Howler } from 'howler';
-import BOTAO from '../resources/sample-3s.mp3'
+import ButtonSound from '../resources/click.mp3'
 var buttonSound = new Howl({
-    src: [BOTAO]
+    src: [ButtonSound]
   })
 
 
@@ -24,10 +24,6 @@ function LandingPage() {
 
     const navigateToGlobePage = () => {
         buttonSound.play()
-
-        navigate('/minigamePage'); 
-
-
         navigate('/initialGlobePage'); 
     };
 

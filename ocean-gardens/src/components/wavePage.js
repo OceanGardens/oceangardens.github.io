@@ -3,7 +3,12 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import '../styles/wavePage.css';
 import { useNavigate } from 'react-router-dom';
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function WavePage() {
 
   const [i, seti] = useState(0);
@@ -37,6 +42,7 @@ function WavePage() {
   ]
 
   const next = () => {
+    buttonSound.play()
     if (i < texts.length - 1) {
       seti(i + 1);
     } else {
@@ -46,6 +52,7 @@ function WavePage() {
   }
 
   const previous = () => {
+    buttonSound.play()
     if (i > 0) {
       seti(i - 1);
     } else {
