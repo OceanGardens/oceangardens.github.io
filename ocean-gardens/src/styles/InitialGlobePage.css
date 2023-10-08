@@ -11,14 +11,12 @@
 
 .text-overlay {
   position: absolute;
-  bottom: 25%;
-  right: 30%;
-  width: 100%;
-  height: 100vh;
+  top: 0vh;
+  left: 0vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.8); Add background color with some opacity */
+  
   z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
   max-height: 500px; /* Set a maximum height for the scrollable content */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -27,10 +25,9 @@
 
 .text-overlay2 {
     position: absolute;
-    top: 15%;
-    left: 38%;
-    width: 100%;
-    height: 100vh;
+    top: 50vh;
+    left: 62vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +37,7 @@
   }
 
 .buttons-container {
-    margin-top: 270px; /* Adjust the margin as needed */
+    margin-top: 0px; /* Adjust the margin as needed */
     display: flex;
     justify-content: flex-start; /* Align items to the start (left) of the container */
     margin-left: -85%; /* Add this line to ensure no left margin is applied */
@@ -63,29 +60,15 @@
 
 .info-box {
   background-color: #f8f9fa; /* Bootstrap light gray background color */
-  padding: 20px;
-  border: 1px solid #dee2e6; /* Bootstrap border color */
-  border-radius: 4px; /* Bootstrap border radius */
-  max-width: 400px;
+  max-height: 60vh;
+  width: 35vw;
   text-align: center;
 }
 
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin-bottom: 20px;
+.info-box p{
+  color: #000
 }
 
-p {
-  margin-bottom: 10px;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
+.scrollable-content p{
+  color: #000
 }
