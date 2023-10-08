@@ -57,8 +57,8 @@ function InitialGlobePage() {
       <div className="text-overlay2">
 
         <div className="initialGlobeBox">
-          <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-          <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
+          <p>Finally, the Hydrosphere! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
+          <p>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the Oceans, their beauties and their importance to our lives.</p>
         </div>
         <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
           <Link to="../landingPage">
