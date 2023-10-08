@@ -19,6 +19,9 @@ import Page63 from './page63';
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
+import Page9 from './page9';
+import Page8 from './page8'
+import CreditsPage from "./creditsPage"
 
 export default function Navigator(props){
     const location = useLocation();
@@ -41,6 +44,8 @@ export default function Navigator(props){
                     <Route path = '/page61' element={<Page61/>} />
                     <Route path = '/page62' element={<Page62/>} />
                     <Route path = '/page63' element={<Page63/>} />
+                    <Route path = '/page8' element={<Page8/>}/>
+                    <Route path = '/page9' element={<Page9/>} />
                 </Routes>
            </AnimatePresence>
 }
