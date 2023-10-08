@@ -5,7 +5,6 @@ import Image from '../resources/wallpaper/wallpaper.jpg'
 import {useLinkClickHandler, Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 
-
 function TransmissionPage(props) {
   const [msg1, setMsg1] = useState('');
   const [msg2, setMsg2] = useState('');
@@ -16,13 +15,16 @@ function TransmissionPage(props) {
   const [msg7, setMsg7] = useState('');
   const [msg8, setMsg8] = useState('');
   const [msg9, setMsg9] = useState('');
-  const [stage2, setStage] = useState(true);
+  const [stage2, setStage] = useState(0);
+  const [decoding, setDecode] = useState(false);
   const [buttonHeight, setButtonHeight] = useState(true)
   const Messenger = function (writeMsg, setter, timewait) {
     const m = this;
-
+    if(stage2>1){
+      return
+    }
     m.init = function (writeMsg, setter, timewait) {
-      m.codeletters = "&#*+%?£@§$";
+      m.codeletters = "-'*+%?.>!$";
       m.message = 0;
       m.current_length = 0;
       m.fadeBuffer = false;
@@ -99,57 +101,52 @@ function TransmissionPage(props) {
     m.init(writeMsg, setter, timewait);
   };
 
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-
-
-
-    if(props.clicks == 0){
-    var messenger1 = new Messenger("Receiving new radio transmission...", setMsg1, 2000);
-
-    var messenger2 = new Messenger("Distance from source: 39.46 light years", setMsg2, 6500);
-
-    var messenger3 = new Messenger("Click on the screen to decode...", setMsg3, 10000);}
+  const handleClickOutsideRef = (event) => {
+    props.setClicks(props.clicks+1)
     
-
-    function handleClickOutside(){
-        
-        if(props.clicks == 0){
-          setStage(false)
-          props.setClicks(props.clicks+1)
-          setMsg1('')
-          setMsg2('')
-          setMsg3('')
-          setButtonHeight(false)
-          //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
-
-          var messenger4 = new Messenger("Dear inhabitants of TRAPPIST-1 planetary system,", setMsg4, 0);
-          var messenger5 = new Messenger("Greetings from Earth!", setMsg5, 2500);
-          var messenger6 = new Messenger("We are sending this transmission as a gift to you,", setMsg6, 5000);
-          var messenger9 = new Messenger("our cosmic neighbors,", setMsg9, 8000);
-          var messenger7 = new Messenger("so you can experience the beauty of our greatest garden: the oceans.", setMsg7, 10000);
-          var messenger8 = new Messenger("Click on the screen to start", setMsg8, 13000);
-          
-        }else{
-          setMsg4('')
-          setMsg5('')
-          setMsg6('')
-          setMsg7('')
-          setMsg8('')
-          setMsg9('')
-          
-          
-          document.removeEventListener('mousedown', handleClickOutside);
-          
-          return ;
-          
-        }
-        
+    if(stage2===1){
+      //Send second messa
+      
+      setStage(stage2+1)
+      setDecode(true)
+      setMsg1('')
+      setMsg2('')
+      setMsg3('')
+      setTimeout(()=>setButtonHeight(false), 15500);
+      //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
+      
+      var messenger4 = new Messenger("Dear inhabitants of TRAPPIST-1 planetary system,", setMsg4, 0);
+      var messenger5 = new Messenger("Greetings from Earth!", setMsg5, 2500);
+      var messenger6 = new Messenger("We are sending this transmission as a gift to you,", setMsg6, 5000);
+      var messenger9 = new Messenger("our cosmic neighbors,", setMsg9, 8000);
+      var messenger7 = new Messenger("so you can experience the beauty of our greatest garden: the oceans.", setMsg7, 10000);
+      var messenger8 = new Messenger("Click on the screen to start", setMsg8, 13000);
+      return
+    }else{
+      
+      //HELP HERE
+      document.removeEventListener('mousedown', handleClickOutsideRef);  
+      return ;
     }
     
-  }, [stage2, setStage, props.clicks]); // Empty dependency array to run the effect once on component mount
-  
+  }
 
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutsideRef);
+    if(props.clicks == 0 && stage2 == 0){
+    var messenger1 = new Messenger("Receiving new radio transmission...", setMsg1, 2000);
+
+    var messenger2 = new Messenger("Distance from source: 39.46 light years", setMsg2, 5000);
+
+    const messenger3 = new Messenger("Click on the screen to decode...", setMsg3, 8000);
+    setTimeout(()=>setStage(stage2+1), 11000);
+    }
+    return () =>{
+      document.removeEventListener('mousedown', handleClickOutsideRef)
+    }
+    
+  }, [stage2, setStage, decoding, setDecode, props.clicks]); // Empty dependency array to run the effect once on component mount
+  
   return (
     <>
       <motion.div className="transmissionPage"

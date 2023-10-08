@@ -50,7 +50,10 @@ function LandingPage() {
                         <div id="landingPageTextContainer">
                             <h1>Ocean Gardens</h1>
                             <h2>How the oceans play a key role in planet Earth's biosphere</h2>
-                            <Button id="startButton" variant="contained">Let's start!</Button>
+                            <Link to='../page3'>
+                                <Button id="startButton" variant="contained">Let's start!</Button>
+                            </Link>
+
                         </div>
                         <h3>Click on the screen to generate water ripples!</h3>
                     </div> 

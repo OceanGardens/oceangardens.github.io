@@ -7,7 +7,8 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    
+    width: 75vw;
+    text-align: center;
     transform: translate(-50%, -50%);
     font-family: Poppins;
     font-weight: 550;
@@ -20,7 +21,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    
+    width: 75vw;
+    text-align: center;
     transform: translate(-50%, -50%);
     font-family: Poppins;
     font-weight: 550;
@@ -33,7 +35,8 @@ body {
     position: absolute;
     top: 70%;
     left: 50%;
-    
+    width: 75vw;
+    text-align: center; 
     transform: translate(-50%, -50%);
     font-family: Poppins;
     font-weight: 550;
@@ -45,31 +48,34 @@ body {
   #messenger4 {
     position: relative;
     left: 5%;
-    top: 3.5rem;
+    top: 8.5vh;
     overflow-wrap: break-word;
     font-family: Poppins;
     font-weight: 550;
     width: 85%;
     text-shadow: 0 2px 2px rgba(#000, 0.9);
     font-size: 1.9rem;
+    text-overflow: ellipsis;
   }
 
   #messenger5 {
     position: relative;
     left: 0%;
-    top: 6.5rem;
+    top: 16vh;
     overflow-wrap: break-word;
     font-family: Poppins;
     font-weight: 550;
     width: 85%;
     text-shadow: 0 2px 2px rgba(#000, 0.9);
     font-size: 1.9rem;
+    text-overflow: ellipsis;
   }
 
   #messenger6 {
     position: relative;
     left: 0%;
-    top: 9.5rem;
+    top: 23.5vh;
+
     overflow-wrap: break-word;
     font-family: Poppins;
     font-weight: 550;
@@ -81,7 +87,7 @@ body {
   #messenger9 {
     position: relative;
     left: 0%;
-    top: 11rem;
+    top: 27vh;
     
     font-family: Poppins;
     font-weight: 550;
@@ -94,7 +100,7 @@ body {
   #messenger7 {
     position: relative;
     left: 0%;
-    top: 12.5rem;
+    top: 30.5vh;
     
     font-family: Poppins;
     font-weight: 550;
@@ -108,7 +114,7 @@ body {
   #messenger8 {
     position: relative;
     left: 0%;
-    top: 19.75rem;
+    top: 48.5vh;
     
     font-family: Poppins;
     font-weight: 550;
