@@ -6,7 +6,7 @@ const oceanLocations = [
     },
     {
       label: 'Pacific Ocean',
-      lat: -46,
+      lat: -8,
       lng: -120,
       altitude: 1.5
     },

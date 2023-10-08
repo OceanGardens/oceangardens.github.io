@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
-import Image from '../resources/nasa/andamanSea.jpg'
+import Image from '../resources/nasa/benguelaCurrent.png'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import  ButtonGroup from '@mui/material/ButtonGroup';
 
-function Page3() {
+function Page7() {
 
     return(
 
-        <motion.div className = 'page3'
+        <motion.div className = 'page7'
         initial={{width: 0}}
         animate={{width: '100%'}}
         
@@ -24,8 +24,8 @@ function Page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
-                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for life on Earth?</h2>
+                    <h1 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>But how? </h1>
+                    <h2 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify', maxWidth:'60vw'}}>Phytoplankton, as well as ordinary plants, contain a pigment called chlorophyll in their bodies, which can capture the sunlight necessary for photosynthesis. This pigment is also responsible for the greenish color of all these organisms.</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
@@ -33,13 +33,13 @@ function Page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4vh', textAlign:'right'}}>One of the fundamental building blocks of life on Earth, alongside carbon, hydrogen, and nitrogen, oxygen is an essential chemical element found in the organic compounds that make up the bodies of living beings.</p>
-                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0'}}>
-                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'5vh', right: '0vw'}}>
-                                <Link to='../wavePage'>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>An interesting way to visualize the distribution of these oceanic gardens is to analyze the concentrations of chlorophyll across the oceans.</h1>
+                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
+                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'0vh', right: '0vw'}}>
+                                <Link to='../page8'>
                                     <Button>Previous</Button>
                                 </Link> 
-                                <Link to='../page4'>
+                                <Link to='../previewGlobesPage'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>
@@ -52,4 +52,4 @@ function Page3() {
     )
 }
 
-export default Page3;   
+export default Page7;   

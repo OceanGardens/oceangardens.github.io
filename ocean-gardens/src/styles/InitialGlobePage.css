@@ -19,15 +19,14 @@
   
   z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
   max-height: 500px; /* Set a maximum height for the scrollable content */
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: hidden; /* Enable vertical scrolling */
 
 }
 
 .text-overlay2 {
     position: absolute;
-    top: 50vh;
-    left: 62vw;
-    
+    top: 55vh;
+    left: 63vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,16 +35,6 @@
     z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
   }
 
-.buttons-container {
-    margin-top: 0px; /* Adjust the margin as needed */
-    display: flex;
-    justify-content: flex-start; /* Align items to the start (left) of the container */
-    margin-left: -85%; /* Add this line to ensure no left margin is applied */
-}
-
-.button-next{
-    size: 10px;
-}
 
 /* Add this to your CSS file */
 .scrollable-content {

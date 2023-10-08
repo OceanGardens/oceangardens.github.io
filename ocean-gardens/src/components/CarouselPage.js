@@ -7,8 +7,9 @@ import dinoflagelados from '../resources/phytoplankton/dinoflagelados.webp'
 import singlediatomacea from '../resources/phytoplankton/singlediatomacea.jpg'
 import synedra from '../resources/phytoplankton/synedra.jpg'
 import synura from '../resources/phytoplankton/synura.jpg'
+import { Link } from 'react-router-dom';
 
-function CarouselPage(props) {
+function CarouselComp(props) {
     var items = [
         {
           name: "Diatomaceas",
@@ -63,7 +64,7 @@ function CarouselPage(props) {
     const renderText = () => {
         return (
           <Paper> 
-            <Typography variant="h4" className="phyto-name">
+            <Typography className="phyto-name">
               {currentItem.name}
             </Typography>
             <Typography className="phyto-desc">{currentItem.description}</Typography>
@@ -75,18 +76,6 @@ function CarouselPage(props) {
   
     return (
         <div id="carousel-naim" onKeyDown={handleKeyDown} tabIndex={0} >
-            <div className="phytoplankton-container" >
-                <Typography variant="h4" className="phytoplankton-title" gutterBottom>
-                    The World of Phytoplankton
-                </Typography>
-                <Typography variant="body1" className="phytoplankton-paragraph" paragraph>
-                    Phytoplankton are microscopic, plant-like organisms that play a crucial role in the Earth's oceans. Despite their small size, they are the foundation of marine ecosystems, serving as the primary producers of organic matter through photosynthesis.
-                </Typography>
-                <ButtonGroup variant="contained" style={{display:'flex', top: '20%', position: 'absolute', right: '0vw'}}>
-                    <Button href="./carousel">Previous</Button>
-                    <Button href="./carousel">Next</Button>
-                </ButtonGroup>
-            </div>
             <Carousel
                 className = "carousel-container"
                 animation="false"
@@ -121,4 +110,4 @@ function CarouselPage(props) {
     );
   }
   
-  export default CarouselPage;
+  export default CarouselComp;

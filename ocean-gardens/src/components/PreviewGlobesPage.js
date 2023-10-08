@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Globe from 'react-globe.gl';
-import image from '../resources/earth_daymap.jpg'
+import image from '../resources/temperature2022-AQUA_MODIS.20220101_20221231.L3m.YR.SST.sst.4km.nc.png'
 import { useCallback, useEffect } from "react";
 import '../styles/InitialGlobePage.css'
 import { Container, Grid, Button, ButtonGroup } from '@mui/material'; // Import Material-UI components
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 
-function InitialGlobePage() {
+function PreviewGlobesPage() {
 
   const globeRef = useRef();
 
@@ -45,11 +45,11 @@ function InitialGlobePage() {
         <Container fluid className="content" style = {{backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px'}}>
           <Grid container>
             <div className="info-box">
-              <h2>This is our home, Planet Earth!</h2>
-              <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
-              <p>Our planet is divided in three main parts: </p>
-              <p>Lithosphere: Our rigid layer, composed mainly of rocks, minerals and crystals.</p>
-              <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide.</p>
+              <h2>Time to explore!</h2>
+              <p>The globe that you are seeing shows the average temperature of the Earths oceans in 2022. Red means warmer, blue means colder. Black means there is not enough water, thats why you
+                can see the continents in black.
+                 </p>
+              <p>In the next page you will be able to move the globe around and see the ocean temperature, chlorophyll concentration and available radiation.</p>
             </div>
           </Grid>
         </Container>
@@ -59,8 +59,8 @@ function InitialGlobePage() {
           <Grid container>
             <Grid item className="info-box">
               <div className="scrollable-content">
-                <p>Finally, and one of the most amazing: the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-                <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
+                <p> Try to figure out what are the relation between this three elements! </p>
+                <p> Remember that chlorophyll is related to photosynthesis, and that this requires the sun's  radiation. Enjoy!</p>
               </div>
             </Grid>
           </Grid>
@@ -68,10 +68,10 @@ function InitialGlobePage() {
           <Grid container>
             <Grid item className="text-center buttons-container" style={{ position: 'absolute', maxHeight: '5vh', right: '5vw', top: '32vh' }}>
               <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
-                <Link to="../landingPage">
+                <Link to="../page81">
                   <Button>Previous</Button>
                 </Link>
-                <Link to="../wavePage">
+                <Link to="../globesPage">
                   <Button>Next</Button>
                 </Link>
               </ButtonGroup>
@@ -83,4 +83,4 @@ function InitialGlobePage() {
   );
 }
 
-export default InitialGlobePage;
+export default PreviewGlobesPage;
