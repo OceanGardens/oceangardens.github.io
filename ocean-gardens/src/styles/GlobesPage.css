@@ -43,18 +43,15 @@
 }
 
 .image-overlay {
-    position: absolute;
-    background-color: azure;
-    top: 40%;
-    right: 1%;
-    /* width: 200px; Fixed pixel value */
-    /* height: auto; Automatically adjust height to maintain aspect ratio */
-    transform: scale(0.62, 0.62); /* Initial scaling without distortion */
-    transform-origin: top right; /* Set the scaling origin to the top-left corner */
-
-    z-index: 1; /* Adjust the z-index to control the stacking order */
-    pointer-events: none; /* Allows interactions with the globe underneath */
-    
+  position: absolute;
+  background-color: rgb(122, 173, 214);
+  border-radius: 10px;
+  top:5%;
+  right: 5%;
+  transform: scale(0.75, 0.75); /* Initial scaling without distortion */
+  transform-origin: top right; /* Set the scaling origin to the top-left corner */
+  z-index: 1; /* Adjust the z-index to control the stacking order */
+  pointer-events: none; /* Allows interactions with the globe underneath */
 }
 
 .image-overlay img {
@@ -120,7 +117,7 @@
   }
  
   #header .info-box a {
-    color: #007bff;
+    color: #4ca2ff;
     text-decoration: none;
     font-weight: bold;
   }

@@ -10,6 +10,8 @@
 }
 
 .text-overlay {
+  margin-top: 15px;
+  margin-left: 15px;
   position: absolute;
   top: 0vh;
   left: 0vw;
@@ -25,7 +27,9 @@
 
 .text-overlay2 {
     position: absolute;
-    top: 55vh;
+    bottom: 0vh;
+    margin-bottom: 15px;
+    margin-right: 15px;
     left: 63vw;
     display: flex;
     justify-content: center;
@@ -47,17 +51,19 @@
   text-align: center;
 }
 
-.globe-container .info-box {
+.globe-container .initialGlobeBox {
   background-color: #265d9459; /* Bootstrap light gray background color */
   max-height: 70vh;
   width: 35vw;
   border: 0px;
   text-align: center;
   margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 15px;
   text-align: justify;
 }
 
-.globe-container .info-box p{
+.globe-container .initialGlobeBox p{
   color: rgb(255, 255, 255)
 }
 

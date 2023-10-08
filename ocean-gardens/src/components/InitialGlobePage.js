@@ -41,30 +41,28 @@ function InitialGlobePage() {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         enablePointerInteraction={false}
       />
-      <div className="text-overlay" style = {{width: '40vw', height: '70vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
-            <div className="info-box">
-              <h2>This is our home, Planet Earth!</h2>
-              <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
-              <p>Our planet's surface is divided in three main parts: </p>
-              <p>Lithosphere: Our rigid layer, composed mainly of rocks, minerals and crystals.</p>
-              <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide...</p>
-            </div>
+      <div className="text-overlay" >
+        <div className="initialGlobeBox">
+          <h2>This is our home, Planet Earth!</h2>
+          <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
+          <p>Our planet's surface is divided in three main parts: </p>
+          <p>Lithosphere: Our rigid layer, composed mainly of rocks, minerals and crystals.</p>
+          <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide...</p>
+        </div>
       </div>
       <div className="text-overlay2">
-        <Container fluid className="content" style={{ height: '35vh', backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px', display: 'flex', flexDirection: "column", alignItems: "flexEnd"}}>
-              <div className="info-box">
-                <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-                <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
-              </div>
-              <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
-                <Link to="../landingPage">
-                  <Button>Previous</Button>
-                </Link>
-                <Link to="../wavePage">
-                  <Button>Next</Button>
-                </Link>
-              </ButtonGroup>
-        </Container>
+        <div className="initialGlobeBox">
+          <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
+          <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
+        </div>
+        <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
+          <Link to="../landingPage">
+            <Button>Previous</Button>
+          </Link>
+          <Link to="../wavePage">
+            <Button>Next</Button>
+          </Link>
+        </ButtonGroup>
       </div>
     </div>
   );
