@@ -12,30 +12,30 @@ import { Link } from 'react-router-dom';
 function CarouselComp(props) {
     var items = [
         {
-          name: "Diatomaceas",
-          description: "Meet the Diatomaceas, the tiny but amazing phytoplankton! They are like little jewels in the ocean, making the sea sparkle with their beauty.",
-          imageUrl: diatomaceas,
-        },
-        {
-          name: "Dinoflagelados",
-          description: "Say hello to the Dinoflagelados! These playful phytoplankton light up the water like fireflies, making the ocean a magical place to explore.",
+          name: "Dinoflagellates",
+          description: "Say hello to the dinoflagellates! They constitute a group of single celled organisms, with lots of different species. Some of them are bioluminescent, meaning they can produce light! ",
           imageUrl: dinoflagelados,
         },
         {
-          name: "Single Diatomacea",
-          description: "Meet the Single Diatomacea, a tiny superhero of the sea! Despite their size, they play a big role in keeping the ocean healthy and full of life.",
+          name: "Synura",
+          description: "Synura is a freshwater algae group. They form spherical colonies of about 30-100 micrometers in diameter, with cells that have outward-facing flagella, and they tend to aggregate into clusters.",
+          imageUrl: synura,
+        },
+        {
+          name: "Diatom Group",
+          description: "The Diatom is a group of various species, some of which you can see here. They come in various forms and shapes, but they are all crucial to life. Which one is your favorite?",
+          imageUrl: diatomaceas,
+        },
+        {
+          name: "Centric Diatom",
+          description: "This is a single celled type of Diatom. As you can see in the scale of 30 micrometers, they are really small. Can you figure out the diameter of this one?",
           imageUrl: singlediatomacea,
         },
         {
           name: "Synedra",
-          description: "Say hi to Synedra, the friendly phytoplankton with a unique shape! They are like nature's artwork, adding a special touch to the underwater world.",
+          description: "Synedra is a genus of diatoms, with needle-like cells that can exist singly or radiate in colonies.",
           imageUrl: synedra,
         },
-        {
-          name: "Synura",
-          description: "Meet Synura, the tiny dancer of the ocean! These phytoplankton move gracefully in the water, creating a mesmerizing show for everyone to enjoy.",
-          imageUrl: synura,
-        }
       ];
 
     const [activeIndex, setActiveIndex] = useState(0);

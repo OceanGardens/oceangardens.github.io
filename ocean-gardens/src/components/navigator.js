@@ -31,7 +31,7 @@ import Topic6page4 from './topic6page4';
 import Page9 from './page9';
 import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
-
+import CreditsPage from './creditsPage';
 
 export default function Navigator(props){
     const location = useLocation();

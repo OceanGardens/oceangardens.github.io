@@ -45,7 +45,7 @@ But do not think that they are this simple… The variety of species, shapes, si
         
       </div>
 
-      <p>They differ, especially in terms of size, ranging from 2µm up to 200µm. For clarification, µm (micro-meter) is a unit of measure equivalent of a milionth of a meter. For comparison, the diameter of a strand of hair is about 60-140 µm.
+      <p>They differ, especially in terms of size, ranging from 2µm up to 200µm. For clarification, µm (micro-meter) is a unit of measure equivalent of a milionth of a meter. For comparison, the diameter of a strand of hair is around 80 µm.
           They can be classified as:
           </p>
 
@@ -68,6 +68,7 @@ But do not think that they are this simple… The variety of species, shapes, si
       </div>
       <p>
           This has a grand impact on the quantity of individuals in the water, their concentration and the amount of oxygen they produce through photosynthesis. For example, in a lenght of 400µm we can fit 200 nanoplâncton of 2µm, but only 2 microplâncton of 200µm of length. Studies point out that the nanoplânctons are responsible for most of the oxygen production and carbon fixation!
+          See below some examples of phytoplankton:
       </p>
       <CarouselComp/>
       <p>To sum up, they are responsible for producing massive amounts of oxygen, filtering light penetration in the ocean and fixating tons of CO2 that would otherwise be at the atmosphere. They are also the base of the food chain - serving as food to many animals. Therefore, they are responsible for maintaining the whole maritime ecosystem balanced, and, by consequence, also the whole Earth ecosystem as we know. But have you ever imagined an Earth without the phytoplanktons? How would it be?</p>
