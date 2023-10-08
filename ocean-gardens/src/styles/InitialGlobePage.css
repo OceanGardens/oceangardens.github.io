@@ -29,7 +29,7 @@
     left: 63vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     /* background-color: rgba(255, 255, 255, 0.8); Add background color with some opacity */
     z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
@@ -47,17 +47,20 @@
   text-align: center;
 }
 
-.info-box {
-  background-color: #f8f9fa; /* Bootstrap light gray background color */
+.globe-container .info-box {
+  background-color: #265d9459; /* Bootstrap light gray background color */
   max-height: 70vh;
   width: 35vw;
+  border: 0px;
   text-align: center;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
-.info-box p{
-  color: #000
+.globe-container .info-box p{
+  color: rgb(255, 255, 255)
 }
 
-.scrollable-content p{
-  color: #000
+.text-overlay h2 {
+  color: rgb(255, 255, 255)
 }

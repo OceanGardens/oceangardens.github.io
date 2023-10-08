@@ -42,31 +42,20 @@ function InitialGlobePage() {
         enablePointerInteraction={false}
       />
       <div className="text-overlay" style = {{width: '40vw', height: '70vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
-        <Container fluid className="content" style = {{backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px'}}>
-          <Grid container>
             <div className="info-box">
               <h2>This is our home, Planet Earth!</h2>
               <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
-              <p>Our planet is divided in three main parts: </p>
+              <p>Our planet's surface is divided in three main parts: </p>
               <p>Lithosphere: Our rigid layer, composed mainly of rocks, minerals and crystals.</p>
-              <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide.</p>
+              <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide...</p>
             </div>
-          </Grid>
-        </Container>
       </div>
       <div className="text-overlay2">
-        <Container fluid className="content" style={{ height: '35vh', backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px' }}>
-          <Grid container>
-            <Grid item className="info-box">
-              <div className="scrollable-content">
-                <p>Finally, and one of the most amazing: the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
+        <Container fluid className="content" style={{ height: '35vh', backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px', display: 'flex', flexDirection: "column", alignItems: "flexEnd"}}>
+              <div className="info-box">
+                <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
                 <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
               </div>
-            </Grid>
-          </Grid>
-
-          <Grid container>
-            <Grid item className="text-center buttons-container" style={{ position: 'absolute', maxHeight: '5vh', right: '5vw', top: '32vh' }}>
               <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
                 <Link to="../landingPage">
                   <Button>Previous</Button>
@@ -75,8 +64,6 @@ function InitialGlobePage() {
                   <Button>Next</Button>
                 </Link>
               </ButtonGroup>
-            </Grid>
-          </Grid>
         </Container>
       </div>
     </div>
