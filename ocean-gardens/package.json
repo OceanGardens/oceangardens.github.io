@@ -31,6 +31,7 @@
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.5",
+    "react-unity-webgl": "^9.4.3",
     "react-water-wave": "^2.0.1",
     "sass": "^1.68.0",
     "start": "^5.1.0",

@@ -15,7 +15,6 @@ import Page61 from './page61';
 import Page62 from './page62';
 import Page63 from './page63';
 import Page81 from './page81'
-import CreditsPage from './creditsPage'
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
@@ -35,7 +34,6 @@ import PreviewGlobesPage from './PreviewGlobesPage';
 
 
 import MinigamePage from './minigamePage';
-import CreditsPage from './creditsPage';
 
 export default function Navigator(props){
     const location = useLocation();
