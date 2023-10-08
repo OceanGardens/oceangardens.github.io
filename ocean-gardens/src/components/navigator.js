@@ -26,7 +26,6 @@ import Topic6page1 from './topic6page1';
 import Topic6page2 from './topic6page2';
 import Topic6page3 from './topic6page3';
 import Topic6page4 from './topic6page4';
-import CreditsPage from './creditsPage';
 import Page9 from './page9';
 import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
