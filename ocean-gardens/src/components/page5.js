@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import Image from '../resources/LC08_L1TP_131050_20191129_20191129_01_RT.AndamanSea.crop.small.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
+import {ButtonGroup} from '@mui/material'
 
 function Page5() {
 
@@ -35,7 +36,7 @@ function Page5() {
                         <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Oxygen is an atom (a really tiny part of matter!) that is present in two of the most important things in our lives: Water and Air! </p>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             
-                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
+                            <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', left: '0vh'}}>
                                 <Link to='../page4'>
                                     <Button>Previous</Button>
                                 </Link> 

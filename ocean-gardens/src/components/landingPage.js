@@ -10,6 +10,12 @@ import React, { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
+import { Howl, Howler } from 'howler';
+import BOTAO from '../resources/sample-3s.mp3'
+
+var buttonSound = new Howl({
+    src: [BOTAO]
+  })
 
 function LandingPage() {
 
@@ -51,7 +57,7 @@ function LandingPage() {
                             <h1>Ocean Gardens</h1>
                             <h2>How the oceans play a key role in planet Earth's biosphere</h2>
                             <Link to='../page3'>
-                                <Button id="startButton" variant="contained">Let's start!</Button>
+                                <Button onClick={()=>{buttonSound.play()}} id="startButton" variant="contained">Let's start!</Button>
                             </Link>
 
                         </div>
