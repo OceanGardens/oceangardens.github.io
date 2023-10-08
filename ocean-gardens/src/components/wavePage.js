@@ -13,10 +13,14 @@ function WavePage() {
     navigate('/landingPage'); // Replace '/' with the desired route
   };
 
+  const navigateToNext = () => {
+    navigate('/page3')
+  }
+
   const texts = [
     {
-      "upperText": "Even though the oceans cover 70% of Earth's surface, it is estimated that we humans have only explored 20% of them.   Ranging from shallow waters full of marine life to deep underwater valleys ranging up to 10,935 meters (35,876 feet) in depth, humanity has still much to learn about them. ",
-      "lowerText": "For a comparison, the number of people that have already been to space is more than 10 times bigger than the number of people who has visited Challenger Deep, the lowest point of the seabed. "
+      "upperText": "Even though the oceans cover 70% of Earth's surface, it is estimated that we humans have only explored 20% of them. From shallow waters full of marine life to deep underwater valleys ranging up to 10,935 meters (35,876 feet) in depth, humanity has still much to learn about them. ",
+      "lowerText": "For a comparison, the number of people that have already been to space is more than 10 times bigger than the number of people who have visited Challenger Deep, the lowest point of the seabed. "
     },
     {
       "upperText": "Even if we still have much to learn, we already know that the oceans play a crucial role in many aspects of our daily lives - even for those who live far from the shores. From our oceans, we obtain a significant amount of food and materials such as salt, sand and oil.",
@@ -36,7 +40,7 @@ function WavePage() {
     if (i < texts.length - 1) {
       seti(i + 1);
     } else {
-      navigateToHome();
+      navigateToNext();
     }
     
   }
@@ -56,7 +60,7 @@ function WavePage() {
     <div id="wavePage">
       <div className="header">
         <div className="inner-header">
-          <h1>{upperText}</h1>
+          <h1 style={{fontSize: '3.5vh'}}>{upperText}</h1>
         </div>
         <div>
           <svg
@@ -99,7 +103,7 @@ function WavePage() {
       </div>
       <div className="content">
         <div id="lowerTextDiv">
-          <h1>{lowerText}</h1>
+          <h1 style={{fontSize: '3.5vh'}}>{lowerText}</h1>
           <ButtonGroup id="buttonGroup" variant="outlined">
             <Button onClick={previous}>Previous</Button>
             <Button onClick={next}>Next</Button>
