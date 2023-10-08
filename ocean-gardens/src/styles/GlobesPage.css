@@ -31,23 +31,27 @@
   z-index: 1000;
 }
 
+#header h2 {
+  font-family: 'Poppins';
+  color: white;
+  font-weight: 400;
+  margin: 0;
+}
+
 .small-font {
   font-size: 14px;
 }
 
 .image-overlay {
-    position: absolute;
-    background-color: azure;
-    top: 40%;
-    right: 1%;
-    /* width: 200px; Fixed pixel value */
-    /* height: auto; Automatically adjust height to maintain aspect ratio */
-    transform: scale(0.62, 0.62); /* Initial scaling without distortion */
-    transform-origin: top right; /* Set the scaling origin to the top-left corner */
-
-    z-index: 1; /* Adjust the z-index to control the stacking order */
-    pointer-events: none; /* Allows interactions with the globe underneath */
-    
+  position: absolute;
+  background-color: rgb(122, 173, 214);
+  border-radius: 10px;
+  top:5%;
+  right: 5%;
+  transform: scale(0.75, 0.75); /* Initial scaling without distortion */
+  transform-origin: top right; /* Set the scaling origin to the top-left corner */
+  z-index: 1; /* Adjust the z-index to control the stacking order */
+  pointer-events: none; /* Allows interactions with the globe underneath */
 }
 
 .image-overlay img {
@@ -88,32 +92,32 @@
     text-align: center;
   }
  
-  .info-box {
+  #header .info-box {
     
-    background-color: #f8f9fa; /* Bootstrap light gray background color */
-    padding: 20px;
-    border: 1px solid #dee2e6; /* Bootstrap border color */
-    border-radius: 4px; /* Bootstrap border radius */
-    max-width: 100%;
-    text-align: left;
+    background-color: #265d9459; /* Bootstrap light gray background color */
+    text-align: center;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
  
- .info-box h2{
+#header .info-box .info-box h2{
   color: black;
 }
 
-  h2 {
+#header .info-box h2 {
     font-size: 1.5rem;
     line-height: 1.4;
     margin-bottom: 20px;
   }
  
-  p {
+  #header .info-box  p {
     margin-bottom: 10px;
   }
  
-  a {
-    color: #007bff;
+  #header .info-box a {
+    color: #4ca2ff;
     text-decoration: none;
     font-weight: bold;
   }

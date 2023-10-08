@@ -79,7 +79,22 @@ function GlobesPage() {
     <div>
       <div id="header">
         {renderText()}
-        <div className="button-group">
+        <div style={{display: 'flex', alignItems: "center", justifyContent: "space-around"}}>
+          <Button variant="contained"
+            onClick={() => changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}
+          >
+            Water Temperature
+          </Button>
+          <Button variant="contained"
+            onClick={() => changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}
+          >
+            Chlorophyll Concentration
+          </Button>
+          <Button variant="contained"
+            onClick={() => changeImages(imageRad, absortionScale, 'GlobeAbsortion')}
+          >
+            Photosynthetically available radiation
+          </Button>
           <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
 
             <Link to='../previewGlobesPage'>
@@ -107,6 +122,7 @@ function GlobesPage() {
           labelAltitude={0.05}
         />
         <img src={scalaImage} alt="Image Overlay" className="image-overlay" />
+
         <div className="buttons-container">
           <div className="button-group-vert" style={{position: 'relative', left: '0vw'}} >
             <ButtonGroup orientation = 'vertical' variant="contained">
@@ -128,6 +144,7 @@ function GlobesPage() {
             </ButtonGroup>
           </div>
         </div>
+
       </div>
     </div>
   );

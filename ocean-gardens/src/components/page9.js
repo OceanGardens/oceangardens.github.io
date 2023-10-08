@@ -26,7 +26,8 @@ function Page9() {
 
   const navigatePrevious = () => {
     buttonSound.play()
-    navigate("globesPage")
+    navigate("/GlobesPage")
+
   }
 
   return (

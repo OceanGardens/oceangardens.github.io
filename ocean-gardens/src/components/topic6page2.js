@@ -28,7 +28,7 @@ function Topic6page2() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}> The entire planet has to work together in order to preserve the oceans and our home. Major companies and governments need to create plans of actions to preserve and protect the Aquasphere.</h1>
+                    <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}> The entire planet has to work together in order to preserve the oceans and our home. Major companies and governments need to create plans of actions to preserve and protect the Hydrosphere.</h1>
                       
                 </motion.div>
                 <motion.div
