@@ -1,7 +1,0 @@
-#game {
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    width: 100vw;
-    height: 70vh;
-}
