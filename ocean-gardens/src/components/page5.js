@@ -39,7 +39,7 @@ function Page5() {
                                 <Link to='../page4'>
                                     <Button>Previous</Button>
                                 </Link> 
-                                <Link to='../landingPage'>
+                                <Link to='../globesPage'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>

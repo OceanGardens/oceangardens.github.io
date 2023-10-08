@@ -13,6 +13,10 @@ function WavePage() {
     navigate('/landingPage'); // Replace '/' with the desired route
   };
 
+  const navigateToNext = () => {
+    navigate('/page3')
+  }
+
   const texts = [
     {
       "upperText": "Even though the oceans cover 70% of Earth's surface, it is estimated that we humans have only explored 20% of them.   Ranging from shallow waters full of marine life to deep underwater valleys ranging up to 10,935 meters (35,876 feet) in depth, humanity has still much to learn about them. ",
@@ -36,7 +40,7 @@ function WavePage() {
     if (i < texts.length - 1) {
       seti(i + 1);
     } else {
-      navigateToHome();
+      navigateToNext();
     }
     
   }
