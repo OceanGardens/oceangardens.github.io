@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/transmissionPage.css';
+import '../styles/creditsPage.css';
 import MatrixRain from './matrixRain';
 import Image from '../resources/wallpaper/wallpaper.jpg'
 import {useLinkClickHandler, Link} from 'react-router-dom'
@@ -8,7 +8,7 @@ import { Howl, Howler } from 'howler';
 import soundSrc from '../resources/waveSound.mp3'
 import BOTAO from '../resources/sample-3s.mp3'
 
-function TransmissionPage(props) {
+function CreditsPage(props) {
   const [msg1, setMsg1] = useState('');
   const [msg2, setMsg2] = useState('');
   const [msg3, setMsg3] = useState('');
@@ -18,8 +18,10 @@ function TransmissionPage(props) {
   const [msg7, setMsg7] = useState('');
   const [msg8, setMsg8] = useState('');
   const [msg9, setMsg9] = useState('');
+  const [msg10, setMsg10] = useState('');
+  const [msg11, setMsg11] = useState('');
   const [stage2, setStage] = useState(0);
-  const [decoding, setDecode] = useState(false);
+  const [decoding, setDecode] = useState(true);
   const [buttonHeight, setButtonHeight] = useState(true)
   var sound = new Howl({
     src: [soundSrc],
@@ -112,7 +114,6 @@ function TransmissionPage(props) {
   };
 
   const handleClickOutsideRef = (event) => {
-    props.setClicks(props.clicks+1)
     
     if(stage2===1){
       //Send second messa
@@ -122,15 +123,17 @@ function TransmissionPage(props) {
       setMsg1('')
       setMsg2('')
       setMsg3('')
-      setTimeout(()=>setButtonHeight(false), 9500);
+      setTimeout(()=>setButtonHeight(false), 5600);
       //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
       
-      var messenger4 = new Messenger("Dear inhabitants of TRAPPIST-1 planetary system,", setMsg4, 0);
-      var messenger5 = new Messenger("Greetings from Earth!", setMsg5, 1500);
-      var messenger6 = new Messenger("We are sending this transmission as a gift to you,", setMsg6, 3000);
-      var messenger7 = new Messenger("our cosmic neighbors,", setMsg7, 4500);
-      var messenger8 = new Messenger("so you can experience the beauty of our greatest garden: the oceans.", setMsg8, 6000);
-      var messenger9 = new Messenger("Click on the screen to start", setMsg9, 7500);
+      var messenger4 = new Messenger("Made by Students at UNICAMP:", setMsg4, 0);
+      var messenger5 = new Messenger("Andreas Cisi", setMsg5, 0);
+      var messenger6 = new Messenger("Bernardo Archegas", setMsg6, 600);
+      var messenger7 = new Messenger("Bruno Freitas", setMsg7, 1200);
+      var messenger8 = new Messenger("Daniel Hosomi", setMsg8, 1800);
+      var messenger9 = new Messenger("Felipe Brabes", setMsg9, 2400); 
+      var messenger10 = new Messenger("Naim Shaikhzadeh", setMsg10, 3000);
+      var messenger11 = new Messenger("Click on the screen to restart the journey...", setMsg11, 3600);
       return
     }else{
       
@@ -143,13 +146,13 @@ function TransmissionPage(props) {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutsideRef);
-    if(props.clicks == 0 && stage2 == 0){
-    var messenger1 = new Messenger("Receiving new radio transmission...", setMsg1, 1500);
+    if(stage2 == 0){
+    var messenger1 = new Messenger("We hope you enjoyed our transmission", setMsg1, 1000);
 
-    var messenger2 = new Messenger("Distance from source: 39.46 light years", setMsg2, 3500);
+    var messenger2 = new Messenger("This was our submission to NASA Space Apps 2023", setMsg2, 2500);
 
-    const messenger3 = new Messenger("Click on the screen to decode...", setMsg3, 5500);
-    setTimeout(()=>setStage(stage2+1), 7500);
+    const messenger3 = new Messenger("Click on the screen to continue...", setMsg3, 4000);
+    setTimeout(()=>setStage(stage2+1), 6000);
     }
     return () =>{
       document.removeEventListener('mousedown', handleClickOutsideRef)
@@ -159,26 +162,28 @@ function TransmissionPage(props) {
   
   return (
     <>
-      <motion.div className="transmissionPage"
+      <motion.div className="creditsPage"
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}>
         
         <MatrixRain/>
-        <Link to='landingPage'>
+        <Link to='../landingPage'>
             <button onClick={()=>{sound.play(); buttonSound.play()}} id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
             </Link>
         
-        <p id='message1'>{msg1}</p>
-        <p id='message2'>{msg2}</p>
-        <p id='message3'>{msg3}</p>
-        <p id='message4'>{msg4}</p>
+        <p id='messenger1'>{msg1}</p>
+        <p id='messenger2'>{msg2}</p>
+        <p id='messenger3'>{msg3}</p>
+        <p id='messenger4'>{msg4}</p>
         <div id='mail'>
-          <p id='message5'>{msg5}</p>
-          <p id='message6'>{msg6}</p>
-          <p id='message7'>{msg7}</p>
-          <p id='message8'>{msg8}</p>
-          <p id='message9'>{msg9}</p>
+          <p id='messenger5'>{msg5}</p>
+          <p id='messenger6'>{msg6}</p>
+          <p id='messenger7'>{msg7}</p>
+          <p id='messenger8'>{msg8}</p>
+          <p id='messenger9'>{msg9}</p>
+          <p id='messenger10'>{msg10}</p>
+          <p id='messenger11'>{msg11}</p>
         </div>
         
       </motion.div>
@@ -186,4 +191,4 @@ function TransmissionPage(props) {
   );
 }
 
-export default TransmissionPage;
+export default CreditsPage;
