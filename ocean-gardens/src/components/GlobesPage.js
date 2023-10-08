@@ -21,23 +21,26 @@ function GlobesPage() {
       case 'ChloroPage':
         return (
           <div className="info-box">
-            <h2>Visualize the concentration of chlorophyll on Earth's water bodies!</h2>
-            <p>The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll levels, except for black, which signifies an absence of water. Higher chlorophyll levels contribute to richer marine life. Feel free to zoom in, move around, and explore!</p>
-            <p className="small-font"> You can change the displayed information below. Images from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
+            <h2>Visualize the concentration of chlorophyll on Earth's water!</h2>
+            <p>The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll levels. Black indicates no water. 
+              Higher chlorophyll levels contribute to a richer marine life! Feel free to move it around and explore!</p>
+            <p className="small-font"> You can change the displayed information below and try to find some corelations! Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA. Data from 2022</a></p>
           </div>
         );
       case 'GlobeOceanTemperature':
         return (
           <div className="info-box">
             <h2>Visualize the Temperature of the Oceans on Earth!</h2>
-            <p>The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black which means there is no water. Feel free to zoom in, move around, and explore!</p>
+            <p>The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures. Black means no water. Feel free to move it around and explore!</p>
+            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
           </div>
         );
       case 'GlobeAbsortion':
         return (
           <div className="info-box">
             <h2>Visualize the Capacity of light absorption on Earth's water!</h2>
-            <p>The color intensity represents the average in 2022, at daytime. Darker colors indicate higher temperatures, with an exception of black which means there is no water. Can you find the relation between this and the temperature of the water? Feel free to zoom in, move around, and explore!</p>
+            <p>The color intensity represents the average in 2022, at daytime. Darker colors indicate higher temperatures. Black means no water. Can you find the relation between this and the temperature of the water? Feel free to move it around and explore!</p>
+            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
           </div>
         );
       default:
@@ -62,7 +65,7 @@ function GlobesPage() {
     if (globeRef.current) {
       const controls = globeRef.current.controls();
       controls.enableZoom = false;
-      globeRef.current.pointOfView({ lat: 20.88, lng: -97.14, altitude: 2.2 });
+      globeRef.current.pointOfView({ lat: 20.88, lng: -97.14, altitude: 3.0 });
     }
   }, []); // Empty dependency array ensures the effect runs once when the component mounts
 
@@ -73,10 +76,12 @@ function GlobesPage() {
         {renderText()}
         <div className="button-group">
           <ButtonGroup variant="contained" style={{display:'flex', position: 'relative', left: '0vh'}}>
-            <Link to='../page4'>
+
+            <Link to='../page8'>
               <Button>Previous</Button>
             </Link> 
-            <Link to='../globesPage'>
+            <Link to='../page9'>
+
               <Button>Next</Button>
             </Link>
           </ButtonGroup>

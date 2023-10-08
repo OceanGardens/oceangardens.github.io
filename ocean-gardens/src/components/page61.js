@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import {motion} from 'framer-motion'
-import Image from '../resources/nasa/andamanSea.jpg'
+import Image from '../resources/nasa/northSeaBlooms.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import  ButtonGroup from '@mui/material/ButtonGroup';
 
-function Page3() {
+function Page61() {
 
     return(
 
-        <motion.div className = 'page3'
+        <motion.div className = 'page61'
         initial={{width: 0}}
         animate={{width: '100%'}}
         
@@ -24,22 +24,22 @@ function Page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
-                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for life on Earth?</h2>
+                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '9vh'}}>Let’s preserve and restore our Oceans.</h1>
+                    <h2 style={{position:'relative', left:'3vh', color:'#ddf', fontSize: '7vh', maxWidth: '90%', textAlign: "left"}}>Living oceans means living Earth.</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
                 animate={{right: '-50vw'}}
                 transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'10vh', width:'45vw'}}
+                style={{position: 'relative', top:'14vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4vh', textAlign:'right'}}>One of the fundamental building blocks of life on Earth, alongside carbon, hydrogen, and nitrogen, oxygen is an essential chemical element found in the organic compounds that make up the bodies of living beings.</p>
-                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0'}}>
+                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Now that you know how important the oceans and the phytoplanktons are and what would happen if they suddenly disappeared, what can we do to protect them and preserve the Ocean?</p>
+                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'5vh', right: '0vw'}}>
-                                <Link to='../wavePage'>
+                                <Link to='../carousel'>
                                     <Button>Previous</Button>
                                 </Link> 
-                                <Link to='../page4'>
+                                <Link to='../page61'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>
@@ -52,4 +52,4 @@ function Page3() {
     )
 }
 
-export default Page3;   
+export default Page61;   

@@ -25,7 +25,7 @@ function Page7() {
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
                     <h1 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>Photosynthesis </h1>
-                    <h2 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify', maxWidth:'60vw'}}>is a process that utilizes water, light and CO2 to generate energy for certain living organisms that we call autotrophs, and, besides energy, it produces oxygen!</h2>
+                    <h2 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify', maxWidth:'60vw'}}>is a process that employs water, light, and CO2 to generate energy for specific living organisms known as autotrophs. In addition to energy, it also produces oxygen as a byproduct!</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
@@ -33,13 +33,14 @@ function Page7() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>It is also the main process that allows other organisms to live, because it produces almost every single molecule of oxygen gas that we breathe, and drops the levels of CO2!</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>It is common to think than trees are the main agents in creating Earth's oxygen by photosynthesis, especially considering vast forests such as the Amazon.</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'0vh', right: '0vw'}}>
                                 <Link to='../page6'>
                                     <Button>Previous</Button>
                                 </Link> 
                                 <Link to='../topic5page1'>
+
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>

@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: scroll;
+    overflow: hidden;
   }
   
 
@@ -39,7 +39,7 @@
     position: absolute;
     background-color: azure;
     top: 40%;
-    right: 5%;
+    right: 1%;
     /* width: 200px; Fixed pixel value */
     /* height: auto; Automatically adjust height to maintain aspect ratio */
     transform: scale(0.62, 0.62); /* Initial scaling without distortion */
@@ -60,7 +60,7 @@
     max-width: 30%;
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 1%;
 
     z-index: 10000; /* Adjust the z-index to control the stacking order */
     
@@ -95,7 +95,7 @@
     border: 1px solid #dee2e6; /* Bootstrap border color */
     border-radius: 4px; /* Bootstrap border radius */
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
  
  .info-box h2{

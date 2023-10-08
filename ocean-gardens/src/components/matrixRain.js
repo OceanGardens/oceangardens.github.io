@@ -90,7 +90,7 @@ const RainStream = props => {
 				marginTop: topPadding,
 				marginLeft: -35,
 				marginRight: -35,
-				textShadow: '0px 0px 8px rgba(32, 194, 14, 0.5)',
+				textShadow: '0px 0px 8px rgba(10, 52, 10, 0.7)',
 				fontSize: 25,
 			}}>
 			{stream.map((char, index) => (
@@ -99,7 +99,7 @@ const RainStream = props => {
 						marginTop: -12,
 						// Reduce opacity for last chars
 						opacity: index < 6 ? 0.1 + index * 0.15 : 1,
-						color: index === stream.length - 1 ? undefined : undefined,
+						color: index === stream.length - 1 ? 'rgba(10, 52, 10, 1)' : 'rgba(10, 52, 10, 1)',
 						textShadow:
 							index === stream.length - 1
 								? '0px 0px 20px rgba(255, 255, 255, 0)'

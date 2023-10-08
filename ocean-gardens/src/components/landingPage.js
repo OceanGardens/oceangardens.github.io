@@ -17,13 +17,16 @@ var buttonSound = new Howl({
     src: [BOTAO]
   })
 
+
 function LandingPage() {
 
     const navigate = useNavigate();
 
     const navigateToGlobePage = () => {
         buttonSound.play()
-        navigate('/creditsPage'); 
+
+        navigate('/initialGlobePage'); 
+
     };
 
     const getBackgroundImage=(width, height)=>{
