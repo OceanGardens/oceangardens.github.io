@@ -1,6 +1,7 @@
 import "../styles/minigamePage.css"
 import { Unity, useUnityContext } from "react-unity-webgl";
 import React, { useEffect, useState } from 'react';
+import {ButtonGroup, Button} from '@mui/material'
 
 function MinigamePage() {
     
@@ -40,11 +41,25 @@ function MinigamePage() {
     );
 
     return(
-            <Unity 
+            <div style = {{ width: '100%', height: '100%',background: '#000000',position: 'absolute', alignSelf: 'center' }}>
+              <div style = {{background: '#000000', width : '76%',  position: 'absolute', alignSelf: 'center',left: '12%', right:'12%',  top : '10%', bottom: '10%' ,
+            alignItems: 'center',display: 'flex'}}>
+                <Unity 
                 unityProvider={unityProvider}
                 devicePixelRatio={devicePixelRatio}
-                style={{width: '100%' }}
-            />
+                style = {{ width : '100%', margin: '0' }}
+          
+                />
+                
+            
+              </div>
+              <ButtonGroup variant = 'contained' style={{position: 'absolute', right:'2vw', bottom: '5vh', alignSelf: 'end'}}>
+              <Button>Previous</Button>
+              <Button>Next</Button>
+            </ButtonGroup>
+            
+            
+            </div>
     )
 
 }
