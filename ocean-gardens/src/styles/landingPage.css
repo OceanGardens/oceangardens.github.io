@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.landingPage {
+#landingPage {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -42,20 +42,20 @@
   background-color: rgb(15, 16, 88);
 }
 
-h1 {
+#landingPage h1 {
   font-size: 6rem;
   color:rgb(15, 16, 88);
   text-align: center;
 }
 
-h2 {
+#landingPage h2 {
   font-size: 2rem;
   text-align: center;
   color: rgb(15, 16, 88);
   margin-bottom: 2rem;
 }
 
-h3 {
+#landingPage h3 {
   text-align: center;
   color: rgb(15, 16, 88);
   align-self: end;
@@ -75,12 +75,12 @@ h3 {
   #landingPageContent {
     padding: 5vw;
   }
-  h1 {
+  #landingPage h1 {
     line-height: 1.2;
     font-size: 6rem;
     text-align: left;
   }
-  h2 {
+  #landingPage h2 {
     font-size: 2rem;
     text-align: left;
   }
@@ -90,11 +90,11 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
+  #landingPage h1 {
     line-height: 1.2;
     font-size: 4rem;
   }
-  h2 {
+  #landingPage h2 {
     font-size: 1.5rem;
   }
 }
