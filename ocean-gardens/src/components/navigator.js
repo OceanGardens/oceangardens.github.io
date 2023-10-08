@@ -19,8 +19,19 @@ import Page63 from './page63';
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
+
+import Topic5page1 from './topic5page1';
+import Topic5page2 from './topic5page2';
+import Topic5page3 from './topic5page3';
+import Topic5page4 from './topic5page4';
+import Topic6page1 from './topic6page1';
+import Topic6page2 from './topic6page2';
+import Topic6page3 from './topic6page3';
+import Topic6page4 from './topic6page4';
+import CreditsPage from './creditsPage';
 import Page9 from './page9';
 import Page8 from './page8'
+
 
 export default function Navigator(props){
     const location = useLocation();
@@ -40,6 +51,16 @@ export default function Navigator(props){
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
+
+                    <Route path = '/topic5page1' element={<Topic5page1/>} />
+                    <Route path = '/topic5page2' element={<Topic5page2/>} />
+                    <Route path = '/topic5page3' element={<Topic5page3/>} />
+                    <Route path = '/topic5page4' element={<Topic5page4/>} />
+                    <Route path = '/topic6page1' element={<Topic6page1/>} />
+                    <Route path = '/topic6page2' element={<Topic6page2/>} />
+                    <Route path = '/topic6page3' element={<Topic6page3/>} />
+                    <Route path = '/topic6page4' element={<Topic6page4/>} />
+
                     <Route path = '/page61' element={<Page61/>} />
                     <Route path = '/page62' element={<Page62/>} />
                     <Route path = '/page63' element={<Page63/>} />
