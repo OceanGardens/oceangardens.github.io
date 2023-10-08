@@ -33,7 +33,7 @@ function Topic5page1() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', top: '-5vh', textAlign:'right'}}>Until now, we showed you all their functions and impacts in our lives, but have you ever imagined how the world would be if their population was massively decreased?</p>
+                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', top: '-5vh', textAlign:'right'}}>Until now, we showed you all their impacts in our lives, but have you ever imagined how the world would be if their population was massively decreased?</p>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-8vh', right: '0vw'}}>
                                 <Link to='../landingPage'>

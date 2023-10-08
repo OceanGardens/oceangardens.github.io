@@ -38,18 +38,18 @@
 
 /* Add this to your CSS file */
 .scrollable-content {
-    max-height: 200px; /* Set a maximum height for the scrollable content */
+    max-height: 250px; /* Set a maximum height for the scrollable content */
     overflow-y: auto; /* Enable vertical scrolling */
   }
   
-
+  
 .content {
   text-align: center;
 }
 
 .info-box {
   background-color: #f8f9fa; /* Bootstrap light gray background color */
-  max-height: 60vh;
+  max-height: 70vh;
   width: 35vw;
   text-align: center;
 }

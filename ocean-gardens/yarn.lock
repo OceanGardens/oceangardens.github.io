@@ -10235,6 +10235,11 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-unity-webgl@^9.4.3:
+  version "9.4.3"
+  resolved "https://registry.npmjs.org/react-unity-webgl/-/react-unity-webgl-9.4.3.tgz"
+  integrity sha512-P/NhKil8EZRtT3q87DC0EgxdNd3c5wa34DMWr5128r2bZojgVIJJu+b20RtGaJpW4lxg6SB2PNN4+R2QujKlDw==
+
 react-water-wave@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/react-water-wave/-/react-water-wave-2.0.1.tgz"

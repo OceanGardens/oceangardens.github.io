@@ -25,8 +25,10 @@ function LandingPage() {
     const navigateToGlobePage = () => {
         buttonSound.play()
 
-        navigate('/initialGlobePage'); 
+        navigate('/minigamePage'); 
 
+
+        navigate('/initialGlobePage'); 
     };
 
     const getBackgroundImage=(width, height)=>{

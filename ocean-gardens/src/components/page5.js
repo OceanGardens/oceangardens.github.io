@@ -50,8 +50,8 @@ function Page5() {
                                     font: {
                                         color: 'white'
                                     },
-                                    height: 400,
-                                    width: 600,
+                                    height: 350,
+                                    width: 500,
                                     paper_bgcolor: 'rgba(0, 0, 0, 0)', // Transparent paper background
                                     plot_bgcolor: 'rgba(0, 0, 0, 0)', // Transparent plot background
                                     legend:{

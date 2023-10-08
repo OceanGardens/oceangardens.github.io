@@ -14,7 +14,7 @@ function Page9() {
   const navigate = useNavigate()
 
   const navigateNext = () => {
-    navigate("/page61")
+    navigate("/topic5page1")
   }
 
   const navigatePrevious = () => {

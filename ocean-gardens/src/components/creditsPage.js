@@ -126,14 +126,14 @@ function CreditsPage(props) {
       setTimeout(()=>setButtonHeight(false), 5600);
       //Mudar para estilo carta no canto da tela, ajustar espaçamento para não ficar estranho
       
-      var messenger4 = new Messenger("Made by Students at UNICAMP:", setMsg4, 0);
-      var messenger5 = new Messenger("Andreas Cisi", setMsg5, 0);
-      var messenger6 = new Messenger("Bernardo Archegas", setMsg6, 600);
-      var messenger7 = new Messenger("Bruno Freitas", setMsg7, 1200);
-      var messenger8 = new Messenger("Daniel Hosomi", setMsg8, 1800);
-      var messenger9 = new Messenger("Felipe Brabes", setMsg9, 2400); 
-      var messenger10 = new Messenger("Naim Shaikhzadeh", setMsg10, 3000);
-      var messenger11 = new Messenger("Click on the screen to restart the journey...", setMsg11, 3600);
+      var messenger4 = new Messenger("Made by undergraduate students from UNICAMP:", setMsg4, 0);
+      var messenger5 = new Messenger("Andreas Cisi", setMsg5, 1000);
+      var messenger6 = new Messenger("Bernardo Archegas", setMsg6, 1800);
+      var messenger7 = new Messenger("Bruno Freitas", setMsg7, 2600);
+      var messenger8 = new Messenger("Daniel Hosomi", setMsg8, 3400);
+      var messenger9 = new Messenger("Felipe Brabes", setMsg9, 4200); 
+      var messenger10 = new Messenger("Naim Shaikhzadeh", setMsg10, 5000);
+      var messenger11 = new Messenger("Click on the screen to restart the journey...", setMsg11, 5800);
       return
     }else{
       

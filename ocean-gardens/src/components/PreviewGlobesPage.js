@@ -68,7 +68,7 @@ function PreviewGlobesPage() {
           <Grid container>
             <Grid item className="text-center buttons-container" style={{ position: 'absolute', maxHeight: '5vh', right: '5vw', top: '32vh' }}>
               <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
-                <Link to="../page8">
+                <Link to="../page81">
                   <Button>Previous</Button>
                 </Link>
                 <Link to="../globesPage">
