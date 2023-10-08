@@ -29,9 +29,9 @@ function Page5() {
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
-                animate={{right: '-10vw'}}
+                animate={{right: '-0vw'}}
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
-                style={{position: 'relative', top:'-6vh', width:'85vw'}}
+                style={{position: 'relative', top:'-10vh', width:'95vw'}}
                 >   
                         <div style={{position:'relative'}}>
                             <Plot
@@ -61,7 +61,7 @@ function Page5() {
                                 }}
                             />
                         
-                            <h1 style={{position:'absolute', top: '0vh', left: '50vw', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
+                            <h1 style={{position:'absolute', top: '5vh', left: '55vw', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
                             <div style={{position:'absolute', right: '0vw', bottom: '5vh', marginLeft: 'auto', marginRight: '0'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../page4'>

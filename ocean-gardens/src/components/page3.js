@@ -24,14 +24,14 @@ function Page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
-                    <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Oxygen, </h1>
+                    <h1 style={{position:'relative', textAlign:'left', color:'#bbf', fontSize: '12vh'}}>Oxygen, </h1>
                     <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>why is it so important for life on Earth?</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
                 animate={{right: '-50vw'}}
                 transition={{duration: 1.2, ease: 'circOut'}}
-                style={{position: 'relative', top:'10vh', width:'45vw'}}
+                style={{position: 'relative', top:'5vh', width:'45vw'}}
                 >   
                         <p style={{position:'relative', color:'#fff', fontSize: '4vh', textAlign:'right'}}>One of the fundamental building blocks of life on Earth, alongside carbon, hydrogen, and nitrogen, oxygen is an essential chemical element found in the organic compounds that make up the bodies of living beings.</p>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0'}}>
