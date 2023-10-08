@@ -10,7 +10,7 @@ function WavePage() {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-    navigate('/landingPage'); // Replace '/' with the desired route
+    navigate('/InitialGlobePage'); // Replace '/' with the desired route
   };
 
   const navigateToNext = () => {

@@ -24,7 +24,9 @@ function LandingPage() {
 
     const navigateToGlobePage = () => {
         buttonSound.play()
+
         navigate('/initialGlobePage'); 
+
     };
 
     const getBackgroundImage=(width, height)=>{
