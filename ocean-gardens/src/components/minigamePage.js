@@ -1,6 +1,7 @@
 import "../styles/minigamePage.css"
 import { Unity, useUnityContext } from "react-unity-webgl";
 import React, { useEffect, useState } from 'react';
+import {Link} from "react-router-dom";
 import {ButtonGroup, Button} from '@mui/material'
 
 function MinigamePage() {
@@ -54,8 +55,12 @@ function MinigamePage() {
             
               </div>
               <ButtonGroup variant = 'contained' style={{position: 'absolute', right:'2vw', bottom: '5vh', alignSelf: 'end'}}>
-              <Button>Previous</Button>
-              <Button>Next</Button>
+              <Link to='../landingPage'>
+                    <Button>Previous</Button>
+                </Link> 
+                <Link to='../creditsPage'>
+                    <Button>Next</Button>
+                </Link>
             </ButtonGroup>
             
             

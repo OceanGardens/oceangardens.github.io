@@ -16,6 +16,9 @@ import Page7 from './page7';
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
 
+import MinigamePage from './minigamePage';
+import CreditsPage from './creditsPage';
+
 export default function Navigator(props){
     const location = useLocation();
 
@@ -30,10 +33,11 @@ export default function Navigator(props){
                     <Route path = '/page6' element={<Page6/>} />
                     <Route path = '/page7' element={<Page7/>} />
                     <Route path = '/landingPage' element={<LandingPage/>} />
-                    {/* <Route path = '/creditsPage' element={<CreditsPage/>} /> */}
+                    <Route path = '/creditsPage' element={<CreditsPage/>} />
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
+                    <Route path = '/minigamePage' element={<MinigamePage/>} />
                 </Routes>
            </AnimatePresence>
 }
