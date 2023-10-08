@@ -3,7 +3,7 @@ body {
     color: #ffffff;
   }
   
-  #message1 {
+  #messenger1 {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -17,7 +17,7 @@ body {
     text-overflow: ellipsis;
   }
 
-  #message2 {
+  #messenger2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,7 +31,7 @@ body {
     text-overflow: ellipsis;
   }
 
-  #message3 {
+  #messenger3 {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -45,7 +45,7 @@ body {
     text-overflow: ellipsis;
   }
 
-  #message4 {
+  #messenger4 {
     position: relative;
     left: 5%;
     top: 8.5vh;
@@ -58,10 +58,10 @@ body {
     text-overflow: ellipsis;
   }
 
-  #message5 {
+  #messenger5 {
     position: relative;
     left: 0%;
-    top: 16vh;
+    top: 10vh;
     overflow-wrap: break-word;
     font-family: Poppins;
     font-weight: 550;
@@ -71,10 +71,10 @@ body {
     text-overflow: ellipsis;
   }
 
-  #message6 {
+  #messenger6 {
     position: relative;
     left: 0%;
-    top: 21vh;
+    top: 13vh;
 
     overflow-wrap: break-word;
     font-family: Poppins;
@@ -84,10 +84,10 @@ body {
     font-size: 1.9rem;
   }
 
-  #message7 {
+  #messenger7 {
     position: relative;
     left: 0%;
-    top: 26vh;
+    top: 16vh;
     
     font-family: Poppins;
     font-weight: 550;
@@ -98,10 +98,10 @@ body {
     width: 90%;
   }
 
-  #message8 {
+  #messenger8 {
     position: relative;
     left: 0%;
-    top: 31vh;
+    top: 19vh;
     
     font-family: Poppins;
     font-weight: 550;
@@ -111,10 +111,36 @@ body {
     overflow-wrap: break-word;
   }
 
-  #message9 {
+  #messenger9 {
     position: relative;
     left: 0%;
-    top: 37vh;
+    top: 22vh;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+  }
+
+  #messenger10 {
+    position: relative;
+    left: 0%;
+    top: 25vh;
+    
+    font-family: Poppins;
+    font-weight: 550;
+    width: 85%;
+    text-shadow: 0 2px 2px rgba(#000, 0.9);
+    font-size: 1.9rem;
+    overflow-wrap: break-word;
+  }
+
+  #messenger11 {
+    position: relative;
+    left: 0%;
+    top: 28vh;
     
     font-family: Poppins;
     font-weight: 550;

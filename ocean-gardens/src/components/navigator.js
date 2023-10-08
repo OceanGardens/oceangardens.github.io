@@ -8,6 +8,7 @@ import { AnimatePresence } from 'framer-motion';
 import Page3 from './page3';
 import Page4 from './page4';
 import Page5 from './page5';
+import CreditsPage from './creditsPage';
 
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
@@ -24,6 +25,7 @@ export default function Navigator(props){
                     <Route path = '/page5' element={<Page5/>} />
 
                     <Route path = '/landingPage' element={<LandingPage/>} />
+                    <Route path = '/creditsPage' element={<CreditsPage/>} />
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
