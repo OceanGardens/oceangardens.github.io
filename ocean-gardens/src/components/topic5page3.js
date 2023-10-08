@@ -23,7 +23,7 @@ function Topic5page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.3vh'}}>In the aquatic environment, besides the oxygen problem, the food offer for ALL living beings would decrease, because the phytoplanktons are the base of the aquatic food chain, meaning that the diminish in their population leads to a decrease in every single trophic level.</h1>
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.3vh'}}>In the aquatic environment, besides the oxygen problem, the food offer for all living beings would decrease, because the phytoplanktons are the base of the aquatic food chain, meaning that the diminish in their population leads to a decrease in every single trophic level.</h1>
                   
                 </motion.div>
                 <motion.div

@@ -41,7 +41,7 @@ function InitialGlobePage() {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         enablePointerInteraction={false}
       />
-      <div className="text-overlay" style = {{width: '40vw', height: '60vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
+      <div className="text-overlay" style = {{width: '40vw', height: '70vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
         <Container fluid className="content" style = {{backgroundColor: 'rgba(255, 0, 255, 0)', padding: '0px'}}>
           <Grid container>
             <div className="info-box">
