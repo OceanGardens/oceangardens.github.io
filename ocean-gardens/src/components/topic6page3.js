@@ -41,7 +41,7 @@ We hope you could learn a little bit more about our Earth and mainly about our O
                                     <Button>Previous</Button>
                                 </Link> 
 
-                                <Link to='../topic6page4'>
+                                <Link to='../minigamePage'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>

@@ -21,7 +21,7 @@ function MinigamePage() {
 
     async function returnPrevious(){
       await unload()
-      navigate('/topic6page4');
+      navigate('/topic6page3');
 
     }
 

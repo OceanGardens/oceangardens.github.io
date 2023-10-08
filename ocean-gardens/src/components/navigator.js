@@ -25,7 +25,6 @@ import Topic5page4 from './topic5page4';
 import Topic6page1 from './topic6page1';
 import Topic6page2 from './topic6page2';
 import Topic6page3 from './topic6page3';
-import Topic6page4 from './topic6page4';
 import Page9 from './page9';
 import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
@@ -58,7 +57,6 @@ export default function Navigator(props){
                     <Route path = '/topic6page1' element={<Topic6page1/>} />
                     <Route path = '/topic6page2' element={<Topic6page2/>} />
                     <Route path = '/topic6page3' element={<Topic6page3/>} />
-                    <Route path = '/topic6page4' element={<Topic6page4/>} />
 
                     <Route path = '/page61' element={<Page61/>} />
                     <Route path = '/page62' element={<Page62/>} />
