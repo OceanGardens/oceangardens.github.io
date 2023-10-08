@@ -7,6 +7,7 @@ import image4 from "../resources/phytoplankton/cyanophite.jpeg"
 import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material'
 import { useNavigate } from 'react-router-dom';
+import CarouselComp from './CarouselPage';
 
 function Page9() {
 
@@ -68,7 +69,7 @@ But do not think that they are this simple… The variety of species, shapes, si
       <p>
           This has a grand impact on the quantity of individuals in the water, their concentration and the amount of oxygen they produce through photosynthesis. For example, in a lenght of 400µm we can fit 200 nanoplâncton of 2µm, but only 2 microplâncton of 200µm of length. Studies point out that the nanoplânctons are responsible for most of the oxygen production and carbon fixation!
       </p>
-      
+      <CarouselComp/>
       <p>To sum up, they are responsible for producing massive amounts of oxygen, filtering light penetration in the ocean and fixating tons of CO2 that would otherwise be at the atmosphere. They are also the base of the food chain - serving as food to many animals. Therefore, they are responsible for maintaining the whole maritime ecosystem balanced, and, by consequence, also the whole Earth ecosystem as we know. But have you ever imagined an Earth without the phytoplanktons? How would it be?</p>
       <div style={{textAlign:"right"}}>
         <ButtonGroup variant="contained">
