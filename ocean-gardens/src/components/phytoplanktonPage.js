@@ -1,22 +1,22 @@
 import React from 'react';
-import '../styles/imagePage.css'
+import '../styles/phytoplanktonPage.css'
 import image2 from "../resources/phytoplankton/diatomaceas.webp" 
 import image3 from "../resources/phytoplankton/singlediatomacea.jpg"
 import ButtonGroup from '@mui/material/Button';
 import Button from '@mui/material/Button';
-//import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function InfoPage() {
+function PhytoplanktonPage() {
 
-  //const navigate = useNavigate()
-//
-  //const navigateNext = () => {
-  //  navigate("/phytoplanktons1")
-  //}
-//
-  //const navigatePrevious = () => {
-  //  navigate("/previous1")
-  //}
+  const navigate = useNavigate()
+
+  const navigateNext = () => {
+    navigate("/landingPage")
+  }
+
+  const navigatePrevious = () => {
+    navigate("/page5")
+  }
 
   return (
     <div id="imagePage">
@@ -70,12 +70,12 @@ function InfoPage() {
         </div>
       </div>
       <ButtonGroup variant="contained">
-        <Button>Previous</Button>
-        <Button>Next</Button>
+        <Button onClick={navigatePrevious}>Previous</Button>
+        <Button onClick={navigateNext}>Next</Button>
       </ButtonGroup>
       
     </div>
   );
 }
 
-export default InfoPage;
+export default PhytoplanktonPage;

@@ -3,7 +3,7 @@ import WaterWave from 'react-water-wave';
 import LandingPage from './components/landingPage';
 import ContentPage from './components/wavePage';
 import Navigator from './components/navigator';
-import ImagePage from './components/imagePage';
+import ImagePage from './components/phytoplanktonPage';
 import TransmissionPage from './components/transmissionPage'
 import {Helmet} from "react-helmet"
 import React, {useState} from 'react';  

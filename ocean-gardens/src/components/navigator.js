@@ -10,6 +10,7 @@ import Page4 from './page4';
 import Page5 from './page5';
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
+import PhytoplanktonPage from './phytoplanktonPage';
 
 export default function Navigator(props){
     const location = useLocation();
@@ -25,6 +26,7 @@ export default function Navigator(props){
                     <Route path = '/wavePage' element={<WavePage/>} />
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
+                    <Route path = '/phytoplancton' element={<PhytoplanktonPage/>} />
                 </Routes>
            </AnimatePresence>
 }
