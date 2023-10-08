@@ -10,6 +10,7 @@ import InitialGlobePage from './InitialGlobePage';
 import Page3 from './page3';
 import Page4 from './page4';
 import Page5 from './page5';
+import CarouselPage from './CarouselPage';
 
 export default function Navigator(props){
     const location = useLocation();
@@ -24,6 +25,7 @@ export default function Navigator(props){
                     <Route path = '/page3' element={<Page3/>} />
                     <Route path = '/page4' element={<Page4/>} />
                     <Route path = '/page5' element={<Page5/>} />
+                    <Route path = '/carousel' element={<CarouselPage/>} />
                 </Routes>
            </AnimatePresence>
 }
