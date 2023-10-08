@@ -39,7 +39,7 @@ function Topic6page4() {
                                 <Link to='../topic6page3'>
                                     <Button>Previous</Button>
                                 </Link> 
-                                <Link to='../creditsPage'>
+                                <Link to='../minigamePage'>
                                     <Button>Next</Button>
                                 </Link>
                             </ButtonGroup>

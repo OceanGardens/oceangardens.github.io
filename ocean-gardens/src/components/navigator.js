@@ -16,11 +16,8 @@ import Page62 from './page62';
 import Page63 from './page63';
 import Page81 from './page81'
 import CreditsPage from './creditsPage'
-
 import GlobesPage from "./GlobesPage"
 import InitialGlobePage from './InitialGlobePage';
-import CreditsPage from './creditsPage';
-
 import Topic5page1 from './topic5page1';
 import Topic5page2 from './topic5page2';
 import Topic5page3 from './topic5page3';
@@ -32,10 +29,7 @@ import Topic6page4 from './topic6page4';
 import Page9 from './page9';
 import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
-
-
 import MinigamePage from './minigamePage';
-import CreditsPage from './creditsPage';
 
 export default function Navigator(props){
     const location = useLocation();
@@ -56,10 +50,7 @@ export default function Navigator(props){
                     <Route path = '/initialGlobePage' element={<InitialGlobePage/>} />
                     <Route path = '/previewGlobesPage' element = {<PreviewGlobesPage/>} />
                     <Route path = '/globesPage' element={<GlobesPage/>} />
-
                     <Route path = '/minigamePage' element={<MinigamePage/>} />
-
-
                     <Route path = '/topic5page1' element={<Topic5page1/>} />
                     <Route path = '/topic5page2' element={<Topic5page2/>} />
                     <Route path = '/topic5page3' element={<Topic5page3/>} />
