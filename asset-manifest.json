@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4382d55c.css",
-    "main.js": "/static/js/main.74277279.js",
+    "main.js": "/static/js/main.072b41ce.js",
     "static/js/787.fd0698ee.chunk.js": "/static/js/787.fd0698ee.chunk.js",
     "static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.png": "/static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.40e4f9cdbe1889fe9033.png",
     "static/media/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.png": "/static/media/PhotosynAvailableRadiation-AQUA_MODIS.20220101_20221231.L3m.YR.PAR.par.4km.nc.a7df56254a1c82621ad7.png",
@@ -19,11 +19,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.4382d55c.css.map": "/static/css/main.4382d55c.css.map",
-    "main.74277279.js.map": "/static/js/main.74277279.js.map",
+    "main.072b41ce.js.map": "/static/js/main.072b41ce.js.map",
     "787.fd0698ee.chunk.js.map": "/static/js/787.fd0698ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4382d55c.css",
-    "static/js/main.74277279.js"
+    "static/js/main.072b41ce.js"
   ]
 }
