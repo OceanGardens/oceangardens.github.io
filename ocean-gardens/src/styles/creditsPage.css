@@ -3,7 +3,7 @@
     color: #ffffff;
   }
   
-  #messenger1 {
+  #messenger_1 {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -17,7 +17,7 @@
     text-overflow: ellipsis;
   }
 
-  #messenger2 {
+  #messenger_2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,7 +31,7 @@
     text-overflow: ellipsis;
   }
 
-  #messenger3 {
+  #messenger_3 {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -45,7 +45,7 @@
     text-overflow: ellipsis;
   }
 
-  #messenger4 {
+  #messenger_4 {
     position: relative;
     left: 5%;
     top: 8.5vh;
@@ -58,7 +58,7 @@
     text-overflow: ellipsis;
   }
 
-  #messenger5 {
+  #messenger_5 {
     position: relative;
     left: 0%;
     top: 10vh;
@@ -71,7 +71,7 @@
     text-overflow: ellipsis;
   }
 
-  #messenger6 {
+  #messenger_6 {
     position: relative;
     left: 0%;
     top: 13vh;
@@ -84,7 +84,7 @@
     font-size: 1.9rem;
   }
 
-  #messenger7 {
+  #messenger_7 {
     position: relative;
     left: 0%;
     top: 16vh;
@@ -98,7 +98,7 @@
     width: 90%;
   }
 
-  #messenger8 {
+  #messenger_8 {
     position: relative;
     left: 0%;
     top: 19vh;
@@ -111,7 +111,7 @@
     overflow-wrap: break-word;
   }
 
-  #messenger9 {
+  #messenger_9 {
     position: relative;
     left: 0%;
     top: 22vh;
@@ -124,7 +124,7 @@
     overflow-wrap: break-word;
   }
 
-  #messenger10 {
+  #messenger_10 {
     position: relative;
     left: 0%;
     top: 25vh;
@@ -137,7 +137,7 @@
     overflow-wrap: break-word;
   }
 
-  #messenger11 {
+  #messenger_11 {
     position: relative;
     left: 0%;
     top: 28vh;

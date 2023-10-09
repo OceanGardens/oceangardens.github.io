@@ -170,16 +170,16 @@ function TransmissionPage(props) {
             <button onClick={()=>{sound.play(); buttonSound.play()}} id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
             </Link>
         
-        <p id='message1'>{msg1}</p>
-        <p id='message2'>{msg2}</p>
-        <p id='message3'>{msg3}</p>
-        <p id='message4'>{msg4}</p>
+        <h3 id='message1'>{msg1}</h3>
+        <h3 id='message2'>{msg2}</h3>
+        <h3 id='message3'>{msg3}</h3>
+        <h3 id='message4'>{msg4}</h3>
         <div id='mail'>
-          <p id='message5'>{msg5}</p>
-          <p id='message6'>{msg6}</p>
-          <p id='message7'>{msg7}</p>
-          <p id='message8'>{msg8}</p>
-          <p id='message9'>{msg9}</p>
+          <h3 id='message5'>{msg5}</h3>
+          <h3 id='message6'>{msg6}</h3>
+          <h3 id='message7'>{msg7}</h3>
+          <h3 id='message8'>{msg8}</h3>
+          <h3 id='message9'>{msg9}</h3>
         </div>
         
       </motion.div>
