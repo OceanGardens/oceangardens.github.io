@@ -81,7 +81,7 @@
       size: 10px;
   }
  
-  /* Add this to your CSS file */
+  /* Add this to your CSS file */ 
   .scrollable-content {
       max-height: 200px; /* Set a maximum height for the scrollable content */
       overflow-y: auto; /* Enable vertical scrolling */
@@ -104,6 +104,10 @@
  
 #header .info-box .info-box h2{
   color: black;
+}
+
+#header p {
+  color: white;
 }
 
 #header .info-box h2 {

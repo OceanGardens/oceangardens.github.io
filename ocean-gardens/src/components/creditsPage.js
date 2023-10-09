@@ -161,7 +161,7 @@ function CreditsPage(props) {
   }, [stage2, setStage, decoding, setDecode, props.clicks]); // Empty dependency array to run the effect once on component mount
   
   return (
-    <>
+    <div id="creditsBody">
       <motion.div className="creditsPage"
         initial={{opacity: 0}}
         animate={{opacity: 1}}
@@ -187,7 +187,7 @@ function CreditsPage(props) {
         </div>
         
       </motion.div>
-    </>
+    </div>
   );
 }
 

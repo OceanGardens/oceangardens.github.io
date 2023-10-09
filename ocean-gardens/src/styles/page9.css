@@ -1,23 +1,23 @@
 #page9 {
   padding: 5vw;
-  background-color: white;
+  background: linear-gradient(to bottom, #b4cfe0, #4988af, #124b6e, #041f30);
 }
 
 #page9 li {
-  color: rgb(15, 16, 88);
+  color: #b4cfe0;
 }
 
 #page9 h1 {
   font-size: 4rem;
   font-weight: bold;
-  color: rgb(15, 16, 88);
+  color: rgba(15, 16, 88, 1);
 }
 
 #page9 p {
   text-align: justify;
   font-size: 1.5rem;
   line-height: 1.5;
-  color:  rgb(15, 16, 88);
+  color:  #b4cfe0;
 }
 
 .list {

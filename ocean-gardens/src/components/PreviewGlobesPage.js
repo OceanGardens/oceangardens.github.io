@@ -33,8 +33,8 @@ function PreviewGlobesPage() {
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         enablePointerInteraction={false}
       />
-      <div className="text-overlay" style = {{width: '40vw', height: '60vh', backgroundColor: 'rgba(255, 0, 255, 0)'}}>
-        <div className="info-box">
+      <div className="text-overlay">
+        <div className="globeBox">
           <h2>Time to explore!</h2>
           <p>The globe you are seeing is interactive and shows concentrations of chlorophyll on the ocean. Red representent high concentrations, while bluish tones representent low concentrations. Land is highlighted in black, thats why you
             can see the continents clearly.
@@ -43,7 +43,7 @@ function PreviewGlobesPage() {
         </div>
       </div>
       <div className="text-overlay2">
-        <div className="info-box">
+        <div className="globeBox">
           <p> Try to figure out the relations between those three elements! </p>
           <p> Remember that chlorophyll is related to photosynthesis, and that this requires the sun's  radiation. Enjoy!</p>
         </div>

@@ -7,6 +7,11 @@
     align-items: flex-start; /* Align items to the start (top) of the container */
   }
 
+#carouselDescription {
+  box-shadow: 5px 5px 10px #000000bb;
+  border-radius: 25px;
+}
+
 #carousel-naim .carousel-item {
 
     overflow: hidden; /* Hide any overflow */
@@ -24,7 +29,7 @@
 }
 
   #carousel-naim  .phytoplankton-container {
-    background-color: white;
+    background-color: transparent;
     width: 100%;
     margin: auto;
     padding: 20px;

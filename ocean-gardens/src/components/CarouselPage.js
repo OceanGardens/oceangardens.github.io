@@ -63,16 +63,14 @@ function CarouselComp(props) {
 
     const renderText = () => {
         return (
-          <Paper> 
+          <div id="carouselDescription"> 
             <Typography className="phyto-name">
               {currentItem.name}
             </Typography>
             <Typography className="phyto-desc">{currentItem.description}</Typography>
-          </Paper>
+          </div>
         );
       };
-    
-      
   
     return (
         <div id="carousel-naim" onKeyDown={handleKeyDown} tabIndex={0} >

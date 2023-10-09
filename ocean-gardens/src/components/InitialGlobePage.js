@@ -42,7 +42,7 @@ function InitialGlobePage() {
         enablePointerInteraction={false}
       />
       <div className="text-overlay" >
-        <div className="initialGlobeBox">
+        <div className="globeBox">
           <h2>This is our home, Planet Earth!</h2>
           <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
           <p>Our planet's surface is divided in three main parts: </p>
@@ -51,7 +51,7 @@ function InitialGlobePage() {
         </div>
       </div>
       <div className="text-overlay2">
-        <div className="initialGlobeBox">
+        <div className="globeBox">
           <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
           <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
         </div>
