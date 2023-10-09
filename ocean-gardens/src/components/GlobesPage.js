@@ -29,23 +29,23 @@ function GlobesPage() {
             <h2>Visualize the concentration of chlorophyll on Earth's water!</h2>
             <p>The color intensity represents the amount of chlorophyll. Darker colors indicate higher chlorophyll levels. Black indicates no water. 
               Higher chlorophyll levels contribute to a richer marine life! Feel free to move it around and explore!</p>
-            <p className="small-font"> You can change the displayed information below and try to find some corelations! Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA. Data from 2022</a></p>
+            <p className="small-font"> You can change the displayed information below and try to find some corelations! Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a>. Data from 2022.</p>
           </div>
         );
       case 'GlobeOceanTemperature':
         return (
           <div className="info-box">
             <h2>Visualize the Temperature of the Oceans on Earth!</h2>
-            <p>The color intensity represents the average temperature in 2022, at daytime. Darker colors indicate higher temperatures. Black means no water. Feel free to move it around and explore!</p>
-            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
+            <p>The color intensity represents the average temperature at daytime. Warmer colors indicate higher temperatures. Black means no water. Feel free to move it around and explore!</p>
+            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a>. Data from 2022.</p>
           </div>
         );
       case 'GlobeAbsortion':
         return (
           <div className="info-box">
             <h2>Visualize the Capacity of light absorption on Earth's water!</h2>
-            <p>The color intensity represents the average in 2022, at daytime. Darker colors indicate higher temperatures. Black means no water. Can you find the relation between this and the temperature of the water? Feel free to move it around and explore!</p>
-            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a></p>
+            <p>The color intensity represents the average photosynthetically available radiation. Warmer colors indicates more available radiation. Black means no water. Can you find the relation between this and the temperature of the water? Feel free to move it around and explore!</p>
+            <p className="small-font"> You can change the displayed information below. Images are from <a href="https://oceancolor.gsfc.nasa.gov/l3/">NASA</a>. Data from 2022.</p>
           </div>
         );
       default:
