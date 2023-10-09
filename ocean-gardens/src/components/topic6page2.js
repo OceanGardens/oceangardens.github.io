@@ -28,7 +28,7 @@ function Topic6page2() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}> The entire planet has to work together in order to preserve the oceans and our home. Major companies and governments need to create plans of actions to preserve and protect the Hydrosphere.</h1>
+                    <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}> The entire planet has to work together in order to preserve the oceans and our home. Major companies and governments need to create plans of actions to preserve and protect the Hydrosphere.</h1>
                       
                 </motion.div>
                 <motion.div
@@ -37,7 +37,7 @@ function Topic6page2() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'0vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>A few key components to achieve this is fighting against illegal mining and fishing, diminishing ocean plastic pollution, reducing gasses emissions and exploring sustainable energy sources.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>A few key components to achieve this is fighting against illegal mining and fishing, diminishing ocean plastic pollution, reducing gasses emissions and exploring sustainable energy sources.</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-10vh', left: '77vw'}}>

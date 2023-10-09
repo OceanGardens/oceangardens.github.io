@@ -28,7 +28,7 @@ function Page6() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'right', color:'white', fontSize: '10vh'}}>But where does Earth's oxygen come from?</h1>
+                    <h1 style={{position:'relative', textAlign: 'right', color:'white', fontSize: '4.9vw'}}>But where does Earth's oxygen come from?</h1>
                 </motion.div>
                 <motion.div
                 initial={{x: '-105vw'}}
@@ -36,7 +36,7 @@ function Page6() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'-1vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>The oxygen we breathe daily, which has been present in Earth's atmosphere for more than 2.4 billion years, is generated through a process called photosynthesis.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>The oxygen we breathe daily, which has been present in Earth's atmosphere for more than 2.4 billion years, is generated through a process called photosynthesis.</h1>
                         
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             

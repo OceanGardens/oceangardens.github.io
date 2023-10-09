@@ -28,7 +28,7 @@ function Topic6page3() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.3vh'}}>All these actions are challenges that we face to preserve our seas! But our largest garden really needs to be taken care of.
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '2.1vw'}}>All these actions are challenges that we face to preserve our seas! But our largest garden really needs to be taken care of.
 We hope you could learn a little bit more about our Earth and mainly about our Oceans, its habitants and the incredible things that it provides us.</h1>
                   
                 </motion.div>
@@ -38,9 +38,9 @@ We hope you could learn a little bit more about our Earth and mainly about our O
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'-0vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.3vh', top:'2vh', textAlign:'justify'}}>We encourage you to continue to study this topic, so that you can join us in the fight to preserve and protect it. Before you go, we prepared a little Quiz Game! We hope you enjoy it as much as we did.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.1vw ', top:'2vh', textAlign:'justify'}}>We encourage you to continue to study this topic, so that you can join us in the fight to preserve and protect it. Before you go, we prepared a little Quiz Game! We hope you enjoy it as much as we did.</h1>
                         
-                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', top:'1vh', bottom: '-5vh'}}>
+                        <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', top:'3vh', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../topic6page2'>
                                     <Button onClick={() => buttonSound.play()}>Previous</Button>

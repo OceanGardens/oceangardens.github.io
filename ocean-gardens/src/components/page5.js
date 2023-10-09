@@ -29,7 +29,7 @@ function Page5() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.5vh'}}>Moreover, oxygen gas plays a vital role in various aspects of human civilization, such as the combustion process, which is crucial for cooking, illumination, and industrial production.</h1>
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '2.2vw'}}>Moreover, oxygen gas plays a vital role in various aspects of human civilization, such as the combustion process, which is crucial for cooking, illumination, and industrial production.</h1>
                   
                 </motion.div>
                 <motion.div
@@ -66,7 +66,7 @@ function Page5() {
                                 }}
                             />
                         
-                            <h1 style={{position:'absolute', top: '5vh', left: '55vw', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
+                            <h1 style={{position:'absolute', top: '5vh', left: '55vw', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>Currently, Earth's atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases and water vapor.</h1>
                             <div style={{position:'absolute', right: '0vw', bottom: '5vh', marginLeft: 'auto', marginRight: '0'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../page4'>

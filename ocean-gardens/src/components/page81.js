@@ -30,7 +30,7 @@ function Page7() {
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
                     <h1 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>But how? </h1>
-                    <h2 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify', maxWidth:'60vw'}}>Phytoplankton, as well as ordinary plants, contain a pigment called chlorophyll in their bodies, which can capture the sunlight necessary for photosynthesis. This pigment is also responsible for the greenish color of all these organisms.</h2>
+                    <h2 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify', maxWidth:'60vw'}}>Phytoplankton, as well as ordinary plants, contain a pigment called chlorophyll in their bodies, which can capture the sunlight necessary for photosynthesis. This pigment is also responsible for the greenish color of all these organisms.</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
@@ -38,7 +38,7 @@ function Page7() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'right'}}>An interesting way to visualize the distribution of these oceanic gardens is to analyze the concentrations of chlorophyll across the oceans.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'right'}}>An interesting way to visualize the distribution of these oceanic gardens is to analyze the concentrations of chlorophyll across the oceans.</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'0vh', right: '0vw'}}>
                                 <Link to='../page8'>
