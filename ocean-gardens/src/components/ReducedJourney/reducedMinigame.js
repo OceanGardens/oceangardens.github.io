@@ -28,7 +28,7 @@ function ReducedMinigame() {
     async function returnPrevious(){
       buttonSound.play()
       await unload()
-      navigate('/reducedPrevGlobe');
+      navigate('/reducedGlobe');
 
     }
 

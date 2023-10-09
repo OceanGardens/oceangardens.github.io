@@ -36,7 +36,7 @@ function Topic5page4() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'-1vh', width:'45vw'}}
                 >   
-                        <h1 style={{top:'-4vh', position:'relative', color:'#fff', fontSize: '2.05vw', textAlign:'justify'}}>This affects every single aspect of life on Earth, because it drastically changes the way ecosystems interact with each other. The rise in temperature of the Earth is responsible for climate anomalies, melting of polar ice caps, forest fires and the rise of water temperature that impacts all marine life.</h1>
+                        <h1 style={{top:'-4vh', position:'relative', color:'#fff', fontSize: '1.95vw', textAlign:'justify'}}>This affects every single aspect of life on Earth, because it drastically changes the way ecosystems interact with each other. The rise in temperature of the Earth is responsible for climate anomalies, melting of polar ice caps, forest fires and the rise of water temperature that impacts all marine life.</h1>
                         
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '2vh'}}>
                             

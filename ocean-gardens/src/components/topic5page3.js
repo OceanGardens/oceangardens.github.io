@@ -37,7 +37,7 @@ function Topic5page3() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'-10vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.1vw', top:'10vh', textAlign:'justify'}}>As for the inflation of carbon dioxide levels, it would result in an intensification of Global Warming (phenomenon responsible for the rising in Earth's temperature), which brings a bunch of other negative consequences.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2vw', top:'10vh', textAlign:'justify'}}>As for the inflation of carbon dioxide levels, it would result in an intensification of Global Warming (phenomenon responsible for the rising in Earth's temperature), which brings a bunch of other negative consequences.</h1>
                         
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', top:'12vh', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>

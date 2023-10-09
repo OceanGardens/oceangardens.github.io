@@ -38,7 +38,7 @@ function Topic5page2() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'0vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>So if their population drastically decreased or if they were simply gone, the levels of oxygen in our atmosphere would highly decrease while the carbon levels would increase! But what are the impacts of those alterations on our Earth?</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2vw', textAlign:'justify'}}>So if their population drastically decreased or if they were simply gone, the levels of oxygen in our atmosphere would highly decrease while the carbon levels would increase! But what are the impacts of those alterations on our Earth?</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-10vh', left: '77vw'}}>
