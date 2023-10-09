@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cca6f3c1.css",
-    "main.js": "/static/js/main.491a7586.js",
+    "main.css": "/static/css/main.fed97e4a.css",
+    "main.js": "/static/js/main.3e7861e9.js",
     "static/js/787.fd0698ee.chunk.js": "/static/js/787.fd0698ee.chunk.js",
     "static/media/deepOcean.mp3": "/static/media/deepOcean.0583e6c317939377a0c9.mp3",
     "static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.png": "/static/media/chorolo-AQUA_MODIS.20220101_20221231.L3m.YR.CHL.chlor_a.4km.nc.40e4f9cdbe1889fe9033.png",
@@ -11,7 +11,6 @@
     "static/media/earth_daymap.jpg": "/static/media/earth_daymap.54672c1f3ba121d80470.jpg",
     "static/media/benguelaCurrent.png": "/static/media/benguelaCurrent.2dc768002e0335ff4a5f.png",
     "static/media/frenchWhitecaps.jpg": "/static/media/frenchWhitecaps.3012dcd988b8cf3b05bf.jpg",
-    "static/media/waveSound.mp3": "/static/media/waveSound.b88b4fcc6fee96c9ba39.mp3",
     "static/media/wallpaper.jpg": "/static/media/wallpaper.7ad865ba84a632c95dab.jpg",
     "static/media/southernChukchiSea.jpg": "/static/media/southernChukchiSea.47f3053efd80cc985e68.jpg",
     "static/media/balticSeaCyanobacteria.jpg": "/static/media/balticSeaCyanobacteria.e34fff2f646fe1c2744a.jpg",
@@ -35,17 +34,16 @@
     "static/media/synura.jpg": "/static/media/synura.bbdca4e37a7518b01750.jpg",
     "static/media/microalga.jpeg": "/static/media/microalga.9ef055bc13015e7e94be.jpeg",
     "static/media/dinoflagelados.webp": "/static/media/dinoflagelados.077a412e22b5089c47e7.webp",
-    "static/media/sample-3s.mp3": "/static/media/sample-3s.68e9be0168d87b9d956e.mp3",
     "static/media/click.mp3": "/static/media/click.b070217cc3ec9826fd89.mp3",
     "static/media/eugenoid.jpeg": "/static/media/eugenoid.fdf8ca04c5544f7880f7.jpeg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.cca6f3c1.css.map": "/static/css/main.cca6f3c1.css.map",
-    "main.491a7586.js.map": "/static/js/main.491a7586.js.map",
+    "main.fed97e4a.css.map": "/static/css/main.fed97e4a.css.map",
+    "main.3e7861e9.js.map": "/static/js/main.3e7861e9.js.map",
     "787.fd0698ee.chunk.js.map": "/static/js/787.fd0698ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cca6f3c1.css",
-    "static/js/main.491a7586.js"
+    "static/css/main.fed97e4a.css",
+    "static/js/main.3e7861e9.js"
   ]
 }
