@@ -2,7 +2,7 @@
 
 This repository was made for the NASA Space Apps Challenge 2023.
 
-You can access our site clicking [here](https://oceangardens.github.io).
+You can access our site clicking [here](https://oceangardens.github.io). We recomend to access it in Desktop.
 
 ### Contributors
 
