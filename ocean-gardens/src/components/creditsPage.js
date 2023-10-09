@@ -162,7 +162,7 @@ function CreditsPage(props) {
         <MatrixRain/>
         <Link to='../landingPage'>
             <button id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
-            </Link>
+        </Link>
         
         <p id='messenger1'>{msg1}</p>
         <p id='messenger2'>{msg2}</p>

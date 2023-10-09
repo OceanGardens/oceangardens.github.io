@@ -30,6 +30,11 @@ import Page9 from './page9';
 import Page8 from './page8'
 import PreviewGlobesPage from './PreviewGlobesPage';
 import MinigamePage from './minigamePage';
+import InitialGlobe from './ReducedJourney/initialGlobe';
+import ReducedGlobe from './ReducedJourney/reducedGlobe';
+import ReducedMinigame from './ReducedJourney/reducedMinigame';
+import ReducedPage9 from './ReducedJourney/reducedPage9';
+import ReducedPreviewGlobe from './ReducedJourney/reducedPrevGlobe';
 
 export default function Navigator(props){
     const location = useLocation();
@@ -59,13 +64,17 @@ export default function Navigator(props){
                     <Route path = '/topic6page2' element={<Topic6page2/>} />
                     <Route path = '/topic6page3' element={<Topic6page3/>} />
                     <Route path = '/topic6page4' element={<Topic6page4/>} />
-
                     <Route path = '/page61' element={<Page61/>} />
                     <Route path = '/page62' element={<Page62/>} />
                     <Route path = '/page63' element={<Page63/>} />
                     <Route path = '/page8' element={<Page8/>}/>
                     <Route path = '/page9' element={<Page9/>} />
                     <Route path = '/page81' element={<Page81/>} />
+                    <Route path = '/initialGlobe' element = {<InitialGlobe/>} />
+                    <Route path = '/reducedGlobe' element = {<ReducedGlobe/>} />
+                    <Route path = '/reducedMinigame' element = {<ReducedMinigame/>} />
+                    <Route path = '/reducedPage9' element = {<ReducedPage9/>} />
+                    <Route path = '/reducedPrevGlobe' element = {<ReducedPreviewGlobe/>} />
 
                 </Routes>
            </AnimatePresence>
