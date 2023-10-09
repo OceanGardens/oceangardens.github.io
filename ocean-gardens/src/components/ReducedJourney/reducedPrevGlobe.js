@@ -42,7 +42,7 @@ function ReducedPreviewGlobe() {
         <div className="globeBox">
           <h2>Time to explore!</h2>
           <p>The globe you are seeing is interactive and shows concentrations of chlorophyll on the ocean. Red representent high concentrations, while bluish tones representent low concentrations. Land is highlighted in black, thats why you
-            can see the continents clearly.
+            can see the continents clearly. 
           </p>
           <p>In the next page you will be able to explore the globe in more detail, visualizing also water temperature and available radiation.</p>
         </div>

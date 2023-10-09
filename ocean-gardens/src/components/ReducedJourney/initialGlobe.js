@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Globe from 'react-globe.gl';
 import image from '../../resources/earth_daymap.jpg'
 import { useCallback, useEffect } from "react";
-import '../../styles/InitialGlobePage.css'
+import '../../styles/reducedInitialGlobePage.css'
 import { Container, Grid, Button, ButtonGroup } from '@mui/material'; // Import Material-UI components
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -38,15 +38,15 @@ function InitialGlobe() {
 
 
   return (
-    <div className="globe-container">
+    <div className="tglobe-container">
       <Globe
         ref={globeRef}
         globeImageUrl={image}
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         enablePointerInteraction={false}
       />
-      <div className="text-overlay" >
-        <div className="globeBox">
+      <div className="ttext-overlay" >
+        <div className="tglobeBox">
           <h2>This is our home, Planet Earth!</h2>
           <p>But it should be called Planet Water, because 70% of its surface is covered by water, and only 30% by land. </p>
           <p>Our planet's surface is divided in three main parts: </p>
@@ -54,11 +54,11 @@ function InitialGlobe() {
           <p>Atmosphere: Our gas layer, composed of a lot of different gasses, such as oxygen and carbon dioxide...</p>
         </div>
       </div>
-      <div className="text-overlay2">
+      <div className="ttext-overlay2">
 
-        <div className="initialGlobeBox">
-          <p>Finally, the Hydrosphere! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-          <p>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the Oceans, their beauties and their importance to our lives.</p>
+        <div className="tinitialGlobeBox" style={{backgroundColor: '#265d9459', textAlign: 'center', marginBottom: '15px', padding: '15px', borderRadius: '15px'}}>
+          <p style={{color: 'rgb(255, 255, 255)'}}>Finally, the Hydrosphere! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
+          <p style={{color: 'rgb(255, 255, 255)'}}>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the Oceans, their beauties and their importance to our lives.</p>
         </div>
         <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
           <Link to="../landingPage">
