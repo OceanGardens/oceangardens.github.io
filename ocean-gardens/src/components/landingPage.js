@@ -13,6 +13,7 @@ import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import { Howl, Howler } from 'howler';
 import ButtonSound from '../resources/click.mp3'
+import { ButtonGroup } from 'react-bootstrap';
 var buttonSound = new Howl({
     src: [ButtonSound]
   })
@@ -25,6 +26,11 @@ function LandingPage() {
     const navigateToGlobePage = () => {
         buttonSound.play()
         navigate('/initialGlobePage'); 
+    };
+
+    const reducedJourney = () => {
+        buttonSound.play()
+        navigate('/initialGlobe'); 
     };
 
     const getBackgroundImage=(width, height)=>{
@@ -64,7 +70,10 @@ function LandingPage() {
                         <div id="landingPageTextContainer">
                             <h1>Ocean Gardens</h1>
                             <h2>How the oceans play a key role in planet Earth's biosphere</h2>
-                            <Button onClick={navigateToGlobePage} id="startButton" variant="contained">Let's start!</Button>
+                            <ButtonGroup variant='contained'>
+                                <Button onClick={navigateToGlobePage} id="startButton" variant="contained">Complete journey</Button>
+                                <Button onClick={reducedJourney} id="startButton" variant="contained" style={{position: 'relative', left: '2vw'}}>Reduced journey</Button>
+                            </ButtonGroup>
                         </div>
                         <h3>Click on the screen to generate water ripples!</h3>
                     </div> 
