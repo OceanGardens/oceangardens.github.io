@@ -1,0 +1,72 @@
+
+.tglobe-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .tbuttons-group{
+      flex-direction: row;
+  }
+  
+  .ttext-overlay {
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
+    max-height: 500px; /* Set a maximum height for the scrollable content */
+    overflow-y: hidden; /* Enable vertical scrolling */
+  
+  }
+  
+  .ttext-overlay2 {
+      position: absolute;
+      bottom: 0vh;
+      margin-bottom: 15px;
+      margin-right: 15px;
+      left: 63vw;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+      /* background-color: rgba(255, 255, 255, 0.t8); Add background color with some opacity */
+      z-index: 2; /* Ensure the overlay is on top of the canvas (increase if necessary) */
+    }
+  
+  
+  /* Add this to your CSS file */
+  .tscrollable-content {
+      max-height: 250px; /* Set a maximum height for the scrollable content */
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+    
+    
+  .tcontent {
+    text-align: center;
+  }
+  
+  .tglobeBox {
+    background-color: #265d9459;
+    max-height: 70vh;
+    width: 35vw;
+    border: 0px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: justify;
+  }
+  
+  .tglobe-container .tglobeBox p{
+    color: rgb(255, 255, 255)
+  }
+  
+  .ttext-overlay h2 {
+    color: rgb(255, 255, 255)
+  }

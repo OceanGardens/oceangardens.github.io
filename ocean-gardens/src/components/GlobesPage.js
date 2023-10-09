@@ -123,28 +123,7 @@ function GlobesPage() {
         />
         <img src={scalaImage} alt="Image Overlay" className="image-overlay" />
 
-        <div className="buttons-container">
-          <div className="button-group-vert" style={{position: 'relative', left: '0vw'}} >
-            <ButtonGroup orientation = 'vertical' variant="contained">
-              <Button
-                onClick={() => {buttonSound.play(); changeImages(imageCrolo, escalaCrolo, 'ChloroPage')}}
-              >
-                Chlorophyll Concentration
-              </Button>
-              <Button
-                onClick={() => {buttonSound.play(); changeImages(imageTemp, tempScale, 'GlobeOceanTemperature')}}
-              >
-                Water Temperature
-              </Button>
-              <Button
-                onClick={() => {buttonSound.play(); changeImages(imageRad, absortionScale, 'GlobeAbsortion')}}
-              >
-                Photosynthetically available radiation
-              </Button>
-            </ButtonGroup>
-          </div>
-        </div>
-
+        
       </div>
     </div>
   );
