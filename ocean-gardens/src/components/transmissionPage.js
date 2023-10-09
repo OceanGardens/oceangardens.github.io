@@ -6,8 +6,11 @@ import {useLinkClickHandler, Link} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import { Howl, Howler } from 'howler';
 import soundSrc from '../resources/deepOcean.mp3'
-import BOTAO from '../resources/click.mp3'
-
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function TransmissionPage(props) {
   const [msg1, setMsg1] = useState('');
   const [msg2, setMsg2] = useState('');
@@ -25,9 +28,7 @@ function TransmissionPage(props) {
     src: [soundSrc],
     loop: true
   })
-  var buttonSound = new Howl({
-    src: [BOTAO]
-  })
+  
   const Messenger = function (writeMsg, setter, timewait) {
     const m = this;
     if(stage2>1){

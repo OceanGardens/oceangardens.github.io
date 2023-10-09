@@ -4,7 +4,12 @@ import Image from '../resources/nasa/tasmanSea.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material'
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function Topic5page4() {
 
     return(
@@ -37,10 +42,10 @@ function Topic5page4() {
                             
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-6vh', left: '77vw'}}>
                                 <Link to='../topic5page3'>
-                                    <Button>Previous</Button>
+                                    <Button onClick={() => buttonSound.play()}>Previous</Button>
                                 </Link> 
                                 <Link to='../topic6page1'>
-                                    <Button>Next</Button>
+                                    <Button onClick={() => buttonSound.play()}>Next</Button>
                                 </Link>
                             </ButtonGroup>
         

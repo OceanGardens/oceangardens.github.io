@@ -5,7 +5,12 @@ import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material';
 import Plot from 'react-plotly.js';
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function Page6() {
 
     return(
@@ -65,10 +70,10 @@ function Page6() {
                             
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-11vh', left: '77vw'}}>
                                 <Link to='../page7'>
-                                    <Button>Previous</Button>
+                                    <Button onClick={() => buttonSound.play()}>Previous</Button>
                                 </Link> 
                                 <Link to='../page81'>
-                                    <Button>Next</Button>
+                                    <Button onClick={() => buttonSound.play()}>Next</Button>
                                 </Link>
                             </ButtonGroup>
         

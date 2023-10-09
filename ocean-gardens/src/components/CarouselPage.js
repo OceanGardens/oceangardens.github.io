@@ -8,6 +8,11 @@ import singlediatomacea from '../resources/phytoplankton/singlediatomacea.jpg'
 import synedra from '../resources/phytoplankton/synedra.jpg'
 import synura from '../resources/phytoplankton/synura.jpg'
 import { Link } from 'react-router-dom';
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
 
 function CarouselComp(props) {
     var items = [
@@ -42,14 +47,17 @@ function CarouselComp(props) {
     const [currentItem, setCurrentItem] = useState(items[0]);
     useEffect(() => {
         // Update the current item when the activeIndex changes
+        
         setCurrentItem(items[activeIndex]);
       }, [activeIndex, items]);
     
     const handleNext = () => {
+        buttonSound.play()
         setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
     };
 
     const handlePrev = () => {
+        buttonSound.play()
         setActiveIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
     };
 

@@ -4,7 +4,12 @@ import Image from '../resources/nasa/queenslandSawdust.jpg'
 import {Link} from "react-router-dom";
 import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material'
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 function Topic6page3() {
 
     return(
@@ -38,11 +43,11 @@ We hope you could learn a little bit more about our Earth and mainly about our O
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', top:'1vh', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', right: '0vh'}}>
                                 <Link to='../topic6page2'>
-                                    <Button>Previous</Button>
+                                    <Button onClick={() => buttonSound.play()}>Previous</Button>
                                 </Link> 
 
-                                <Link to='../topic6page4'>
-                                    <Button>Next</Button>
+                                <Link to='../minigamePage'>
+                                    <Button onClick={() => buttonSound.play()}>Next</Button>
                                 </Link>
                             </ButtonGroup>
                         </div>

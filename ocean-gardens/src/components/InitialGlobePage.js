@@ -6,7 +6,11 @@ import '../styles/InitialGlobePage.css'
 import { Container, Grid, Button, ButtonGroup } from '@mui/material'; // Import Material-UI components
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
 
 function InitialGlobePage() {
 
@@ -51,16 +55,17 @@ function InitialGlobePage() {
         </div>
       </div>
       <div className="text-overlay2">
-        <div className="globeBox">
-          <p>And finally, the Oceans! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
-          <p>In this transmission, we are going to tell you a little bit more about the Oceans, its beauties and its importance to our lives.</p>
+
+        <div className="initialGlobeBox">
+          <p>Finally, the Hydrosphere! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
+          <p>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the Oceans, their beauties and their importance to our lives.</p>
         </div>
         <ButtonGroup variant="contained" style={{ display: 'flex', position: 'relative', left: '0vh' }}>
           <Link to="../landingPage">
-            <Button>Previous</Button>
+            <Button onClick={()=>buttonSound.play()}>Previous</Button>
           </Link>
           <Link to="../wavePage">
-            <Button>Next</Button>
+            <Button onClick={()=>buttonSound.play()}>Next</Button>
           </Link>
         </ButtonGroup>
       </div>

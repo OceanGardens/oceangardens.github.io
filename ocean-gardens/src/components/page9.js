@@ -8,17 +8,26 @@ import Button from '@mui/material/Button';
 import {ButtonGroup} from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import CarouselComp from './CarouselPage';
+import { Howl, Howler } from 'howler';
+import ButtonSound from '../resources/click.mp3'
+var buttonSound = new Howl({
+    src: [ButtonSound]
+  })
+  
 
 function Page9() {
 
   const navigate = useNavigate()
 
   const navigateNext = () => {
+    buttonSound.play()
     navigate("/topic5page1")
   }
 
   const navigatePrevious = () => {
-    navigate("globesPage")
+    buttonSound.play()
+    navigate("/GlobesPage")
+
   }
 
   return (
