@@ -28,8 +28,8 @@ function Page4() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left", color:'#bbf'}}>Oxygen gas</h1>
-                    <h2 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}> It is all around us Earthlings, present in the atmosphere and dissolved in nearly every water source, including the oceans.</h2>
+                    <h1 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '3.8vw', maxWidth: '60%', textAlign: "left", color:'#bbf'}}>Oxygen gas</h1>
+                    <h2 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}> It is all around us Earthlings, present in the atmosphere and dissolved in nearly every water source, including the oceans.</h2>
                       
                 </motion.div>
                 <motion.div
@@ -38,7 +38,7 @@ function Page4() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'0vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Also represented by the formula O2, oxygen gas plays a significant role in the process of breathing, through which most of living beings generate the energy they need to sustain life.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>Also represented by the formula O2, oxygen gas plays a significant role in the process of breathing, through which most of living beings generate the energy they need to sustain life.</h1>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-10vh', left: '77vw'}}>

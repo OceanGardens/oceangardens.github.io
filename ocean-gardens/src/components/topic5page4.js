@@ -28,7 +28,7 @@ function Topic5page4() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '45vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '4.2vh'}}>Lastly, According to the International Panel on Climate Change (IPCC), there is a lot of evidence that human actions are also contributing to an alarming increase in Global Warming.</h1>
+                    <h1 style={{position:'relative', textAlign: 'justify', color:'white', fontSize: '2.05vw'}}>Lastly, According to the International Panel on Climate Change (IPCC), there is a lot of evidence that human actions are also contributing to an alarming increase in Global Warming.</h1>
                 </motion.div>
                 <motion.div
                 initial={{x: '-105vw'}}
@@ -36,7 +36,7 @@ function Topic5page4() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'-1vh', width:'45vw'}}
                 >   
-                        <h1 style={{top:'-4vh', position:'relative', color:'#fff', fontSize: '4.2vh', textAlign:'justify'}}>This affects every single aspect of life on Earth, because it drastically changes the way ecosystems interact with each other. The rise in temperature of the Earth is responsible for climate anomalies, melting of polar ice caps, forest fires and the rise of water temperature that impacts all marine life.</h1>
+                        <h1 style={{top:'-4vh', position:'relative', color:'#fff', fontSize: '2.05vw', textAlign:'justify'}}>This affects every single aspect of life on Earth, because it drastically changes the way ecosystems interact with each other. The rise in temperature of the Earth is responsible for climate anomalies, melting of polar ice caps, forest fires and the rise of water temperature that impacts all marine life.</h1>
                         
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '2vh'}}>
                             

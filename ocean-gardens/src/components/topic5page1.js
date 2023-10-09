@@ -30,7 +30,7 @@ function Topic5page1() {
                 style={{position: 'relative', top:'5vh', left: '5vw', width: '90vw'}}
                 >
                     <h1 style={{position:'relative', textAlign:'left', color:'white', fontSize: '12vh'}}>Phytoplanktons, </h1>
-                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '8vh', maxWidth: '60%', textAlign: "left"}}>What would happen if they were gone?</h2>
+                    <h2 style={{position:'relative', left:'3vh', color:'#fff', fontSize: '3.9vw', maxWidth: '60%', textAlign: "left"}}>What would happen if they were gone?</h2>
                 </motion.div>
                 <motion.div
                 initial={{right: '-200vw'}}
@@ -38,7 +38,7 @@ function Topic5page1() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'10vh', width:'45vw'}}
                 >   
-                        <p style={{position:'relative', color:'#fff', fontSize: '4.5vh', top: '-5vh', textAlign:'right'}}>Until now, we showed you all their impacts in our lives, but have you ever imagined how the world would be if their population was massively decreased?</p>
+                        <p style={{position:'relative', color:'#fff', fontSize: '2.2vw', top: '-5vh', textAlign:'right'}}>Until now, we showed you all their impacts in our lives, but have you ever imagined how the world would be if their population was massively decreased?</p>
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             <ButtonGroup variant="contained" style={{display:'flex', position: 'absolute', top:'-8vh', right: '0vw'}}>
                                 <Link to='../page9'>

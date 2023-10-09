@@ -29,7 +29,7 @@ function Page6() {
                 transition={{duration: 1.2, ease: 'circOut'}}
                 style={{position: 'relative', top:'5vh', left: '0vw', width: '90vw', height:'50vh'}}
                 >
-                    <h1 style={{position:'absolute', left: '50vw', textAlign: 'right', color:'white', fontSize: '4.5vh'}}>In reality, the primary agents are a group of microorganisms known as phytoplankton, consisting of microalgae and specific bacteria. These organisms predominantly live in aquatic environments, especially in the oceans.</h1>
+                    <h1 style={{position:'absolute', left: '50vw', textAlign: 'right', color:'white', fontSize: '2.2vw'}}>In reality, the primary agents are a group of microorganisms known as phytoplankton, consisting of microalgae and specific bacteria. These organisms predominantly live in aquatic environments, especially in the oceans.</h1>
                     <Plot
                         data = {[{
                             values: [28, 2, 70],
@@ -64,7 +64,7 @@ function Page6() {
                 transition={{duration: 1.2, ease: 'circOut', delay:1.5}}
                 style={{position: 'relative', top:'5vh', width:'45vw'}}
                 >   
-                        <h1 style={{position:'relative', color:'#fff', fontSize: '4.5vh', textAlign:'justify'}}>Because of that, you can think of our oceans as massive gardens. It is those beautiful painting-like gardens that you are seeing in the background of these pages, as seen by NASA satellites.</h1>
+                        <h1 style={{position:'relative', color:'#fff', fontSize: '2.2vw', textAlign:'justify'}}>Because of that, you can think of our oceans as massive gardens. It is those beautiful painting-like gardens that you are seeing in the background of these pages, as seen by NASA satellites.</h1>
                         
                         <div style={{position: 'relative', marginLeft: 'auto', marginRight: '0', bottom: '-5vh'}}>
                             
