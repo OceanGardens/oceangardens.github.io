@@ -63,9 +63,9 @@ function TransmissionPage(props) {
         var message = m.generateRandomString(m.current_length);
         setter(message);
 
-        setTimeout(m.animateIn, 25);
+        setTimeout(m.animateIn, 100);
       } else {
-        setTimeout(m.animateFadeBuffer, 25);
+        setTimeout(m.animateFadeBuffer, 100);
       }
     };
 
@@ -94,9 +94,9 @@ function TransmissionPage(props) {
       setter(message);
 
       if (do_cycles === true) {
-        setTimeout(m.animateFadeBuffer, 30);
+        setTimeout(m.animateFadeBuffer, 120);
       } else {
-        setTimeout(m.cycleText, 2000);
+        setTimeout(m.cycleText, 4000);
       }
     };
 

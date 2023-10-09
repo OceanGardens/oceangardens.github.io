@@ -32,7 +32,7 @@ function ReducedPage9() {
 
   return (
     <div id="page9">
-      <h1>But how does Phytoplankton looks like? How small are they?</h1>
+      <h1>But how do the Phytoplankton look like? How small are they?</h1>
       <p style={{color: "rgb(15, 16, 88)"}}>They are composed of two groups of living beings, the first are organisms present in the Protozoa Kingdom like seaweeds and euglenoids, and the second are organisms called cyanophytes that are classified as Bacterias.
 But do not think that they are this simple… The variety of species, shapes, sizes and structures is huge.
       </p>
