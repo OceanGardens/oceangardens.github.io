@@ -55,8 +55,7 @@ function InitialGlobePage() {
         </div>
       </div>
       <div className="text-overlay2">
-
-        <div className="initialGlobeBox">
+        <div className="globeBox">
           <p>Finally, the Hydrosphere! Bursting with an immense amount of water and brimming with life, they're an incredible marvel!</p>
           <p>In this transmission, we are going to tell you a little bit more about the Hydrosphere and the Oceans, their beauties and their importance to our lives.</p>
         </div>
