@@ -164,18 +164,18 @@ function CreditsPage(props) {
             <button id = 'button' style={{zIndex: '1000', opacity: '0%', width: buttonHeight? "0%":"100%", height: buttonHeight ? '0px': '100vh'}}>troca</button>
         </Link>
         
-        <p id='messenger1'>{msg1}</p>
-        <p id='messenger2'>{msg2}</p>
-        <p id='messenger3'>{msg3}</p>
-        <p id='messenger4'>{msg4}</p>
+        <p style={{color: 'white'}} id='messenger_1'>{msg1}</p>
+        <p style={{color: 'white'}} id='messenger_2'>{msg2}</p>
+        <p style={{color: 'white'}} id='messenger_3'>{msg3}</p>
+        <p style={{color: 'white'}} id='messenger_4'>{msg4}</p>
         <div id='mail'>
-          <p id='messenger5'>{msg5}</p>
-          <p id='messenger6'>{msg6}</p>
-          <p id='messenger7'>{msg7}</p>
-          <p id='messenger8'>{msg8}</p>
-          <p id='messenger9'>{msg9}</p>
-          <p id='messenger10'>{msg10}</p>
-          <p id='messenger11'>{msg11}</p>
+          <p style={{color: 'white'}} id='messenger_5'>{msg5}</p>
+          <p style={{color: 'white'}} id='messenger_6'>{msg6}</p>
+          <p style={{color: 'white'}} id='messenger_7'>{msg7}</p>
+          <p style={{color: 'white'}} id='messenger_8'>{msg8}</p>
+          <p style={{color: 'white'}} id='messenger_9'>{msg9}</p>
+          <p style={{color: 'white'}} id='messenger_10'>{msg10}</p>
+          <p style={{color: 'white'}} id='messenger_11'>{msg11}</p>
         </div>
         
       </motion.div>
